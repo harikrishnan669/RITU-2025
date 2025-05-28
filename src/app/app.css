@@ -1,0 +1,13 @@
+
+.gradient-bg {
+    background: linear-gradient(45deg, rgb(6, 7, 24) 0%, 34.6531%, rgb(128, 11, 54) 69.3061%, 84.6531%, rgb(158, 7, 42) 100%);
+}
+
+html, body {
+    overflow: hidden;
+    height: 100dvh;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(6, 7, 24) 0%, 34.6531%, rgb(128, 11, 54) 69.3061%, 84.6531%, rgb(158, 7, 42) 100%);
+}

@@ -1,7 +1,17 @@
 {
   "compilerOptions": {
+    "checkJs": true,
+    "strict": true,
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
-  }
+    },
+    "noEmit": true,
+    "allowJs": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2020"
+  },
+  "include": ["**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules"]
 }
