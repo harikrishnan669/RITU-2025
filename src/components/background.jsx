@@ -3,7 +3,7 @@ import BeamsBackground from "@/components/kokonutui/beams-background";
 export default function Background() {
     return (
         <div className="fixed inset-0 w-full h-full z-[-1]">
-            <BeamsBackground/>
+            {/*<BeamsBackground/>*/}
             <svg
                 className="w-full h-full"
                 viewBox="0 0 100 100"
