@@ -1,4 +1,4 @@
-import BeamsBackground from "@/components/kokonutui/beams-background";
+// import BeamsBackground from "@/components/kokonutui/beams-background";
 
 export default function Background() {
     return (
