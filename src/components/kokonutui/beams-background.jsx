@@ -128,7 +128,7 @@ export default function BeamsBackground({
 
   return (
     <div
-      className={cn("relative min-h-screen w-full overflow-hidden bg-neutral-950", className)}>
+      className={cn("relative min-h-screen w-full overflow-hidden", className)}>
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
