@@ -1,6 +1,6 @@
 "use client";
 import {motion, useAnimation, useInView} from "motion/react";
-import {useEffect, useRef} from "react";
+import {memo, useEffect, useRef} from "react";
 
 
 function getVariants(dir) {
@@ -34,7 +34,7 @@ function getVariants(dir) {
     }
 }
 
-export const BoxReveal = ({
+const BoxReveal = ({
                               children,
                               width = "fit-content",
                               boxColor = "#5046e6",
@@ -87,3 +87,6 @@ export const BoxReveal = ({
         </div>
     );
 };
+
+
+export default memo(BoxReveal);

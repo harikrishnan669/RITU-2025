@@ -28,6 +28,7 @@ const eslintConfig = [
       "no-var": "error",
       "prefer-const": "error",
       "no-empty-function": "error",
+      '@next/next/no-img-element': 'off',
     },
   },
 ];

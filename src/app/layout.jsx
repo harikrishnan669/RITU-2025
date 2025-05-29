@@ -1,7 +1,6 @@
 import {Bilbo_Swash_Caps, Poppins} from "next/font/google";
 import "./globals.css";
 import "./app.css";
-
 import Background from "@/components/background";
 
 const poppins = Poppins({
