@@ -50,7 +50,7 @@ export default function Menu() {
                         animate="open"
                         exit="closed"
                     >
-                        {navItems.map((item, index) => (
+                        {navItems.map((item) => (
                             <motion.div
                                 key={item}
                                 variants={itemVariants}
