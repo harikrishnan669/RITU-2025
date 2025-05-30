@@ -6,7 +6,7 @@ import {useEffect, useRef, useState} from "react";
 import {Grip} from "lucide-react";
 
 
-const Reveal = () => {
+export default function NavMenu() {
     const [isHidden, setIsHidden] = useState(false);
     const [height, setHeight] = useState(0);
     const [mounted, setMounted] = useState(false);
@@ -37,23 +37,21 @@ const Reveal = () => {
             background: "transparent",
         },
         vissible: {
-            width: 500,
-            background: "rgb(0,0,0,0.5)",
+            width: 900,
+            background: "rgba(17, 25, 40, 0.75)",
         },
     };
 
-    const routes = ["Home", "About", "Pricing", "FAQ"];
+    const routes = ["Home", "Events", "Culturals", "Accommodations", "Gallery", "Contact"];
 
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
     useMotionValueEvent(navbarWidth, "change", (latest) => {
-        setIsNavbarOpen(latest > 65); // open when wider than collapsed width
+        setIsNavbarOpen(latest > 65);
     });
 
 
     if (!mounted) return <div>Loading...</div>;
-
-    console.log("Hidden", isHidden, navbarWidth, height, routesOpacity, isNavbarOpen);
 
     return (
         <motion.nav
@@ -65,7 +63,8 @@ const Reveal = () => {
             variants={firstNavVariants}
             transition={{duration: 0.25}}
             className={cn(
-                "p-[10px] z-[10000000000] h-[65px] overflow-hidden rounded-lg flex items-center justify-between pr-6",
+                "p-[10px] h-[65px] overflow-hidden rounded-lg flex items-center justify-between pr-6",
+                "backdrop-blur-lg footer-background"
             )}
             style={{
                 width: navbarWidth,
@@ -78,7 +77,7 @@ const Reveal = () => {
                     <Grip className="text-white"/>
                 </div>
             }
-            <div className="mr-10"/>
+            <div className="mr-3"/>
             <AnimatePresence>
                 {(height >= 0 || !isHidden) && (
                     <motion.ul className="flex items-center gap-10">
@@ -110,5 +109,3 @@ const Reveal = () => {
         </motion.nav>
     );
 };
-
-export default Reveal;

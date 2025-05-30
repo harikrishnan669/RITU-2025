@@ -20,13 +20,16 @@ export const metadata = {
     description: "RITUTSAV 2025",
 };
 
+export const viewport = {
+    colorScheme: "dark",
+    themeColor: "#0c0c0f",
+
+}
+
+
 export default function RootLayout({children}) {
     return (
         <html lang="en">
-        <head>
-            <meta name="color-scheme" content="dark"/>
-            <meta name="theme-color" content="#24081f"/>
-        </head>
         <body
             className={`${poppins.className} ${bilboSwashCaps.variable} antialiased`}
         >

@@ -2,7 +2,7 @@ import BoxReveal from "@/components/magicui/box-reveal";
 
 export default function LandingScreen() {
     return (
-        <main className="relative flex items-center justify-center h-screen text-white px-20 max-sm:px-5">
+        <main className="relative flex items-center justify-center h-screen text-white container-cont">
             <div className="size-full flex flex-col justify-center max-sm:justify-end">
                 <div
                     className="pt-10 flex items-end justify-end space-y-4 text-4xl flex-col max-sm:pb-30 max-sm:pt-0 max-sm:items-center">

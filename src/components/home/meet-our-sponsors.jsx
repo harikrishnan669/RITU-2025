@@ -1,5 +1,6 @@
 import {cn} from "@/lib/utils";
 import {Marquee} from "@/components/magicui/marquee";
+import Header from "@/components/header";
 
 const reviews = [
     {
@@ -55,8 +56,7 @@ function MarqueeDemo() {
 export default function MeetOurSponsors() {
     return (
         <section className="">
-            <h2 className="text-4xl font-bold mb-8 text-center text-white">Meet Our Sponsors</h2>
-
+            <Header title="Meet Our Partners"/>
             <MarqueeDemo/>
         </section>
     );

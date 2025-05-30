@@ -1,9 +1,11 @@
 "use client";
-import { useEffect, useRef, useState } from "react"
+import {memo, useEffect, useRef, useState} from "react"
 import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
+import {useIsLtMaxWidth} from "@/hooks/use-is-lt-max-width";
 
-function createBeam(width, height, isMobile) {
+function createBeam(width, height) {
+    const isMobile = false;
     const angle = -35 + Math.random() * 10
     return {
         x: Math.random() * width * 1.5 - width * 0.25,
@@ -19,39 +21,32 @@ function createBeam(width, height, isMobile) {
     };
 }
 
-export default function BeamsBackground({
+function BeamsBackground({
                                             className,
                                             intensity = "strong"
                                         }) {
+
     const canvasRef = useRef(null)
     const beamsRef = useRef([])
     const animationFrameRef = useRef(0)
     const lastFrameTime = useRef(0)
-    const [isMobile, setIsMobile] = useState(false)
     const [isVisible, setIsVisible] = useState(true)
+    const isMobile = useIsLtMaxWidth();
+
 
     // Detect mobile and visibility
     useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth < 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-        }
-
-        checkMobile()
-        window.addEventListener('resize', checkMobile)
-
-        // Pause animation when tab is not visible
         const handleVisibilityChange = () => {
-            setIsVisible(!document.hidden)
+            setIsVisible(!document.hidden);
         }
         document.addEventListener('visibilitychange', handleVisibilityChange)
 
         return () => {
-            window.removeEventListener('resize', checkMobile)
             document.removeEventListener('visibilitychange', handleVisibilityChange)
         }
     }, [])
 
-    const MINIMUM_BEAMS = isMobile ? 20 : 20
+    const MINIMUM_BEAMS = isMobile ? 18 : 20
     const TARGET_FPS = isMobile ? 30 : 60
     const FRAME_INTERVAL = 1000 / TARGET_FPS
 
@@ -80,7 +75,7 @@ export default function BeamsBackground({
         const updateCanvasSize = () => {
             const dpr = isMobile ? 1 : Math.min(window.devicePixelRatio || 1, 2)
             const width = window.innerWidth
-            const height = window.innerHeight
+            const height = window.innerHeight + 100
 
             canvas.width = width * dpr
             canvas.height = height * dpr
@@ -95,7 +90,8 @@ export default function BeamsBackground({
         }
 
         updateCanvasSize()
-        window.addEventListener("resize", updateCanvasSize)
+        // TODO - At a corner here; In mobile the screen height can change according to scroll. This means the function will cause the canvas to rerender
+        // window.addEventListener("resize", updateCanvasSize)
 
         function resetBeam(beam, index, totalBeams) {
             if (!canvas) return beam
@@ -124,12 +120,12 @@ export default function BeamsBackground({
 
             const gradient = ctx.createLinearGradient(0, 0, 0, beam.length)
 
-            if (isMobile) {
-                // Simplified gradient for mobile
-                gradient.addColorStop(0, `hsla(${beam.hue}, 70%, 60%, 0)`)
-                gradient.addColorStop(0.5, `hsla(${beam.hue}, 70%, 60%, ${pulsingOpacity})`)
-                gradient.addColorStop(1, `hsla(${beam.hue}, 70%, 60%, 0)`)
-            } else {
+            // if (isMobile) {
+            //     // Simplified gradient for mobile
+            //     gradient.addColorStop(0, `hsla(${beam.hue}, 70%, 60%, 0)`)
+            //     gradient.addColorStop(0.5, `hsla(${beam.hue}, 70%, 60%, ${pulsingOpacity})`)
+            //     gradient.addColorStop(1, `hsla(${beam.hue}, 70%, 60%, 0)`)
+            // } else {
                 // Full gradient for desktop
                 gradient.addColorStop(0, `hsla(${beam.hue}, 85%, 65%, 0)`)
                 gradient.addColorStop(0.1, `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity * 0.5})`)
@@ -137,7 +133,7 @@ export default function BeamsBackground({
                 gradient.addColorStop(0.6, `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity})`)
                 gradient.addColorStop(0.9, `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity * 0.5})`)
                 gradient.addColorStop(1, `hsla(${beam.hue}, 85%, 65%, 0)`)
-            }
+            // }
 
             ctx.fillStyle = gradient
             ctx.fillRect(-beam.width / 2, 0, beam.width, beam.length)
@@ -196,7 +192,7 @@ export default function BeamsBackground({
         <div className={cn("relative min-h-screen w-full overflow-hidden bg-neutral-950", className)}>
             <canvas
                 ref={canvasRef}
-                className="absolute inset-0"
+                className="fixed inset-0 h-[calc(100vh+60px)] w-[100vw]"
                 style={{
                     filter: isMobile ? "blur(8px)" : "blur(15px)",
                     willChange: "transform"
@@ -218,11 +214,8 @@ export default function BeamsBackground({
                     }}
                 />
             )}
-            <div className="relative z-10 flex h-screen w-full items-center justify-center">
-                <div className="flex flex-col items-center justify-center gap-6 px-4 text-center">
-                    {/* Your content goes here */}
-                </div>
-            </div>
         </div>
     )
 }
+
+export default memo(BeamsBackground);
