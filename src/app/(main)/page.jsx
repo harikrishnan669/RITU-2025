@@ -1,12 +1,12 @@
 "use client";
 
 import LandingScreen from "@/components/home/landing-screen";
-// import MeetOurSponsors from "@/components/home/meet-our-sponsors";
+import MeetOurSponsors from "@/components/home/meet-our-sponsors";
 import AboutUs from "@/components/home/about-us";
 import EventsListing from "@/components/home/events-listing";
 import CulturalEvents from "@/components/home/cultural-events";
 import Gallery from "@/components/home/gallery";
-// import Footer from "@/components/home/footer";
+import Footer from "@/components/home/footer";
 
 export default function Home() {
     return <main className="overflow-y-auto size-full h-[4000px]">
@@ -14,8 +14,8 @@ export default function Home() {
         <AboutUs/>
         <EventsListing/>
         <CulturalEvents/>
-        {/*<MeetOurSponsors/>*/}
+        <MeetOurSponsors/>
         <Gallery/>
-        {/*<Footer/>*/}
+        <Footer/>
     </main>
 }
