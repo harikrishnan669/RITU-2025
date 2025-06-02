@@ -1,12 +1,10 @@
 "use client";
-import { useIsLtMaxWidth } from "@/hooks/use-is-lt-max-width"
 import Link from "next/link";
 
 
 
 export default function Footer() {
-    const isMobile = useIsLtMaxWidth();
-    return <section className={`container-cont footer-background p-6 px-14 w-full ${isMobile ? "h-[710px]" : "h-[300px]"}`}>
+    return <section className={`container-cont footer-background p-6 px-14 w-full h-[710px] md:h-[300px]`}>
         <div className="md:hidden">
             <h1 className="text-2xl font-medium mb-4 px-1">GET UPDATES</h1>
             <div className="relative w-full max-w-md mb-3">
