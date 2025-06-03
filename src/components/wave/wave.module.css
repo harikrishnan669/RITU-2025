@@ -1,0 +1,64 @@
+/* CSS for animating SVG wave paths on load */
+.svg-wave-container {
+    width: 30%;
+    margin: auto auto 15px;
+}
+
+.svg-wave-container svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Animate all paths with drawing effect */
+.svg-wave-container svg path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 2s ease-in-out forwards;
+}
+
+/* Stagger the animation for each path */
+.svg-wave-container svg path:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.svg-wave-container svg path:nth-child(3) {
+    animation-delay: 2.3s;
+}
+
+.svg-wave-container svg path:nth-child(2) {
+    animation-delay: 2.6s;
+}
+
+.svg-wave-container svg path:nth-child(1) {
+    animation-delay: 2.9s;
+}
+
+/* Keyframe animation for drawing effect */
+@keyframes drawPath {
+    from {
+        stroke-dashoffset: 1000;
+        opacity: 0.3;
+    }
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+/* Optional: Add a subtle fade-in for the entire SVG */
+.svg-wave-container {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Optional: Add hover effect */
+.svg-wave-container:hover svg path {
+    filter: drop-shadow(0 0 5px currentColor);
+    transition: filter 0.3s ease;
+}
