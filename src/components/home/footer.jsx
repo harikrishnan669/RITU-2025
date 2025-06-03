@@ -22,13 +22,13 @@ export default function Footer() {
                 </div>
                 <p className="px-3">Mail us for queries</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-6 md:px-3 py-2">
+            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-2 md:px-3 py-2">
                 <Link href='https://maps.app.goo.gl/beC6rhPdhPRUa5c16'>
-                    <div className="flex items-center  mt-3" >
+                    <div className="flex items-center  mt-3 md:mt-6" >
                         <div className="p-2">
                             <MapPin size={32} />
                         </div>
-                        <div className="tracking-wide" >
+                        <div className="tracking-wide md:tracking-widest" >
                             <p >Rajiv Gandhi Institute of Technology</p>
                             <p className="text-sm">Pampady, Kottayam</p>
                         </div>
@@ -38,7 +38,7 @@ export default function Footer() {
                     <div className="p-2">
                         <PhoneCall size={32} />
                     </div>
-                    <div className="tracking-wide">
+                    <div className="tracking-wide md:tracking-widest">
                         <p >+91 1234567890</p>
                         <p className="text-sm px-1">Hotline 24/7</p>
                     </div>
@@ -48,13 +48,13 @@ export default function Footer() {
                         <div className="p-3">
                             <MailOpen size={32} />
                         </div>
-                        <div className="tracking-wide" >
+                        <div className="tracking-wide md:tracking-widest" >
                             <p >www.rit.ac.in</p>
                             <p className="text-sm ">Free consult</p>
                         </div>
                     </div>
                 </Link>
-                <div className="hidden md:flex md:items-center md:justify-center ">
+                <div className="hidden md:flex md:items-center md:justify-center md:tracking-widest">
                     <p>GET IN TOUCH</p>
                     <ChevronRight />
                 </div>
@@ -66,7 +66,7 @@ export default function Footer() {
                         <img src="/icons/Vector.png" alt="" />
                         <p>RITU</p>
                     </div>
-                    <div className="px-3 py-2 max-w-[25vw]">
+                    <div className="px-3 py-2 max-w-[25vw] md:tracking-widest ">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates placeat, repudiandae nemo nulla amet id officiis molestias.</p>
                     </div>
                     <div className="flex items-center gap-6 px-3 py-2">
@@ -75,7 +75,7 @@ export default function Footer() {
                         <img src="/icons/facebook.png" alt="" />
                     </div>
                 </div>
-                <div>
+                <div className="md:tracking-widest">
                     <h1 className="text-xl px-3 py-2">PAGES</h1>
                     <div>
                         <Link href="/" className="px-2 py-2 block flex"><ChevronRight />Home</Link>
@@ -84,7 +84,7 @@ export default function Footer() {
                         <Link href="/gallery" className="px-2 py-2 block flex"><ChevronRight />FAQs</Link>
                     </div>
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden md:block md:tracking-widest">
                     <h1 className="text-xl px-3 py-2">CULTURALS</h1>
                     <div>
                         <Link href="/" className="px-2 py-2 block flex"><ChevronRight />Gauri Lakshmi</Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                         <Link href="/gallery" className="px-2 py-2 block flex"><ChevronRight />DJ</Link>
                     </div>
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden md:block md:tracking-widest">
                     <h1 className="text-2xl font-medium mb-4 px-1">GET UPDATES</h1>
                     <div className="relative w-full max-w-md mb-3">
                         <input
