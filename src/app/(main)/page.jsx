@@ -2,6 +2,7 @@
 
 import LandingScreen from "@/components/home/landing-screen";
 import MeetOurSponsors from "@/components/home/meet-our-sponsors";
+import MeetOurSponsorsNew from "@/components/home/meet-our-sponsors-new";
 import AboutUs from "@/components/home/about-us";
 import EventsListing from "@/components/home/events-listing";
 import CulturalEvents from "@/components/home/cultural-events";
@@ -13,7 +14,7 @@ export default function Home() {
         <AboutUs/>
         <EventsListing/>
         <CulturalEvents/>
-        <MeetOurSponsors/>
+        <MeetOurSponsorsNew/>
         <Gallery/>
     </main>
 }
