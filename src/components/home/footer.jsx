@@ -122,7 +122,7 @@ export default function Footer() {
             </div>
 
             <div>
-                <p className="text-sm bg-black/5 px-3 py-2 mb-2 md:mb-0 md:py-0 md:pt-3 text-center ">© 2025 RITU. All rights reserved.</p>
+                <p className="text-sm bg-black/5 px-3 py-2 mb-1 md:mb-0 md:py-0 md:pt-3 text-center ">© 2025 RITU. All rights reserved.</p>
             </div>
         </div>
     </section >
