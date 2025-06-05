@@ -38,7 +38,7 @@ export default function Test() {
                     className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black/70 to-transparent z-10 pointer-events-none"/>
             </div>
             <div
-                className={`relative flex flex-col items-center justify-center text-left z-30 ${titleHeight} bg-black/20 `}
+                className={`relative flex flex-col items-center justify-center text-left z-30 ${titleHeight} bg-black/20 transition-all duration-300 ease-in-out`}
                 style={{ minHeight: titleHeight || '100vh' }}
             >
             <div className="min-w-[50%] max-w-[50%] max-md:min-w-[90%]">
