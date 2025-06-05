@@ -91,7 +91,9 @@ function BeamsBackground({
 
         updateCanvasSize()
         // TODO - At a corner here; In mobile the screen height can change according to scroll. This means the function will cause the canvas to rerender
-        // window.addEventListener("resize", updateCanvasSize)
+        // window.addEventListener("resize", (e) => {
+        //     updateCanvasSize()
+        // })
 
         function resetBeam(beam, index, totalBeams) {
             if (!canvas) return beam
