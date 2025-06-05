@@ -16,7 +16,7 @@ export default function Test() {
                 {images.map((imageUrl, index) => (
                         <BlurFade key={imageUrl} delay={0.25 + index * 0.05} inView>
                             <img
-                                className="mb-4 size-full rounded-lg object-contain"
+                                className="mb-4 size-full rounded-lg object-contain hover:scale-95 transition-transform duration-300 ease-in-out"
                                 src={imageUrl}
                                 alt=''
                             />
