@@ -11,18 +11,16 @@ export default function Test() {
 
     return <div className="pt-20">
         <Header title="Gallery"/>
-        <section className="px-22 mb-10 py-2 max-sm:px-6">
-            <div className="columns-2 gap-4 sm:columns-3 md:columns-4">
-                {images.map((imageUrl, index) => (
-                        <BlurFade key={imageUrl} delay={0.25 + index * 0.05} inView>
-                            <img
-                                className="mb-4 size-full rounded-lg object-contain hover:scale-95 transition-transform duration-300 ease-in-out"
-                                src={imageUrl}
-                                alt=''
-                            />
-                        </BlurFade>
-                ))}
-            </div>
-        </section>
+        <div className="columns-2 gap-4 sm:columns-3 md:columns-4 px-22 mb-20 py-2 max-sm:px-6">
+            {images.map((imageUrl, index) => (
+                <BlurFade key={imageUrl} delay={0.25 + index * 0.05} inView>
+                    <img
+                        className="mb-4 size-full rounded-lg object-contain hover:scale-95 transition-transform duration-300 ease-in-out"
+                        src={imageUrl}
+                        alt=''
+                    />
+                </BlurFade>
+            ))}
+        </div>
     </div>
 }
