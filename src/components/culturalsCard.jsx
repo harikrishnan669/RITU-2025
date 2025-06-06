@@ -7,7 +7,9 @@ import { MapPin } from "lucide-react";
 export default function Card({ imgSource, buttonColor, date, location }) {
 	return (
 		<div
-			className={` w-[30vw] max-w-[25rem] h-content rounded-[3rem] bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg`}
+			className={
+				" min-w-[15rem] w-[30vw] max-w-[25rem] rounded-[3rem] bg-white/10 backdrop-blur-md border border-white/20 "
+			}
 		>
 			<img
 				src={imgSource}
