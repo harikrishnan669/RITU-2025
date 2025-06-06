@@ -1,0 +1,35 @@
+import { CalendarClock } from "lucide-react";
+import { MapPin } from "lucide-react";
+
+/**
+ * @param {{ imgSource: string, buttonColor: string, date: string, location: string }} props
+ */
+export default function Card({ imgSource, buttonColor, date, location }) {
+	return (
+		<div
+			className={` w-[30vw] max-w-[25rem] h-content rounded-[3rem] bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg`}
+		>
+			<img
+				src={imgSource}
+				alt="Event"
+				className="w-full max-h-full object-contain"
+			/>
+
+			<div className="flex flex-row gap-2 justify-center items-center mt-4  ">
+				<MapPin color="black" />
+				<p className="text-white text-sm">{location}</p>
+				<CalendarClock color="black" />
+				<p className="text-white  text-sm">{date}</p>
+			</div>
+
+			<div className="flex flex-col items-center justify-center h-24">
+				<button
+					className="w-24 h-10 rounded-lg"
+					style={{ backgroundColor: buttonColor }}
+				>
+					Book now
+				</button>
+			</div>
+		</div>
+	);
+}
