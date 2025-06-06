@@ -88,6 +88,14 @@ export default function Test({titleHeight = "100vh"}) {
             location: "Innovation Hub, SF",
             badge: "New",
         },
+        {
+            image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
+            date: "July 21, 2025",
+            title: "Tech Innovation Workshop",
+            description: "Hands-on experience with cutting-edge technology and robotics.",
+            location: "Innovation Hub, SF",
+            badge: "New",
+        },
     ];
     return (
         <div className="relative">
