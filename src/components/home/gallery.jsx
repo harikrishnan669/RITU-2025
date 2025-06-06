@@ -1,8 +1,37 @@
 import Header from "@/components/header";
+import {ArrowRight} from "lucide-react";
+import Link from 'next/link';
+import BlurFade from "@/components/magicui/blurr-fade";
 
 
 export default function Gallery() {
+    const images = [...Array(9)].map((_, i) => {
+        const isLandscape = i % 2 === 0;
+        const width = isLandscape ? 800 : 600;
+        const height = isLandscape ? 600 : 800;
+        return `https://picsum.photos/seed/${i + 50}/${width}/${height}`;
+    });
+
     return <section className="container-cont">
         <Header title="Gallery"/>
+        <div className="columns-2 gap-4 sm:columns-3 px-22 mb-10 py-2 max-sm:px-6">
+            {images.map((imageUrl, index) => (
+                index !== 8 ?
+                    <BlurFade key={imageUrl} delay={0.25 + index * 0.05} inView>
+                        <img
+                            className="mb-4 size-full rounded-lg object-contain hover:scale-95 transition-transform duration-300 ease-in-out"
+                            src={imageUrl}
+                            alt=''
+                        />
+                    </BlurFade>
+                    :
+                    <BlurFade key={imageUrl} delay={0.25 + index * 0.05} inView className="flex justify-center items-center rounded-lg md:min-h-[200px] md:pr-1">
+                        <Link href="/gallery" className="group flex flex-row items-center justify-center gap-2 p-2 border-dashed border-1 border-white/50 rounded-md text-sm hover:scale-95 hover:border-[#2563eb] transition-all duration-100">
+                            View More
+                            <ArrowRight className="stroke-current text-gray-100 group-hover:text-[#2563eb] transition-colors duration-100"/>
+                        </Link>
+                    </BlurFade>
+            ))}
+        </div>
     </section>
 }
