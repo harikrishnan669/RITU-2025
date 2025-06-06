@@ -3,22 +3,32 @@ import Card from "@/components/culturalsCard";
 import { ChevronLeft } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import React from "react";
 
 export default function CulturalEvents() {
 	const swiperRef = React.useRef(null);
+	const [activeIndex, setActiveIndex] = React.useState(-1);
+	const [isMobile, setIsMobile] = React.useState(false);
+
+	React.useEffect(() => {
+		const checkMobile = () => setIsMobile(window.innerWidth <= 640);
+		checkMobile();
+		window.addEventListener("resize", checkMobile);
+		return () => window.removeEventListener("resize", checkMobile);
+	}, []);
 
 	return (
-		<section className="w-full h-dvh relative">
+		<section className="w-full relative overflow-x-hidden">
 			<Header title="Culturals" />
 
-			<div className="absolute -left-2 sm:top-1/2 top-1/3 z-20 rounded-full w-20 flex items-center justify-center">
+			<div className="absolute  top-1/2  z-30 flex items-center justify-center pointer-events-auto">
 				<button
 					type="button"
-					className="w-16 h-16 flex items-center justify-center rounded-full"
+					className="w-12 h-12 flex items-center justify-center  text-white "
 					onClick={() => {
+						setActiveIndex(-1); // Hide description
 						swiperRef.current /* as any */
 							?.slidePrev?.();
 					}}
@@ -26,11 +36,12 @@ export default function CulturalEvents() {
 					<ChevronLeft />
 				</button>
 			</div>
-			<div className="absolute -right-2 sm:top-1/2 top-1/3 z-20 rounded-full w-20 flex items-center justify-center">
+			<div className="absolute right-0 top-1/2 z-30 flex items-center justify-center pointer-events-auto">
 				<button
 					type="button"
-					className="w-16 h-16 flex items-center justify-center rounded-full"
+					className="w-12 h-12 flex items-center justify-center text-white "
 					onClick={() => {
+						setActiveIndex(-1); // Hide description
 						swiperRef.current /* as any */
 							?.slideNext?.();
 					}}
@@ -40,16 +51,15 @@ export default function CulturalEvents() {
 			</div>
 
 			<Swiper
-				modules={[Pagination, Autoplay]}
-				autoplay={{ delay: 2500, disableOnInteraction: false }}
+				modules={[Pagination]}
+				className="mySwiper w-full my-10"
+				style={{ width: "100%", paddingLeft: 0, paddingRight: 0 }}
 				onSwiper={(swiper) => {
 					swiperRef.current = swiper;
 				}}
 				loop={true}
 				slidesPerView={1}
 				centeredSlides={true}
-				slidesOffsetBefore={50}
-				slidesOffsetAfter={50}
 				breakpoints={{
 					640: {
 						slidesPerView: 1,
@@ -63,63 +73,41 @@ export default function CulturalEvents() {
 						slidesOffsetAfter: 50,
 					},
 				}}
-				className="mySwiper"
-				style={
-					{
-						// display: "flex",
-						// alignItems: "center",
-						// justifyContent: "center",
-					}
-				}
 			>
-				<SwiperSlide>
-					<Card
-						imgSource={"/culturals/1.png"}
-						buttonColor={"#08070D"}
-						date={"March 21, 7pm-12pm"}
-						location={"College Auditorium"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Card
-						imgSource={"/culturals/2.png"}
-						buttonColor={"#DE573A"}
-						date={"March 21, 7pm-12pm"}
-						location={"College Auditorium"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Card
-						imgSource={"/culturals/3.png"}
-						buttonColor={"#900000"}
-						date={"March 21, 7pm-12pm"}
-						location={"College Auditorium"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Card
-						imgSource={"/culturals/1.png"}
-						buttonColor={"#08070D"}
-						date={"March 21, 7pm-12pm"}
-						location={"College Auditorium"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Card
-						imgSource={"/culturals/2.png"}
-						buttonColor={"#DE573A"}
-						date={"March 21, 7pm-12pm"}
-						location={"College Auditorium"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Card
-						imgSource={"/culturals/3.png"}
-						buttonColor={"#900000"}
-						date={"March 21, 7pm-12pm"}
-						location={"College Auditorium"}
-					/>
-				</SwiperSlide>
+				{[1, 2, 3, 1, 2, 3].map((num, idx) => (
+					<SwiperSlide key={`slide-${idx}-${num}`} className="w-full">
+						<div
+							className="w-full"
+							onClick={() =>
+								isMobile
+									? setActiveIndex(activeIndex === idx ? -1 : idx)
+									: undefined
+							}
+						>
+							<Card
+								imgSource={`/culturals/${num}.png`}
+								buttonColor={
+									num === 1 ? "#08070D" : num === 2 ? "#DE573A" : "#900000"
+								}
+								date={"March 21, 7pm-12pm"}
+								location={"College Auditorium"}
+							/>
+						</div>
+						{isMobile && activeIndex === idx && (
+							<div className="text-white text-center my-10 px-10">
+								Gauri Lakshmi captivated the audience with her graceful
+								performance at the recent cultural event held at [Event
+								Venue/Name]. Blending classical elements with modern
+								storytelling, her presentation reflected deep dedication and
+								artistic excellence. The performance not only highlighted her
+								mastery of expression and rhythm but also conveyed a powerful
+								message rooted in Indian tradition. The audience responded with
+								overwhelming applause, making the event a memorable celebration
+								of culture and talent.
+							</div>
+						)}
+					</SwiperSlide>
+				))}
 			</Swiper>
 		</section>
 	);
