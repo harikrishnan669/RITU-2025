@@ -5,7 +5,7 @@ export default function AboutUs() {
 
     return (
         <section className="flex flex-col items-center p-2 min-h-screen text-white gap-6">
-            <Header title={"#HIGONRITU"}/>
+            <Header title={"#HIGHONRITU"}/>
 
             <div className="relative w-full max-w-[600px] h-[300px] mx-auto">
 
