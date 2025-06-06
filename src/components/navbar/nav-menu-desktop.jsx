@@ -6,7 +6,7 @@ import {useEffect, useRef, useState} from "react";
 import {Grip} from "lucide-react";
 
 
-export default function NavMenu() {
+export default function NavMenuDesktop() {
     const [isHidden, setIsHidden] = useState(false);
     const [height, setHeight] = useState(0);
     const [mounted, setMounted] = useState(false);

@@ -11,7 +11,7 @@ const navLinks = [
     {title: 'Contact', url: '/contact'}
 ];
 
-function NavbarMobileAnimation() {
+export default function NavMenuMobile() {
     const [showModal, setShowModal] = useState(false);
 
     const toggleModal = () => {
@@ -128,4 +128,3 @@ function NavbarMobileAnimation() {
     );
 }
 
-export default NavbarMobileAnimation;

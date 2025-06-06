@@ -49,7 +49,7 @@ function AnimatedCounter({value, direction = -1, className}) {
     </AnimatePresence>
 }
 
-const Counter = () => {
+export default function Timer() {
     const direction = -1;
     const targetDate = "10-10-2025"; // Change this to your target date in "DD-MM-YYYY" format
     const parsedDate = useMemo(() => {
@@ -69,7 +69,8 @@ const Counter = () => {
                         <div className="max-sm:text-xl flex gap-3">
                                 <span
                                     className="w-[100px] max-sm:w-[30px] text-right flex items-baseline gap-2 max-sm:flex-col max-sm:gap-0">
-                                    <AnimatedCounter value={days} direction={direction} className="w-[100px] max-sm:w-auto"/>
+                                    <AnimatedCounter value={days} direction={direction}
+                                                     className="w-[100px] max-sm:w-auto"/>
                                     <div className="text-[#f0b830] text-sm max-sm:text-xs opacity-70">
                                         <span>Days</span>
                                     </div>
@@ -77,7 +78,8 @@ const Counter = () => {
                             :
                             <span
                                 className="w-[100px] max-sm:w-[30px] text-right flex items-baseline gap-2 max-sm:flex-col max-sm:gap-0">
-                                    <AnimatedCounter value={hours} direction={direction} className="w-[100px] max-sm:w-auto"/>
+                                    <AnimatedCounter value={hours} direction={direction}
+                                                     className="w-[100px] max-sm:w-auto"/>
                                     <div className="text-[#e62d36] text-sm max-sm:text-xs opacity-70">
                                         <span className="max-sm:hidden">Hours</span>
                                         <span className="sm:hidden">Hrs</span>
@@ -86,7 +88,8 @@ const Counter = () => {
                             :
                             <span
                                 className="w-[120px] max-sm:w-[30px] text-right flex items-baseline gap-2 max-sm:flex-col max-sm:gap-0">
-                                    <AnimatedCounter value={minutes} direction={direction} className="w-[100px] max-sm:w-auto"/>
+                                    <AnimatedCounter value={minutes} direction={direction}
+                                                     className="w-[100px] max-sm:w-auto"/>
                                     <div className="text-[#2895c4] text-sm max-sm:text-xs opacity-70">
                                         <span className="max-sm:hidden">Minutes</span>
                                         <span className="sm:hidden">Min</span>
@@ -95,7 +98,8 @@ const Counter = () => {
                             :
                             <span
                                 className="w-[120px] max-sm:w-[30px] text-right flex items-baseline gap-2 max-sm:flex-col max-sm:gap-0">
-                                    <AnimatedCounter value={seconds} direction={direction} className="w-[100px] max-sm:w-auto"/>
+                                <AnimatedCounter value={seconds} direction={direction}
+                                                 className="w-[100px] max-sm:w-auto"/>
                                     <div className="text-[#6fb75f] text-sm max-sm:text-xs opacity-70">
                                         <span className="max-sm:hidden">Seconds</span>
                                         <span className="sm:hidden">Sec</span>
@@ -108,5 +112,3 @@ const Counter = () => {
         </div>
     );
 };
-
-export default Counter;
