@@ -23,7 +23,7 @@ export default function CulturalEvents() {
 		<section className="w-full relative overflow-x-hidden">
 			<Header title="Culturals" />
 
-			<div className="absolute  top-1/2  z-30 flex items-center justify-center pointer-events-auto">
+			<div className="absolute top-80 z-30 flex items-center justify-center pointer-events-auto">
 				<button
 					type="button"
 					className="w-12 h-12 flex items-center justify-center  text-white "
@@ -36,7 +36,7 @@ export default function CulturalEvents() {
 					<ChevronLeft />
 				</button>
 			</div>
-			<div className="absolute right-0 top-1/2 z-30 flex items-center justify-center pointer-events-auto">
+			<div className="absolute right-0 top-80 z-30 flex items-center justify-center pointer-events-auto">
 				<button
 					type="button"
 					className="w-12 h-12 flex items-center justify-center text-white "
@@ -52,7 +52,7 @@ export default function CulturalEvents() {
 
 			<Swiper
 				modules={[Pagination]}
-				className="mySwiper w-full my-10"
+				className="mySwiper w-full my-10 "
 				style={{ width: "100%", paddingLeft: 0, paddingRight: 0 }}
 				onSwiper={(swiper) => {
 					swiperRef.current = swiper;
@@ -73,11 +73,17 @@ export default function CulturalEvents() {
 						slidesOffsetAfter: 50,
 					},
 				}}
+				// Add a callback to update activeIndex on slide change
+				onSlideChange={(swiper) => {
+					if (!isMobile) setActiveIndex(swiper.realIndex);
+				}}
 			>
 				{[1, 2, 3, 1, 2, 3].map((num, idx) => (
 					<SwiperSlide key={`slide-${idx}-${num}`} className="w-full">
 						<div
-							className="w-full"
+							className={`w-full transition-transform duration-300 ${
+								activeIndex === idx ? "scale-105 z-40" : "scale-95 opacity-80"
+							}`}
 							onClick={() =>
 								isMobile
 									? setActiveIndex(activeIndex === idx ? -1 : idx)
@@ -94,7 +100,7 @@ export default function CulturalEvents() {
 							/>
 						</div>
 						{isMobile && activeIndex === idx && (
-							<div className="text-white text-center my-10 px-10">
+							<div className="text-white text-center my-10 px-10 ">
 								Gauri Lakshmi captivated the audience with her graceful
 								performance at the recent cultural event held at [Event
 								Venue/Name]. Blending classical elements with modern

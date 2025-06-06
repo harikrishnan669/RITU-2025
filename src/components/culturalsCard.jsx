@@ -8,7 +8,7 @@ export default function Card({ imgSource, buttonColor, date, location }) {
 	return (
 		<div
 			className={
-				" min-w-[15rem] w-[30vw] mx-auto max-w-[25rem] rounded-[3rem] bg-white/10 backdrop-blur-md border border-white/20 "
+				" min-w-[15rem] w-[30vw] mx-auto my-10 max-w-[25rem] rounded-[3rem] bg-white/10 backdrop-blur-md border border-white/20 "
 			}
 		>
 			<img
