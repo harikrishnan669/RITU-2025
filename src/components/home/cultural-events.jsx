@@ -1,18 +1,19 @@
 import Header from "@/components/header";
 import Card from "@/components/culturalsCard";
-import { ChevronLeft } from "lucide-react";
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export default function CulturalEvents() {
+	const router = useRouter();
 	const swiperRef = React.useRef(null);
 	const [activeIndex, setActiveIndex] = React.useState(-1);
 	const [isMobile, setIsMobile] = React.useState(false);
-
 	React.useEffect(() => {
+
 		const checkMobile = () => setIsMobile(window.innerWidth <= 640);
 		checkMobile();
 		window.addEventListener("resize", checkMobile);
@@ -52,7 +53,7 @@ export default function CulturalEvents() {
 
 			<Swiper
 				modules={[Pagination]}
-				className="mySwiper w-full my-10 "
+				className="mySwiper w-full my-10"
 				style={{ width: "100%", paddingLeft: 0, paddingRight: 0 }}
 				onSwiper={(swiper) => {
 					swiperRef.current = swiper;
@@ -73,7 +74,6 @@ export default function CulturalEvents() {
 						slidesOffsetAfter: 50,
 					},
 				}}
-				// Add a callback to update activeIndex on slide change
 				onSlideChange={(swiper) => {
 					if (!isMobile) setActiveIndex(swiper.realIndex);
 				}}
@@ -84,11 +84,18 @@ export default function CulturalEvents() {
 							className={`w-full transition-transform duration-300 ${
 								activeIndex === idx ? "scale-105 z-40" : "scale-95 opacity-80"
 							}`}
-							onClick={() =>
-								isMobile
-									? setActiveIndex(activeIndex === idx ? -1 : idx)
-									: undefined
-							}
+							onClick={() => {
+								if (!isMobile) {
+									router.push(
+										`/culturals?img=${encodeURIComponent(
+											`/culturals/${num}.png`
+										)}`
+									);
+								}
+								if (isMobile) {
+									setActiveIndex(activeIndex === idx ? -1 : idx);
+								}
+							}}
 						>
 							<Card
 								imgSource={`/culturals/${num}.png`}
@@ -100,7 +107,7 @@ export default function CulturalEvents() {
 							/>
 						</div>
 						{isMobile && activeIndex === idx && (
-							<div className="text-white text-center my-10 px-10 ">
+							<div className="text-white text-center my-10 px-10">
 								Gauri Lakshmi captivated the audience with her graceful
 								performance at the recent cultural event held at [Event
 								Venue/Name]. Blending classical elements with modern

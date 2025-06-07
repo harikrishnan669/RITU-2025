@@ -1,10 +1,11 @@
 import { CalendarClock } from "lucide-react";
 import { MapPin } from "lucide-react";
+import BookNow from "@/components/bookNow";
 
 /**
  * @param {{ imgSource: string, buttonColor: string, date: string, location: string, onClick?: () => void }} props
  */
-export default function Card({ imgSource, buttonColor, date, location }) {
+export default function Card({ imgSource, date, location, buttonColor = "bg-blue-500" }) {
 	return (
 		<div
 			className={
@@ -27,12 +28,12 @@ export default function Card({ imgSource, buttonColor, date, location }) {
 			</div>
 
 			<div className="flex flex-col items-center justify-center h-24">
-				<button
-					className="w-24 h-10 rounded-lg"
-					style={{ backgroundColor: buttonColor }}
-				>
-					Book now
-				</button>
+				<BookNow
+					onClick={() => {
+						window.location.href = "/culturals";
+					}} 
+					btnColor={buttonColor}
+				/>
 			</div>
 		</div>
 	);
