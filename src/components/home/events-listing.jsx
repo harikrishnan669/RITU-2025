@@ -61,7 +61,7 @@ export default function EventsListing() {
             </div>
 
             <div
-                className="relative grid grid-cols-1 px-2 md:grid-cols-2 gap-x-38 gap-y-30 z-20 max-md:gap-8 bg-green-400r max-md:w-full ">
+                className="relative grid grid-cols-1 px-2 md:grid-cols-2 gap-x-38 gap-y-30 z-20 max-md:gap-8 bg-green-400r max-md:w-full max-md:mt-[-50px]">
                 {/* Workshops */}
                 <Link href="/workshop"
                     className={`reveal-left relative bg-white/50 border-gray-200/20 border-t-1 border-l-1 p-8 md:p-12 cursor-pointer rounded-lg transition-all duration-300 ease-in-out hover:scale-105 flex justify-center items-center max-md:max-w-[70%] max-md:min-w-[70%] max-md:max-h-[80px] max-md:mr-auto`}
