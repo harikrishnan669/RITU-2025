@@ -1,8 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 import { CalendarClock, MapPin, Info } from "lucide-react";
-import BookNow from "@/components/bookNow";
 
 export default function CulturalEventsDesc() {
 	const searchParams = useSearchParams();
@@ -35,7 +33,7 @@ export default function CulturalEventsDesc() {
 							with the latest consoles, high-performance PCs, VR setups, and
 							motion-sensing games. With cutting-edge technology and a vibrant
 							atmosphere, it’s the ultimate destination for casual players and
-							competitive gamers alike. Whether you're teaming up with friends,
+							competitive gamers alike. Whether you&#39;re teaming up with friends,
 							joining tournaments, or exploring new virtual worlds, Next Gen
 							Gaming Zone delivers the thrill of modern gaming like never
 							before.

@@ -84,7 +84,7 @@ export default function NavMenuDesktop() {
                         {routes.map((route) => (
                             <motion.li
                                 key={route}
-                                className="text-white text-xl cursor-pointer"
+                                className="text-white text-xl cursor-pointer nav-bar-link"
                                 initial={{opacity: 0}}
                                 animate={{opacity: 1}}
                                 style={{
