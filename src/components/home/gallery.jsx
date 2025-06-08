@@ -26,7 +26,7 @@ export default function Gallery() {
                     </BlurFade>
                     :
                     <BlurFade key={imageUrl} delay={0.25 + index * 0.05} inView className="flex justify-center items-center rounded-lg md:min-h-[200px] md:pr-1">
-                        <Link href="/gallery" className="group flex flex-row items-center justify-center gap-2 p-2 border-dashed border-1 border-white/50 rounded-md text-sm hover:scale-95 hover:border-[#2563eb] transition-all duration-100">
+                        <Link href="/gallery" className="group flex flex-row items-center justify-center gap-2 text-md max-md:text-sm bg-white/10 border border-white/30 text-white px-3 py-3 rounded-lg hover:bg-white hover:text-black  transition-all duration-200">
                             View More
                             <ArrowRight className="stroke-current text-gray-100 group-hover:text-[#2563eb] transition-colors duration-100"/>
                         </Link>
