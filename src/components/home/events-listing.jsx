@@ -9,10 +9,10 @@ export default function EventsListing() {
     const [hovered, setHovered] = useState(null);
 
     const imageMap = {
-        Workshops: "/ritu-red.png",
-        Competitions: "/ritu-blue.png",
-        Exhibition: "/ritu-yellow.png",
-        Gaming: "/ritu-green.png",
+        Workshops: "/events-listing-testImages/ritu-red.png",
+        Competitions: "/events-listing-testImages/ritu-blue.png",
+        Exhibition: "/events-listing-testImages/ritu-yellow.png",
+        Gaming: "/events-listing-testImages/ritu-green.png",
     };
 
     const [windowWidth, setWindowWidth] = useState(0);
@@ -56,8 +56,8 @@ export default function EventsListing() {
         <div className="relative flex flex-col items-center justify-center h-[70vh] bg-grsfdcay-800/70">
             {/* Centered Logo */}
             <div className="absolute inset-0 w-full h-full z-0 md:flex justify-center items-center hidden">
-                <img src={hovered ? imageMap[hovered] : "/ritu-logo-white.png"} alt=""
-                     width={`${hovered ? '25%' : '12%'}`} className={`${hovered && 'mt-14 ml-6'} -all -300 `}/>
+                <img src={hovered ? imageMap[hovered] : "/events-listing-testImages/ritu-allcolour.png"} alt=""
+                     width='12%'/>
             </div>
 
             <div
@@ -66,7 +66,7 @@ export default function EventsListing() {
                 <Link href="/workshop"
                     className={`reveal-left relative bg-white/50 border-gray-200/20 border-t-1 border-l-1 p-8 md:p-12 cursor-pointer rounded-lg transition-all duration-300 ease-in-out hover:scale-105 flex justify-center items-center max-md:max-w-[70%] max-md:min-w-[70%] max-md:max-h-[80px] max-md:mr-auto`}
                     style={{
-                        background: 'linear-gradient(135deg, rgba(20,184,166,0.7), rgba(59,130,246,0.65), rgba(147,51,234,0.55))',
+                        background: 'linear-gradient(135deg, rgba(99,210,228,0.5), rgba(96,180,242,0.4), rgba(112,143,242,0.4), rgba(157,108,240,0.4), rgba(170,96,240,0.4))',
                         ...(windowWidth > 768 &&
                             {
                                 WebkitMaskImage: `radial-gradient(circle at calc(100% + 20px) calc(100% + 10px), transparent 0 25%, black 31px)`,
@@ -86,9 +86,9 @@ export default function EventsListing() {
 
                 {/* Competitions */}
                 <Link href="/competition"
-                    className={`reveal-right relative bg-[#cd222d]/20 backdrop-blur-xl border-t border-red-200/30 p-8 md:p-12 cursor-pointer rounded-lg transition-all duration-300 ease-in-out hover:scale-105 flex justify-center items-center max-md:max-w-[70%] max-md:min-w-[70%] max-md:max-h-[80px] max-md:ml-auto`}
+                    className={`reveal-right relative bg-white/50 border-t border-red-200/30 p-8 md:p-12 cursor-pointer rounded-lg transition-all duration-300 ease-in-out hover:scale-105 flex justify-center items-center max-md:max-w-[70%] max-md:min-w-[70%] max-md:max-h-[80px] max-md:ml-auto`}
                     style={{
-                        background: 'linear-gradient(135deg, rgba(147,51,234,0.55), rgba(59,130,246,0.65), rgba(20,184,166,0.6))',
+                        background: 'linear-gradient(135deg, rgba(170,96,240,0.5), rgba(157,108,240,0.4), rgba(112,143,242,0.4), rgba(96,180,242,0.4), rgba(99,210,228,0.4))',
                         ...(windowWidth > 768 &&
                             {
                                 WebkitMaskImage: `radial-gradient(circle at -20px calc(100% + 10px), transparent 0 25%, black 31px)`,
@@ -110,7 +110,7 @@ export default function EventsListing() {
                 <Link href="/culturals"
                     className={`reveal-left relative bg-white/50 border-gray-200/20 border-b-1 border-l-1 p-8 md:p-12 cursor-pointer rounded-lg transition-all duration-300 ease-in-out hover:scale-105 flex justify-center items-center max-md:max-w-[70%] max-md:min-w-[70%] max-md:max-h-[80px] max-md:mr-auto`}
                     style={{
-                        background: 'linear-gradient(135deg, rgba(20,184,166,0.7), rgba(59,130,246,0.65), rgba(147,51,234,0.55))',
+                        background: 'linear-gradient(135deg, rgba(99,210,228,0.5), rgba(96,180,242,0.4), rgba(112,143,242,0.4), rgba(157,108,240,0.4), rgba(170,96,240,0.4))',
                         ...(windowWidth > 768 &&
                             {
                                 WebkitMaskImage: `radial-gradient(circle at calc(100% + 20px) -10px, transparent 0 25%, black 31px)`,
@@ -132,7 +132,7 @@ export default function EventsListing() {
                 <Link href="/gaming"
                     className={`reveal-right relative bg-white/50 border-gray-200/20 border-b-1 border-r-1 p-8 md:p-12 cursor-pointer rounded-lg transition-all duration-300 ease-in-out hover:scale-105 flex justify-center items-center max-md:max-w-[70%] max-md:min-w-[70%] max-md:max-h-[80px] max-md:ml-auto`}
                     style={{
-                        background: 'linear-gradient(135deg, rgba(147,51,234,0.55), rgba(59,130,246,0.65), rgba(20,184,166,0.6))',
+                        background: 'linear-gradient(135deg, rgba(170,96,240,0.5), rgba(157,108,240,0.4), rgba(112,143,242,0.4), rgba(96,180,242,0.4), rgba(99,210,228,0.4))',
                         ...(windowWidth > 768 &&
                             {
                                 WebkitMaskImage: `radial-gradient(circle at -20px -10px, transparent 0 25%, black 31px)`,

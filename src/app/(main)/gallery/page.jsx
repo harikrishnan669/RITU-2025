@@ -13,7 +13,7 @@ export default function Test() {
     });
 
     const BgImgRef = useRef(null)
-    const [titleHeight, setTitleHeight] = useState(0);
+    const [titleHeight, setTitleHeight] = useState(1100);
     useEffect(() => {
         const updateHeight = () => {
             if (BgImgRef.current) {
@@ -48,7 +48,7 @@ export default function Test() {
                 className={`relative flex flex-col items-center justify-center text-left z-30 ${titleHeight} bg-black/20 transition-all duration-300 ease-in-out`}
                 style={{ minHeight: titleHeight || '100vh' }}
             >
-            <div className="min-w-[50%] max-w-[50%] max-md:min-w-[90%]">
+                <div className="min-w-[50%] max-w-[50%] max-md:min-w-[90%]">
                     <h2 className="text-7xl mb-8 max-md:mb-4 text-left text-white tracking-widest max-w-fit max-md:text-2xl">
                         Gallery
                     </h2>
