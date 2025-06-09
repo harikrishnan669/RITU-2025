@@ -153,5 +153,6 @@ export default function CompetitionPage() {
                 </button>
             </div>
         </section>
+
     );
 }
