@@ -41,7 +41,7 @@ export default function EventsListing() {
     return <section className="container-cont">
         <Header title="Events"/>
         <div
-            className="relative flex flex-col items-center justify-start min-h-[60vh] gap-20 max-sm:gap-10 mb-10 max-sm:mb-5 mt-12 max-sm:mt-12 px-10 max-sm:px-0">
+            className="relative flex flex-col items-center justify-start min-h-[60vh] gap-15 max-sm:gap-10 mb-10 max-sm:mb-5 mt-12 max-sm:mt-12 px-10 max-sm:px-0">
             {/* Centered Logo */}
             <div className="absolute inset-0 w-full h-full z-0 md:flex justify-center items-center hidden">
                 <img src={hovered ? imageMap[hovered] : "/events-listing-testImages/ritu-allcolour.png"} alt=""
