@@ -159,7 +159,7 @@ body {
 /* Landing Page Events Button Styling*/
 .reveal-left {
     position: relative;
-    transform: translateX(-150px);
+    transform: translateX(1000px);
     opacity: 0;
     transition: all 0.7s ease;
 }
@@ -171,7 +171,7 @@ body {
 
 .reveal-right {
     position: relative;
-    transform: translateX(150px);
+    transform: translateX(-1000px);
     opacity: 0;
     transition: all 0.7s ease;
 }
@@ -181,6 +181,16 @@ body {
     opacity: 1;
 	font: var(--font-primary);
 	color: white;
+}
+
+@media (max-width: 640px) {
+	.invert-reveal1 {
+		transform: translateX(-1000px);
+	}
+
+	.invert-reveal2 {
+		transform: translateX(1000px);
+	}
 }
 
 @media (max-width: 640px) {
