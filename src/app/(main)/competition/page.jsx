@@ -38,8 +38,6 @@ function EventCard({event}) {
         </div>
     );
 }
-
-
 const events = [
     {
         image: "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?cs=srgb&dl=pexels-wolfgang-1002140-2747449.jpg&fm=jpg",
@@ -91,7 +89,6 @@ const events = [
     },
 ];
 
-
 export default function CompetitionPage() {
     const imageRef = useRef(null);
     const [visibleCount, setVisibleCount] = useState(3);
@@ -103,7 +100,7 @@ export default function CompetitionPage() {
             setVisibleCount(3);
     }
     return (
-        <section>
+        <section className="min-h-screen flex flex-col justify-center items-center">
             <div className="relative w-full h-screen overflow-hidden">
                 <img
                     className="absolute top-0 left-0 object-cover object-center -z-1 w-full h-screen"
@@ -111,48 +108,39 @@ export default function CompetitionPage() {
                     alt="Competitions image"
                     ref={imageRef}
                 />
-
-                <div
-                    className="size-full flex flex-col justify-center bg-black/30 pl-10"
-                >
-                    <div className="w-full max-w-[500px] text-left px-4 md:max-w-[600px]">
-                        <h2 className="text-4xl md:text-5xl lg:text-5xl mb-4 md:mb-8 text-white tracking-widest">
+                <div className="size-full flex flex-col justify-center bg-black/30 pl-10">
+                    <div className="w-full max-w-[600px] text-left px-4">
+                        <h2 className="text-4xl md:text-5xl mb-4 text-white tracking-widest">
                             Competition
                         </h2>
                         <p className="text-sm md:text-base lg:text-xl text-white">
-                            a set of words that is complete in itself, typically containing a subject and predicate,
-                            conveying a statement, question, exclamation, or command, and consisting of a main clause and
-                            sometimes one or more subordinate clauses.
+                            A set of words that is complete in itself, typically containing a subject and predicate...
                         </p>
                     </div>
                 </div>
-
-                {/*<div className="absolute inset-0 bg-black/10 backdrop-blur-sm z-10 md:bg-black/90 md:backdrop-blur" />*/}
-                {/*<div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t  z-20 pointer-events-none md:bg-gradient-to-t bg-red-500" />*/}
             </div>
-            <br/>
-            <div className="w-full flex justify-end pr-6">
-                <button
-                    className="bg-white/20 backdrop-blur border border-white/30 text-white px-6 py-2 rounded-lg transition flex items-center gap-2 hover:bg-white hover:text-black">
+
+            <div className="w-full flex justify-end pr-6 mt-10">
+                <button className="bg-white/20 border border-white/30 text-white px-6 py-2 rounded-lg transition flex items-center gap-2 hover:bg-white hover:text-black">
                     Filter
-                    <Funnel className="size-5"/>
+                    <Funnel className="size-5" />
                 </button>
             </div>
-            <div className="w-full max-w-[1200px] px-4 flex flex-col items-center pb-10 pt-10">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-0 sm:px-4">
+
+            <div className="w-full max-w-[1200px] px-4 flex flex-col items-center py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full justify-items-center">
                     {events.slice(0, visibleCount).map((event, idx) => (
-                        <EventCard key={idx} event={event}/>
+                        <EventCard key={idx} event={event} />
                     ))}
                 </div>
 
                 <button
                     onClick={toggleMoreless}
-                    className="mt-8 bg-white/20 backdrop-blur border border-white/30 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+                    className="mt-10 bg-white/20 border border-white/30 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
                 >
-                    {visibleCount === 3 ? "View All Competitions" : "View Less"}
+                    {visibleCount === 3 ? "View All" : "View Less"}
                 </button>
             </div>
         </section>
-
     );
 }
