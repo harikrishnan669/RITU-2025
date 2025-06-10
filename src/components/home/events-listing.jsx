@@ -41,7 +41,7 @@ export default function EventsListing() {
     return <section className="container-cont">
         <Header title="Events"/>
         <div
-            className="relative flex flex-col items-center justify-start min-h-[60vh] gap-15 max-sm:gap-10 mb-10 max-sm:mb-5 mt-12 max-sm:mt-12 px-10 max-sm:px-0">
+            className="relative flex flex-col items-center justify-start min-h-[60vh] gap-20 mb-10 max-sm:mb-5 mt-12 max-sm:mt-12 px-10 max-sm:px-0">
             {/* Centered Logo */}
             <div className="absolute inset-0 w-full h-full z-0 md:flex justify-center items-center hidden">
                 <img src={hovered ? imageMap[hovered] : "/events-listing-testImages/ritu-allcolour.png"} alt=""
@@ -61,7 +61,7 @@ export default function EventsListing() {
                     <ArrowUpRight size={26} />
                 </Link>
                 <Link href={'/competition'}
-                    className="reveal-left invert-reveal1 max-sm:self-end bg-[#0f172a] transition-shadow duration-100 border-r-1 border-b-1 border-[#0a0a0a]/60
+                    className="reveal-left bg-[#0f172a] transition-shadow duration-100 border-r-1 border-b-1 border-[#0a0a0a]/60
                     shadow-[4px_4px_8px_rgba(0,0,0,0.4),6px_6px_12px_rgba(0,0,0,0.3),0_0_8px_2px_rgba(0,123,255,0.3),0_0_16px_4px_rgba(0,123,255,0.2)]
                     hover:shadow-[6px_6px_10px_rgba(0,0,0,0.5),8px_8px_16px_rgba(0,0,0,0.4),0_0_10px_3px_rgba(0,123,255,0.5),0_0_20px_6px_rgba(0,123,255,0.3)]
                     hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_4px_rgba(0,0,0,0.3),3px_3px_6px_rgba(0,0,0,0.2),0_0_6px_1px_rgba(0,123,255,0.4),0_0_12px_3px_rgba(0,123,255,0.25)]
@@ -74,7 +74,7 @@ export default function EventsListing() {
             </div>
             <div className="w-full flex flex-col justify-center items-end gap-12 max-sm:gap-10">
                 <Link href={'/gaming'}
-                    className="reveal-right invert-reveal2 max-sm:self-start bg-[#0f172a] transition-shadow duration-100 border-r-1 border-b-1 border-[#0a0a0a]/60
+                    className="reveal-right bg-[#0f172a] transition-shadow duration-100 border-r-1 border-b-1 border-[#0a0a0a]/60
                     shadow-[4px_4px_8px_rgba(0,0,0,0.4),6px_6px_12px_rgba(0,0,0,0.3),0_0_8px_2px_rgba(0,255,128,0.3),0_0_16px_4px_rgba(0,255,128,0.2)]
                     hover:shadow-[6px_6px_10px_rgba(0,0,0,0.5),8px_8px_16px_rgba(0,0,0,0.4),0_0_10px_3px_rgba(0,255,128,0.5),0_0_20px_6px_rgba(0,255,128,0.3)]
                     hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_4px_rgba(0,0,0,0.3),3px_3px_6px_rgba(0,0,0,0.2),0_0_6px_1px_rgba(0,255,128,0.4),0_0_12px_3px_rgba(0,255,128,0.25)]
