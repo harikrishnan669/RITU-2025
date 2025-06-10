@@ -184,6 +184,16 @@ body {
 }
 
 @media (max-width: 640px) {
+	.invert-reveal1 {
+		transform: translateX(-1000px);
+	}
+
+	.invert-reveal2 {
+		transform: translateX(1000px);
+	}
+}
+
+@media (max-width: 640px) {
 	.custom-swiper {
 		padding: 2rem !important;
 	}
