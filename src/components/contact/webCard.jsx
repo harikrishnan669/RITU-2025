@@ -1,6 +1,5 @@
 
 import { Github, Mail } from "lucide-react";
-import Link from "next/link";
 
 export default function WebCard({ imgSource, name, github, mail }) {
     return (

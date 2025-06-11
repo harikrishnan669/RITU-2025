@@ -1,21 +1,6 @@
 import BoxReveal from "@/components/magicui/box-reveal";
 import Wave from "@/components/wave/wave";
 
-
-function RITUTSAV() {
-    return <>
-            <span>R</span>
-            <span>I</span>
-            <span>T</span>
-            <span>U</span>
-            <span>T</span>
-            <span>S</span>
-            <span>A</span>
-            <span>V</span>
-    </>
-}
-
-
 export default function LandingScreen() {
     return (
         <main className="relative flex items-center justify-center h-screen text-white container-cont">

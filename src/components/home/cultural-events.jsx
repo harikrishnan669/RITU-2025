@@ -1,6 +1,5 @@
 import Header from "@/components/header";
 import Card from "@/components/culturalsCard";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
