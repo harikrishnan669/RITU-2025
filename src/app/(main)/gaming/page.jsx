@@ -2,7 +2,7 @@
 
 import Header from "@/components/header";
 import EventCard from "@/components/cards";
-import {ArrowDown,ArrowRight} from "lucide-react";
+import {ArrowDown, ArrowRight, Filter} from "lucide-react";
 import React, {useRef, useState} from "react";
 
 export default function Gaming() {
@@ -102,10 +102,19 @@ export default function Gaming() {
                 </button>
             </div>
             {/*here sepearte both parts */}
-            <div className="flex flex-col  items-center mb-5 ">
+            <div className="w-full flex justify-end px-4 sm:px-8 pt-10">
+                <button
+                    className="flex items-center justify-center gap-2 px-4 py-2 max-w-[120px] bg-gray-300 text-black rounded-md hover:bg-gray-400 transition duration-200"
+                >
+                    <span className="hidden md:inline">Filter</span> <Filter size={18}/>
+                </button>
+            </div>
+
+            <div className="flex flex-col items-center min-h-screen p-25 gap-5 ">
+
                 <div
                     ref={scrollRef}
-                    className="flex flex-row flex-wrap gap-10 justify-center items-center mx-auto p-4 min-h-screen"
+                    className="flex flex-row flex-wrap gap-10 justify-center items-center mx-auto p-4 "
                 >
                     {Gaming.slice(0, visible).map((gaming, index) => (
                         <EventCard key={index} event={gaming}/>
@@ -114,7 +123,7 @@ export default function Gaming() {
                 </div>
 
                 <button onClick={toggleVisibility}
-                        className="bg-transparent text-white border border-white p-5 mb-5 w-[280px] text-xl cursor-pointer hover:text-black hover:bg-white transition duration-300 rounded-md">
+                        className="bg-white/20 text-white border border-white p-5 mb-5 w-[280px] text-xl cursor-pointer hover:text-black hover:bg-white transition duration-300 rounded-md">
                     {visible === 3 ?
                         (
                             <span className="flex flex-row justify-center gap-2 tracking-wide items-center">
