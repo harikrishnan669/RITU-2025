@@ -1,6 +1,6 @@
 "use client";
 import React, {useRef, useState} from "react";
-import {Funnel} from "lucide-react";
+import {ChevronDown, Funnel} from "lucide-react";
 import EventCard from "@/components/cards";
 
 const events = [
@@ -83,10 +83,16 @@ export default function CompetitionPage() {
                         </p>
                     </div>
                 </div>
+                <div
+                    className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-40 text-3xl rounded-full p-1 cursor-pointer sm:text-4xl md:text-5xl animate-bounce"
+                >
+                    <ChevronDown size={50}/>
+                </div>
             </div>
 
             <div className="w-full flex justify-end pr-6 mt-10">
-                <button className="bg-white/20 border border-white/30 text-white px-6 py-2 rounded-lg transition flex items-center gap-2 hover:bg-white hover:text-black">
+                <button
+                    className="bg-white/20 border border-white/30 text-white px-6 py-2 rounded-lg transition flex items-center gap-2 hover:bg-white hover:text-black">
                     Filter
                     <Funnel className="size-5" />
                 </button>
