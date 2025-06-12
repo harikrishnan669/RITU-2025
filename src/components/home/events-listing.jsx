@@ -58,7 +58,7 @@ export default function EventsListing() {
                 </Link>
                 <Link href={'/competition'}
                       className="reveal-left invert-reveal1 transition-all duration-100 cursor-pointer select-none hover:scale-105"
-                      onMouseEnter={() => setHovered('Workshops')}
+                      onMouseEnter={() => setHovered('Competitions')}
                       onMouseLeave={() => setHovered(null)}>
                     <img alt="" src={'/events-listing-testImages/ticket2.png'}
                          className="w-[28vw] max-md:w-[65vw]"/>
@@ -67,14 +67,14 @@ export default function EventsListing() {
             <div className="w-full flex flex-row max-sm:flex-col justify-between max-sm:justify-center items-center gap-12 max-md:gap-10 py-2 max-sm:py-0 max-md:pb-2">
                 <Link href={'/culturals'}
                       className="reveal-right invert-reveal2 transition-all duration-100 cursor-pointer select-none hover:scale-105"
-                      onMouseEnter={() => setHovered('Workshops')}
+                      onMouseEnter={() => setHovered('Culturals')}
                       onMouseLeave={() => setHovered(null)}>
                     <img alt="" src={'/events-listing-testImages/ticket3.png'}
                          className="w-[28vw] max-md:w-[65vw]"/>
                 </Link>
                 <Link href={'/gaming'}
                       className="reveal-left transition-all duration-100 cursor-pointer select-none hover:scale-105"
-                      onMouseEnter={() => setHovered('Workshops')}
+                      onMouseEnter={() => setHovered('Gaming')}
                       onMouseLeave={() => setHovered(null)}>
                     <img alt="" src={'/events-listing-testImages/ticket4.png'}
                          className="w-[28vw] max-md:w-[65vw]"/>
