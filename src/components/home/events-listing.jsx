@@ -38,46 +38,46 @@ export default function EventsListing() {
     }, []);
 
 
-    return <section className="container-cont">
+    return <section className="container-cont mt-5">
         <Header title="Events"/>
         <div
-            className="relative flex flex-col items-center justify-start min-h-[60vh] gap-0 overflow-hidden max-md:gap-10 mb-10 max-md:mb-12 mt-12 max-md:mt-12 px-10 max-md:px-0">
+            className="relative flex flex-col items-center justify-start gap-25 overflow-hidden max-md:gap-10 mb-10 max-md:mb-10 mt-12 max-md:mt-10 px-15 max-md:px-0">
             {/* Centered Logo */}
             <div className="absolute inset-0 w-full h-full z-0 md:flex justify-center items-center hidden">
-                <img src={hovered ? imageMap[hovered] : "/events-listing-testImages/ritu-allcolour.png"} alt=""
-                     width='18%'/>
+                <img src={hovered ? imageMap[hovered] : "/events-listing-testImages/ritu-allcolour.webp"} alt=""
+                     width='15%'/>
             </div>
 
-            <div className="w-full flex flex-col justify-center items-start max-md:items-center gap-12 max-md:gap-10">
+            <div className="w-full flex flex-row max-sm:flex-col justify-between max-sm:justify-center items-center gap-12 max-md:gap-10 py-2 max-md:py-0 max-md:pt-2">
                 <Link href="/workshop"
-                    className="reveal-left transition-shadow duration-100 z-20 cursor-pointer select-none"
+                    className="reveal-right transition-all duration-100 cursor-pointer select-none hover:scale-105"
                     onMouseEnter={() => setHovered('Workshops')}
                     onMouseLeave={() => setHovered(null)}>
-                    <img alt="" src="/events-listing-testImages/gaming.png"
-                        className="w-[30vw] max-md:w-[65vw] h-auto block hover:scale-105 transition-all duration-300 ease-in-out"/>
+                    <img alt="" src="/events-listing-testImages/ticket1.png"
+                        className="w-[28vw] max-md:w-[65vw]"/>
                 </Link>
                 <Link href={'/competition'}
-                      className="reveal-left invert-reveal1 max-md:self-endsd transition-shadow duration-100 z-20 cursor-pointer select-none"
+                      className="reveal-left invert-reveal1 transition-all duration-100 cursor-pointer select-none hover:scale-105"
                       onMouseEnter={() => setHovered('Workshops')}
                       onMouseLeave={() => setHovered(null)}>
-                    <img alt="" src={'/events-listing-testImages/workshop.png'}
-                         className="w-[30vw] max-md:w-[65vw] h-auto hover:scale-105 transition-all duration-300 ease-in-out"/>
+                    <img alt="" src={'/events-listing-testImages/ticket2.png'}
+                         className="w-[28vw] max-md:w-[65vw]"/>
                 </Link>
             </div>
-            <div className="w-full flex flex-col justify-center items-end max-md:items-center gap-12 max-md:gap-10">
-                <Link href={'/gaming'}
-                      className="reveal-right invert-reveal2 max-md:self-startsd transition-shadow duration-100 z-20 cursor-pointer select-nonee"
-                      onMouseEnter={() => setHovered('Workshops')}
-                      onMouseLeave={() => setHovered(null)}>
-                    <img alt="" src={'/events-listing-testImages/culturals.png'}
-                         className="w-[30vw] max-md:w-[65vw] h-auto hover:scale-105 transition-all duration-300 ease-in-out"/>
-                </Link>
+            <div className="w-full flex flex-row max-sm:flex-col justify-between max-sm:justify-center items-center gap-12 max-md:gap-10 py-2 max-sm:py-0 max-md:pb-2">
                 <Link href={'/culturals'}
-                      className="reveal-right transition-shadow duration-100 z-20 cursor-pointer select-none"
+                      className="reveal-right invert-reveal2 transition-all duration-100 cursor-pointer select-none hover:scale-105"
                       onMouseEnter={() => setHovered('Workshops')}
                       onMouseLeave={() => setHovered(null)}>
-                    <img alt="" src={'/events-listing-testImages/competition.png'}
-                         className="w-[30vw] max-md:w-[65vw] h-auto hover:scale-105 transition-all duration-300 ease-in-out"/>
+                    <img alt="" src={'/events-listing-testImages/ticket3.png'}
+                         className="w-[28vw] max-md:w-[65vw]"/>
+                </Link>
+                <Link href={'/gaming'}
+                      className="reveal-left transition-all duration-100 cursor-pointer select-none hover:scale-105"
+                      onMouseEnter={() => setHovered('Workshops')}
+                      onMouseLeave={() => setHovered(null)}>
+                    <img alt="" src={'/events-listing-testImages/ticket4.png'}
+                         className="w-[28vw] max-md:w-[65vw]"/>
                 </Link>
             </div>
         </div>

@@ -185,11 +185,11 @@ body {
 
 @media (max-width: 640px) {
 	.invert-reveal1 {
-		transform: translateX(-1000px);
+		transform: translateX(1000px);
 	}
 
 	.invert-reveal2 {
-		transform: translateX(1000px);
+		transform: translateX(-1000px);
 	}
 }
 
