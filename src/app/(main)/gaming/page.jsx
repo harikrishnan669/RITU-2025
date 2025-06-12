@@ -102,40 +102,40 @@ export default function Gaming() {
                 </button>
             </div>
             {/*here sepearte both parts */}
-            <div className="w-full flex justify-end px-4 sm:px-8 pt-10">
+            <div className="w-full flex justify-end px-4 sm:px-4 pt-6 sm:pt-10">
                 <button
-                    className="flex items-center justify-center gap-2 px-4 py-2 max-w-[120px] bg-gray-300 text-black rounded-md hover:bg-gray-400 transition duration-200"
+                    className="flex items-center justify-center gap-2 px-3 py-2 max-w-[120px] bg-gray-300 text-black rounded-md hover:bg-gray-400 transition duration-200 text-sm sm:text-base"
                 >
-                    <span className="hidden md:inline">Filter</span> <Filter size={18}/>
+                    <span className="hidden sm:inline">Filter</span>
+                    <Filter size={18}/>
                 </button>
             </div>
 
-            <div className="flex flex-col items-center min-h-screen p-25 gap-5 ">
-
+            <div className="flex flex-col items-center min-h-screen px-4 sm:px-10 pt-8 sm:pt-12 gap-4 sm:gap-5">
                 <div
                     ref={scrollRef}
-                    className="flex flex-row flex-wrap gap-10 justify-center items-center mx-auto p-4 "
+                    className="flex flex-row flex-wrap gap-6 lg:gap-10 justify-center items-center w-full"
                 >
                     {Gaming.slice(0, visible).map((gaming, index) => (
                         <EventCard key={index} event={gaming}/>
                     ))}
-
                 </div>
 
-                <button onClick={toggleVisibility}
-                        className="bg-white/20 text-white border border-white p-5 mb-5 w-[280px] text-xl cursor-pointer hover:text-black hover:bg-white transition duration-300 rounded-md">
-                    {visible === 3 ?
-                        (
-                            <span className="flex flex-row justify-center gap-2 tracking-wide items-center">
-                                View All Workshops <ArrowRight size={20}/>
-                            </span>
-                        ) : (
-                            "View less"
-                        )
-                    }
+                <button
+                    onClick={toggleVisibility}
+                    className="bg-white/20 text-white border border-white px-4 py-3 sm:p-5 mb-6 w-[220px] sm:w-[280px] text-base sm:text-xl cursor-pointer hover:text-black hover:bg-white transition duration-300 rounded-md"
+                >
+                    {visible === 3 ? (
+                        <span className="flex flex-row justify-center gap-2 tracking-wide items-center">
+        View All Workshops
+        <ArrowRight size={20}/>
+      </span>
+                    ) : (
+                        "View less"
+                    )}
                 </button>
-
             </div>
+
         </div>
     );
 }
