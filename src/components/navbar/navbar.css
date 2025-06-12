@@ -1,0 +1,65 @@
+
+.nav-item {
+    position: relative;
+    /*background: var(--border-color;*/
+}
+
+.nav-item .nav-border {
+    position: absolute;
+    opacity: 0;
+    transition: top 0.2s, left 0.2s, right 0.2s, width 0.2s;
+}
+
+:root {
+    --nav-border-width: 10px;
+    --nav-border-height: 10px;
+    --inset: 50%;
+    --border-width: 2px;
+    --border-color: white;
+}
+
+
+.nav-item:hover .nav-border {
+    --inset: -5px;
+    opacity: 1;
+}
+
+.nav-item .nav-border-1 {
+    --border-color: #de2630;
+    top: var(--inset);
+    left: var(--inset);
+    width: var(--nav-border-width);
+    height: var(--nav-border-height);
+    border-top: var(--border-width) solid var(--border-color);
+    border-left:  var(--border-width) solid var(--border-color);
+}
+
+.nav-item .nav-border-2 {
+    --border-color: #359fca;
+    top: var(--inset);
+    right: var(--inset);
+    width: var(--nav-border-width);
+    height: var(--nav-border-height);
+    border-top: var(--border-width) solid var(--border-color);
+    border-right:  var(--border-width) solid var(--border-color);
+}
+
+.nav-item .nav-border-3 {
+    --border-color: #fcc03c;
+    bottom: var(--inset);
+    left: var(--inset);
+    width: var(--nav-border-width);
+    height: var(--nav-border-height);
+    border-bottom: var(--border-width) solid var(--border-color);
+    border-left:  var(--border-width) solid var(--border-color);
+}
+
+.nav-item .nav-border-4 {
+    --border-color: #61b055;
+    bottom: var(--inset);
+    right: var(--inset);
+    width: var(--nav-border-width);
+    height: var(--nav-border-height);
+    border-bottom: var(--border-width) solid var(--border-color);
+    border-right:  var(--border-width) solid var(--border-color);
+}

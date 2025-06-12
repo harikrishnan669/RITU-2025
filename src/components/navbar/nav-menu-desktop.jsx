@@ -4,7 +4,7 @@ import {cn} from "@/lib/utils";
 import {AnimatePresence, motion, useMotionValue, useMotionValueEvent, useScroll, useTransform,} from "framer-motion";
 import {useEffect, useRef, useState} from "react";
 import {Grip} from "lucide-react";
-
+import "./navbar.css"
 
 export default function NavMenuDesktop() {
     const [isHidden, setIsHidden] = useState(false);
@@ -78,19 +78,26 @@ export default function NavMenuDesktop() {
                 </div>
             }
             <div className="mr-3"/>
+
+
             <AnimatePresence>
                 {(height >= 0 || !isHidden) && (
-                    <motion.ul className="flex items-center gap-10">
+                    <motion.ul className="flex items-center gap-10 group">
                         {routes.map((route) => (
                             <motion.li
                                 key={route}
-                                className="text-white text-xl cursor-pointer nav-bar-link"
+                                className={`text-white text-xl cursor-pointer transition-colors duration-300 group-hover:text-gray-500 hover:!text-white nav-item`}
                                 initial={{opacity: 0}}
                                 animate={{opacity: 1}}
                                 style={{
                                     opacity: routesOpacity,
                                 }}
                             >
+                                <div className="nav-border nav-border-1"/>
+                                <div className="nav-border nav-border-2"/>
+                                <div className="nav-border nav-border-3"/>
+                                <div className="nav-border nav-border-4"/>
+
                                 {route}
                             </motion.li>
                         ))}
@@ -109,3 +116,13 @@ export default function NavMenuDesktop() {
         </motion.nav>
     );
 };
+
+/*
+<div className="flex flex-col gap-2 group">
+  <div className="text-white transition-opacity duration-300 group-hover:opacity-40 hover:!opacity-100">Text</div>
+  <div className="text-white transition-opacity duration-300 group-hover:opacity-40 hover:!opacity-100">Text</div>
+  <div className="text-white transition-opacity duration-300 group-hover:opacity-40 hover:!opacity-100">Text</div>
+  <div className="text-white transition-opacity duration-300 group-hover:opacity-40 hover:!opacity-100">Text</div>
+</div>
+
+ */

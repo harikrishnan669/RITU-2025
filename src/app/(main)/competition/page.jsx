@@ -1,44 +1,7 @@
 "use client";
 import React, {useRef, useState} from "react";
-import {Calendar, Funnel, MapPin} from "lucide-react"
-
-function EventCard({event}) {
-    return (
-        <div
-            className="bg-white/10 border border-white/20 rounded-xl shadow-lg overflow-hidden max-w-sm w-full flex flex-col">
-            <div className="relative">
-                <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-40 object-cover"
-                />
-                {event.badge && (
-                    <span
-                        className="absolute top-2 right-2 bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-            {event.badge}
-          </span>
-                )}
-            </div>
-            <div className="p-4 flex flex-col flex-grow">
-                <div className="flex items-center text-sm text-white-500 mb-1">
-                    <span className="mr-2"><Calendar className="size-5"/></span> {event.date}
-                </div>
-                <h2 className="text-lg font-semibold text-white-800 mb-1">
-                    {event.title}
-                </h2>
-                <p className="text-white-600 mb-3 flex-grow text-sm">{event.description}</p>
-                <div className="flex items-center text-sm text-white-500 mb-3">
-                    <span className="mr-2"><MapPin className="size-5"/></span> {event.location}
-                </div>
-                <button
-                    className="bg-purple-900 text-white py-2 px-4 rounded-md hover:bg-purple-800 transition self-end">
-                    Book Now
-                </button>
-            </div>
-        </div>
-    );
-}
-
+import {ChevronDown, Funnel} from "lucide-react";
+import EventCard from "@/components/cards";
 
 const events = [
     {
@@ -91,7 +54,6 @@ const events = [
     },
 ];
 
-
 export default function CompetitionPage() {
     const imageRef = useRef(null);
     const [visibleCount, setVisibleCount] = useState(3);
@@ -103,7 +65,7 @@ export default function CompetitionPage() {
             setVisibleCount(3);
     }
     return (
-        <section>
+        <section className="min-h-screen flex flex-col justify-center items-center">
             <div className="relative w-full h-screen overflow-hidden">
                 <img
                     className="absolute top-0 left-0 object-cover object-center -z-1 w-full h-screen"
@@ -111,45 +73,43 @@ export default function CompetitionPage() {
                     alt="Competitions image"
                     ref={imageRef}
                 />
-
-                <div
-                    className="size-full flex flex-col justify-center bg-black/30 pl-10"
-                >
-                    <div className="w-full max-w-[500px] text-left px-4 md:max-w-[600px]">
-                        <h2 className="text-4xl md:text-5xl lg:text-5xl mb-4 md:mb-8 text-white tracking-widest">
+                <div className="size-full flex flex-col justify-center bg-black/30 pl-10">
+                    <div className="w-full max-w-[600px] text-left px-4">
+                        <h2 className="text-4xl md:text-5xl mb-4 text-white tracking-widest">
                             Competition
                         </h2>
                         <p className="text-sm md:text-base lg:text-xl text-white">
-                            a set of words that is complete in itself, typically containing a subject and predicate,
-                            conveying a statement, question, exclamation, or command, and consisting of a main clause and
-                            sometimes one or more subordinate clauses.
+                            A set of words that is complete in itself, typically containing a subject and predicate...
                         </p>
                     </div>
                 </div>
-
-                {/*<div className="absolute inset-0 bg-black/10 backdrop-blur-sm z-10 md:bg-black/90 md:backdrop-blur" />*/}
-                {/*<div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t  z-20 pointer-events-none md:bg-gradient-to-t bg-red-500" />*/}
+                <div
+                    className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-40 text-3xl rounded-full p-1 cursor-pointer sm:text-4xl md:text-5xl animate-bounce"
+                >
+                    <ChevronDown size={50}/>
+                </div>
             </div>
-            <br/>
-            <div className="w-full flex justify-end pr-6">
+
+            <div className="w-full flex justify-end pr-6 mt-10">
                 <button
-                    className="bg-white/20 backdrop-blur border border-white/30 text-white px-6 py-2 rounded-lg transition flex items-center gap-2 hover:bg-white hover:text-black">
+                    className="bg-white/20 border border-white/30 text-white px-6 py-2 rounded-lg transition flex items-center gap-2 hover:bg-white hover:text-black">
                     Filter
-                    <Funnel className="size-5"/>
+                    <Funnel className="size-5" />
                 </button>
             </div>
-            <div className="w-full max-w-[1200px] px-4 flex flex-col items-center pb-10 pt-10">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-0 sm:px-4">
+
+            <div className="w-full max-w-[1200px] px-4 flex flex-col items-center py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full justify-items-center">
                     {events.slice(0, visibleCount).map((event, idx) => (
-                        <EventCard key={idx} event={event}/>
+                        <EventCard key={idx} event={event} />
                     ))}
                 </div>
 
                 <button
                     onClick={toggleMoreless}
-                    className="mt-8 bg-white/20 backdrop-blur border border-white/30 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+                    className="mt-10 bg-white/20 border border-white/30 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
                 >
-                    {visibleCount === 3 ? "View All Competitions" : "View Less"}
+                    {visibleCount === 3 ? "View All" : "View Less"}
                 </button>
             </div>
         </section>
