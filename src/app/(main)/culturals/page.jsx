@@ -84,6 +84,9 @@ export default function CulturalsPage() {
 							expressions of creativity and identity.
 						</p>
 					</div>
+					<div className="flex flex-row items-center mt-10 justify-end w-full">
+						<BookNow btnColor="black" />
+					</div>
 				</div>
 				<div
 					className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-40 text-3xl rounded-full p-1 cursor-pointer sm:text-4xl md:text-5xl animate-bounce"

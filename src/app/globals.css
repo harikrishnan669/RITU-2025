@@ -97,8 +97,17 @@
 	--sidebar-accent-foreground: oklch(0.205 0 0);
 	--sidebar-border: oklch(0.922 0 0);
 	--sidebar-ring: oklch(0.708 0 0);
-}
 
+	--swiper-navigation-size: 20%;
+	--swiper-navigation-: 2px;
+	--swiper-navigation-top-offset: 50%;
+	--swiper-navigation-sides-offset: 10px;
+	--swiper-navigation-color: white;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	scale: 0.5;
+}
 .dark {
 	--background: oklch(0.145 0 0);
 	--foreground: oklch(0.985 0 0);
@@ -152,33 +161,33 @@
 }
 
 body {
-    font: var(--font-primary);
-    color: white;
+	font: var(--font-primary);
+	color: white;
 }
 
 /* Landing Page Events Button Styling*/
 .reveal-left {
-    position: relative;
-    transform: translateX(1000px);
-    opacity: 0;
-    transition: all 0.7s ease;
+	position: relative;
+	transform: translateX(1000px);
+	opacity: 0;
+	transition: all 0.7s ease;
 }
 
 .reveal-left.active {
-    transform: translateX(0px);
-    opacity: 1;
+	transform: translateX(0px);
+	opacity: 1;
 }
 
 .reveal-right {
-    position: relative;
-    transform: translateX(-1000px);
-    opacity: 0;
-    transition: all 0.7s ease;
+	position: relative;
+	transform: translateX(-1000px);
+	opacity: 0;
+	transition: all 0.7s ease;
 }
 
 .reveal-right.active {
-    transform: translateX(0px);
-    opacity: 1;
+	transform: translateX(0px);
+	opacity: 1;
 	font: var(--font-primary);
 	color: white;
 }
@@ -193,8 +202,8 @@ body {
 	}
 }
 
-@media (max-width: 640px) {
-	.custom-swiper {
-		padding: 2rem !important;
+@media (width>= 640px) {
+	:root {
+		--swiper-navigation-top-offset: 50%;
 	}
 }
