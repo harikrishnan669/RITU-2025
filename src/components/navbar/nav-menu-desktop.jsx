@@ -5,6 +5,19 @@ import {AnimatePresence, motion, useMotionValue, useMotionValueEvent, useScroll,
 import {useEffect, useRef, useState} from "react";
 import {Grip} from "lucide-react";
 import "./navbar.css"
+import NAV_LINKS from "@/components/navbar/NAV_LINKS";
+import Link from "next/link";
+
+const firstNavVariants = {
+    hidden: {
+        width: 65,
+        background: "transparent",
+    },
+    vissible: {
+        width: 900,
+        background: "rgba(17, 25, 40, 0.75)",
+    },
+};
 
 export default function NavMenuDesktop() {
     const [isHidden, setIsHidden] = useState(false);
@@ -14,6 +27,7 @@ export default function NavMenuDesktop() {
     const lastYRef = useRef(0);
     const navbarWidth = useMotionValue(65);
     const routesOpacity = useTransform(navbarWidth, [65, 500], [0, 1]);
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
     useEffect(() => {
         setMounted(true);
@@ -31,25 +45,9 @@ export default function NavMenuDesktop() {
         setHeight(difference);
     });
 
-    const firstNavVariants = {
-        hidden: {
-            width: 65,
-            background: "transparent",
-        },
-        vissible: {
-            width: 900,
-            background: "rgba(17, 25, 40, 0.75)",
-        },
-    };
-
-    const routes = ["Home", "Events", "Culturals", "Accommodations", "Gallery", "Contact"];
-
-    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-
     useMotionValueEvent(navbarWidth, "change", (latest) => {
         setIsNavbarOpen(latest > 65);
     });
-
 
     if (!mounted) return <div>Loading...</div>;
 
@@ -83,22 +81,23 @@ export default function NavMenuDesktop() {
             <AnimatePresence>
                 {(height >= 0 || !isHidden) && (
                     <motion.ul className="flex items-center gap-10 group">
-                        {routes.map((route) => (
+                        {NAV_LINKS.map((route, i) => (
                             <motion.li
-                                key={route}
-                                className={`text-white text-xl cursor-pointer transition-colors duration-300 group-hover:text-gray-500 hover:!text-white nav-item`}
+                                key={i}
+                                className="text-white text-xl cursor-pointer transition-colors duration-300 group-hover:text-gray-500 hover:!text-white nav-item"
                                 initial={{opacity: 0}}
                                 animate={{opacity: 1}}
                                 style={{
                                     opacity: routesOpacity,
                                 }}
                             >
-                                <div className="nav-border nav-border-1"/>
-                                <div className="nav-border nav-border-2"/>
-                                <div className="nav-border nav-border-3"/>
-                                <div className="nav-border nav-border-4"/>
-
-                                {route}
+                                <Link href={route.href}>
+                                    <div className="nav-border nav-border-1"/>
+                                    <div className="nav-border nav-border-2"/>
+                                    <div className="nav-border nav-border-3"/>
+                                    <div className="nav-border nav-border-4"/>
+                                    {route.title}
+                                </Link>
                             </motion.li>
                         ))}
                     </motion.ul>

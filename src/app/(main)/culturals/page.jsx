@@ -2,6 +2,7 @@
 import React, { useRef, useState} from "react";
 import {Funnel,ChevronDown} from "lucide-react";
 import EventCard from "@/components/cards";
+import BookNow from "@/components/bookNow";
 
 const events = [
 	{

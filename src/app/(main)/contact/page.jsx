@@ -8,7 +8,6 @@ export default function TEst() {
     const contactRef = useRef(null);
 
     const scrollToImages = () => {
-        console.log("hii")
         contactRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 

@@ -1,5 +1,4 @@
 import Header from "@/components/header";
-import {ArrowUpRight} from "lucide-react";
 import {useEffect, useState} from "react";
 import Link from "next/link";
 
