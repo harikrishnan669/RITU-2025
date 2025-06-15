@@ -25,7 +25,7 @@ export default function Navbar() {
         }
     }, []);
 
-    return <nav className="fixed w-full flex items-center justify-between py-4 z-50 container-cont overflow-hidden">
+    return <nav className="fixed w-full flex items-center justify-between py-4 z-50 container-cont overflow-hidden max-sm:px-6 sm:px-4">
         <Link href="/">
             <img src="/ritu-25-white-with-text.webp" alt="RITU logo" className={`h-[70px] max-sm:h-[50px] transition-transform ${hideLogo && "translate-y-[-100px]"}`}/>
         </Link>
