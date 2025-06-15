@@ -1,129 +1,105 @@
 "use client";
 
-import { ArrowRight, ChevronRight, MailOpen, MapPin, PhoneCall } from "lucide-react";
+import {ArrowRight, ArrowUpRight, ChevronRight, Globe, Mail, MapPin, PhoneCall} from "lucide-react";
 import Link from "next/link";
-
+import NAV_LINKS from "@/data/NAV_LINKS";
 
 
 export default function Footer() {
-    return <section className={`container-cont footer-background p-6 px-14 w-full `}>
-        <div>
-            <div className="md:hidden" >
-                <h1 className="text-2xl font-medium mb-4 px-1">GET UPDATES</h1>
-                <div className="relative w-full max-w-md mb-3">
-                    <input
-                        type="text"
-                        placeholder="Enter Your Email"
-                        className="w-full border border-gray-300 rounded-full px-4 py-2 pr-12"
-                    />
-                    <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white px-3 py-1 rounded-full">
-                        <p><ArrowRight /></p>
-                    </button>
+    return <section className="container-cont footer-background p-6 px-14 w-full">
+        <div className="flex items-center justify-between max-lg:hidden">
+            <a href='https://maps.app.goo.gl/beC6rhPdhPRUa5c16' className="flex items-center">
+                <div className="p-2">
+                    <MapPin size={32}/>
                 </div>
-                <p className="px-3">Mail us for queries</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-2 md:px-3 py-2">
-                <Link href='https://maps.app.goo.gl/beC6rhPdhPRUa5c16'>
-                    <div className="flex items-center  mt-3 md:mt-6" >
-                        <div className="p-2">
-                            <MapPin size={32} />
-                        </div>
-                        <div className="tracking-wide md:tracking-widest" >
-                            <p >Rajiv Gandhi Institute of Technology</p>
-                            <p className="text-sm">Pampady, Kottayam</p>
-                        </div>
-                    </div>
-                </Link>
-                <div className="flex items-center  mt-3" >
-                    <div className="p-2">
-                        <PhoneCall size={32} />
-                    </div>
-                    <div className="tracking-wide md:tracking-widest">
-                        <p >+91 1234567890</p>
-                        <p className="text-sm px-1">Hotline 24/7</p>
-                    </div>
+                <div className="tracking-wide md:tracking-widest">
+                    <p>Rajiv Gandhi Institute of Technology</p>
+                    <p className="text-sm opacity-70">Pampady, Kottayam</p>
                 </div>
-                <Link href='https://www.rit.ac.in/'>
-                    <div className="flex items-center  my-3" >
-                        <div className="p-3">
-                            <MailOpen size={32} />
-                        </div>
-                        <div className="tracking-wide md:tracking-widest" >
-                            <p >www.rit.ac.in</p>
-                            <p className="text-sm ">Free consult</p>
-                        </div>
-                    </div>
-                </Link>
-                <div className="hidden md:flex md:items-center md:justify-center md:tracking-widest">
-                    <p>GET IN TOUCH</p>
-                    <ChevronRight />
+            </a>
+            <div className="flex items-center">
+                <div className="p-2">
+                    <PhoneCall size={32}/>
+                </div>
+                <div className="tracking-wide md:tracking-widest">
+                    <p>+91 1234567890</p>
+                    <p className="text-sm px-1 opacity-70">Hotline 24/7</p>
                 </div>
             </div>
-            <hr className="hidden md:block  max-w-[90vw] mx-auto my-6" />
-            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-6 md:px-3 py-2">
-                <div className="hidden md:block ">
-                    <div className="text-4xl px-3 py-2  flex items-center gap-2">
-                        <img src="/icons/Vector.png" alt="" />
-                        <p>RITU</p>
-                    </div>
-                    <div className="px-3 py-2 max-w-[25vw] md:tracking-widest ">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates placeat, repudiandae nemo nulla amet id officiis molestias.</p>
-                    </div>
-                    <div className="flex items-center gap-6 px-3 py-2">
-                        <img src="/icons/instagram.png" alt="" />
-                        <img src="/icons/youtube.png" alt="" />
-                        <img src="/icons/facebook.png" alt="" />
-                    </div>
+            <a href='https://www.rit.ac.in/' className="flex items-center">
+                <div className="p-2">
+                    <Globe size={32}/>
                 </div>
-                <div className="md:tracking-widest">
-                    <h1 className="text-xl px-3 py-2">PAGES</h1>
-                    <div>
-                        <Link href="/" className="px-2 py-2 block flex"><ChevronRight />Home</Link>
-                        <Link href="/contact" className="px-2 py-2 block flex"><ChevronRight />About</Link>
-                        <Link href="/gallery" className="px-2 py-2 block flex"><ChevronRight />Team</Link>
-                        <Link href="/gallery" className="px-2 py-2 block flex"><ChevronRight />FAQs</Link>
-                    </div>
+                <div className="tracking-wide md:tracking-widest">
+                    <p>www.rit.ac.in</p>
+                    <p className="text-sm opacity-70">Vist College</p>
                 </div>
-                <div className="hidden md:block md:tracking-widest">
-                    <h1 className="text-xl px-3 py-2">CULTURALS</h1>
-                    <div>
-                        <Link href="/" className="px-2 py-2 block flex"><ChevronRight />Gauri Lakshmi</Link>
-                        <Link href="/contact" className="px-2 py-2 block flex"><ChevronRight />DJ</Link>
-                        <Link href="/gallery" className="px-2 py-2 block flex"><ChevronRight />DJ</Link>
-                        <Link href="/gallery" className="px-2 py-2 block flex"><ChevronRight />DJ</Link>
-                    </div>
-                </div>
-                <div className="hidden md:block md:tracking-widest">
-                    <h1 className="text-2xl font-medium mb-4 px-1">GET UPDATES</h1>
-                    <div className="relative w-full max-w-md mb-3">
-                        <input
-                            type="text"
-                            placeholder="Enter Your Email"
-                            className="w-full border border-gray-300 rounded-full px-4 py-2 pr-12"
-                        />
-                        <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white px-3 py-1 rounded-full">
-                            <p><ArrowRight /></p>
-                        </button>
-                    </div>
-                    <p className="px-3">Mail us for queries</p>
-                </div>
-            </div>
-
-            <div className="md:hidden">
-                <div className="text-4xl px-3 py-2  flex items-center gap-2">
-                    <img src="/icons/Vector.png" alt="" />
-                    <p>RITU</p>
-                </div>
-                <div className="flex items-center gap-6 px-3 py-2">
-                    <img src="/icons/instagram.png" alt="" />
-                    <img src="/icons/youtube.png" alt="" />
-                    <img src="/icons/facebook.png" alt="" />
-                </div>
-            </div>
-
-            <div>
-                <p className="text-sm bg-black/5 px-3 py-2 mb-1 md:mb-0 md:py-0 md:pt-3 text-center ">© 2025 RITU. All rights reserved.</p>
+            </a>
+            <div className="flex gap-2 h-full">
+                <p>GET IN TOUCH</p>
+                <ChevronRight/>
             </div>
         </div>
-    </section >
+        <hr className="my-6 border-gray-700 max-lg:hidden" color="#9483FF"/>
+
+        <div className="flex w-full justify-between h-full gap-4 max-lg:flex-col">
+            <div>
+                <div className="text-4xl max-sm:text-2xl flex items-center gap-2 mb-1">
+                    <img src="/icons/Vector.png" className="max-sm:h-5" alt=""/>
+                    <p>RITU</p>
+                </div>
+                <p className="text-sm opacity-80 mt-4 max-sm:mt-2 max-w-[400px] max-sm:max-w-full">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates placeat, repudiandae
+                    nemo nulla amet id officiis molestias.
+                </p>
+                <div className="flex items-center gap-6 mt-5 max-sm:mt-2">
+                    <a href="">
+                        <img src="/icons/instagram.png" className="size-8 max-sm:size-6" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="/icons/youtube.png" className="size-8 max-sm:size-6" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="/icons/facebook.png" className="size-8 max-sm:size-6" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div className="lg:min-h-full max-lg:h-[1px] lg:w-[1px] max-lg:w-full bg-gray-700"></div>
+            <div className="flex flex-col">
+                <h1 className="text-xl w-full mb-4 max-sm:text-lg">Pages</h1>
+                <div className="flex-1 grid grid-cols-2 max-lg:pr-6 max-sm:text-sm max-sm:gap-y-4">
+                    {NAV_LINKS.map((item, key) => (
+                        <Link href={item.href} key={key} className="w-fit flex flex-col relative h-fit group">
+                            <div className="flex gap-2 items-center">
+                                <span className="opacity-90">{item.title}</span>
+                                <ArrowUpRight
+                                    className="group-hover:scale-125 group-hover:translate-x-1 transition-transform opacity-50 size-5 max-sm:size-4"/>
+                            </div>
+                            <div
+                                className="group-hover:w-full absolute w-0 transition-[width_0.2s] h-[2px] rounded-full -bottom-1 bg-white opacity-70"></div>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+            <div className="min-h-full w-[1px] bg-gray-700"></div>
+            <div className="flex flex-col">
+                <h1 className="text-xl w-full mb-4 max-sm:text-lg">Get Updates</h1>
+                <form className="relative bg-white rounded-full overflow-hidden flex items-center max-sm:text-sm">
+                    <input className="w-full h-full text-black pl-6 py-3 max-sm:pl-5 max-sm:py-2.5" type="email" required placeholder="Enter email"/>
+                    <button
+                        className="right-1 max-sm:right-0 absolute rounded-full bg-[#624de7] flex items-center justify-center p-2 max-sm:p-1.5 m-1 aspect-square">
+                        <ArrowRight/>
+                    </button>
+                </form>
+                <p className="opacity-80 mt-6 max-sm:text-sm">If you have any queries mail us at:</p>
+                <div className="max-sm:text-sm mt-2 hover:opacity-100 cursor-pointer flex gap-2 items-center opacity-80">
+                    <Mail className="size-5"/><a href="mailto:ritu@rit.ac.in">ritu@rit.ac.in</a>
+                </div>
+            </div>
+        </div>
+
+        <p className="border-t max-sm:text-xs max-sm:pt-5 opacity-70 border-gray-700 mt-8 text-sm px-3 py-2 mb-1 md:mb-0 md:py-0 md:pt-3 text-center ">
+            © 2025 RITU. All rights reserved.
+        </p>
+    </section>
 }

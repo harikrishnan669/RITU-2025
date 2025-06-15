@@ -5,7 +5,7 @@ import {AnimatePresence, motion, useMotionValue, useMotionValueEvent, useScroll,
 import {useEffect, useRef, useState} from "react";
 import {Grip} from "lucide-react";
 import "./navbar.css"
-import NAV_LINKS from "@/components/navbar/NAV_LINKS";
+import NAV_LINKS from "@/data/NAV_LINKS";
 import Link from "next/link";
 
 const firstNavVariants = {
