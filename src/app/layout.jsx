@@ -2,6 +2,8 @@ import {Bilbo_Swash_Caps, Poppins} from "next/font/google";
 import "./globals.css";
 import "./app.css";
 import Background from "@/components/background";
+import NotFound from "@/app/not-found";
+
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -27,6 +29,18 @@ export const viewport = {
 
 
 export default function RootLayout({children}) {
+
+    // redirect("/wait_for_it");
+
+    if (process.env.NODE_ENV === 'production') {
+        return <>
+            <Background/>
+
+            <NotFound/>
+        </>
+    }
+
+
     return (
         <html lang="en">
         <body
