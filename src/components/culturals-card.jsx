@@ -11,7 +11,7 @@ export default function CulturalsCard({
 	return (
 		<div className="flex flex-col justify-center items-center w-full h-full">
 			<div
-				className="relative overflow-hidden rounded-2xl max-w-[400px] bg-white/10 backdrop-blur-md border border-white/20"
+				className="relative max-sm:w-[70%] overflow-hidden rounded-2xl max-w-[400px] bg-white/10 backdrop-blur-md border border-white/20"
 			>
 				<img
 					src={imgSource}

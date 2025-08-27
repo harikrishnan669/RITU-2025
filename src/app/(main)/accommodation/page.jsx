@@ -3,9 +3,9 @@ import Header from "@/components/header";
 export default function Accommodation() {
     return (
         <div className="flex flex-col items-center justify-start lg:justify-center min-h-screen px-4 py-[80px] gap-3 lg:m-3 m-4 lg:px-20 lg:gap-10 lg:w-full ">
-            <Header title="Accommodation" />
+            <Header title="Accommodation" className="max-sm:text-2xl max-sm:mb-2"/>
 
-            <div className="w-full max-w-4xl lg:space-y-6 space-y-2 text-base md:text-lg lg:text-xl text-left font-sans">
+            <div className="w-full max-w-4xl max-sm:max-w-full lg:space-y-6 space-y-2 text-base md:text-lg lg:text-xl text-left font-sans">
                 <p>
                     During the event days, attendees have the opportunity to stay in paid hostel facilities which are
                     available for both boys and girls. These hostel facilities are a great option for those who are

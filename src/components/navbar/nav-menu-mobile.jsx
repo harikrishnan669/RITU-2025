@@ -3,13 +3,8 @@ import {Menu, X} from "lucide-react";
 import {AnimatePresence, motion} from "framer-motion";
 import Link from "next/link";
 import {ScrollLocker} from "@/hooks/use-lock-scroll";
+import NavLinks from "@/data/nav-links";
 
-const navLinks = [
-    {title: 'Home', url: '/'},
-    {title: 'About', url: '/about'},
-    {title: 'Services', url: '/services'},
-    {title: 'Contact', url: '/contact'}
-];
 
 export default function NavMenuMobile() {
     const [showModal, setShowModal] = useState(false);
@@ -108,13 +103,15 @@ export default function NavMenuMobile() {
 
                         >
                             <div className="flex flex-col gap-8 items-center justify-center h-full ">
-                                {navLinks.map((link, index) => (
+                                {NavLinks.map((link, index) => (
                                     <motion.span
                                         key={index}
                                         className="text-white font-light text-2xl cursor-pointer"
                                         variants={linkItemVariants}
                                     >
-                                        <Link href={link.url}>
+                                        <Link href={link.href} onClick={() => {
+                                            toggleModal();
+                                        }}>
                                             {link.title}
                                         </Link>
                                     </motion.span>
