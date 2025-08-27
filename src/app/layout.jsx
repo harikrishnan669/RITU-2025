@@ -30,10 +30,7 @@ export const viewport = {
 
 
 export default function RootLayout({children}) {
-
-    // redirect("/wait_for_it");
-
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.SITE_LIVE === 'false') {
         return <>
             <Background/>
 
