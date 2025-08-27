@@ -3,6 +3,7 @@ import "./globals.css";
 import "./app.css";
 import Background from "@/components/background";
 import NotFound from "@/app/not-found";
+import {Analytics} from "@vercel/analytics/next";
 
 
 const poppins = Poppins({
@@ -47,6 +48,7 @@ export default function RootLayout({children}) {
             className={`${poppins.className} ${bilboSwashCaps.variable} antialiased`}
         >
         <Background/>
+        <Analytics/>
         {children}
         </body>
         </html>
