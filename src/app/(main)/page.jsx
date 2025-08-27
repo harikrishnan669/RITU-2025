@@ -4,7 +4,7 @@ import LandingScreen from "@/components/home/landing-screen";
 import MeetOurSponsorsNew from "@/components/home/meet-our-sponsors-new";
 import AboutUs from "@/components/home/about-us";
 import EventsListing from "@/components/home/events-listing";
-import CulturalEvents from "@/components/home/cultural-events";
+import ProshowEvents from "@/components/home/proshow-events";
 import Gallery from "@/components/home/gallery";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <AboutUs/>
         <EventsListing/>
         <br/><br/>
-        <CulturalEvents/>
+        <ProshowEvents/>
         <br/><br/>
         <MeetOurSponsorsNew/>
         <br/><br/>

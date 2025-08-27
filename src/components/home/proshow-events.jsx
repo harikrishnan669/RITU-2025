@@ -8,7 +8,7 @@ import React from "react";
 import {useRouter} from "next/navigation";
 import CULTURAL_EVENTS from "@/data/cultural-events";
 
-export default function CulturalEvents() {
+export default function ProshowEvents() {
     const router = useRouter();
     const swiperRef = React.useRef(null);
     const [activeIndex, setActiveIndex] = React.useState(-1);
@@ -24,7 +24,7 @@ export default function CulturalEvents() {
         <>
             <section
                 className="w-full h-full py-20 overflow-x-hidden  min-h-[40rem] flex flex-col items-center justify-between ">
-                <Header title="Culturals" id="culturals"/>
+                <Header title="Pro Shows" id="proshows"/>
 
                 <Swiper
                     className="mySwiper"

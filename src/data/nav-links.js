@@ -11,8 +11,8 @@ const NavLinks = [
         href: "/#events",
     },
     {
-        title: "Culturals",
-        href: "/#culturals",
+        title: "Proshows",
+        href: "/#proshows",
     },
     {
         title: "Accommodations",

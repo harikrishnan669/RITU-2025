@@ -6,8 +6,8 @@ import GAMING from "@/data/gaming";
 
 export default function Gaming() {
     return (
-        <div>
-            <LandingBanner
+        <section className="min-h-screen flex flex-col justify-center items-center">
+        <LandingBanner
                 title="Gaming"
                 description="Get ready to battle it out in the ultimate test of skill, speed, and strategy! Our gaming
                         competitions feature a variety of popular titles and thrilling challenges designed for both
@@ -18,6 +18,6 @@ export default function Gaming() {
             />
 
             <PosterListing events={GAMING}/>
-        </div>
+        </section>
     );
 }
