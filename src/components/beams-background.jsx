@@ -74,7 +74,7 @@ function BeamsBackground({
 
         const updateCanvasSize = () => {
             const dpr = isMobile ? 1 : Math.min(window.devicePixelRatio || 1, 2)
-            const width = window.innerWidth
+            const width = window.innerWidth + 150
             const height = window.innerHeight + 100
 
             canvas.width = width * dpr

@@ -1,18 +1,18 @@
 
 // const routes = ["Home", "Events", "Culturals", "Accommodations", "Gallery", "Contact"];
 
-const NAV_LINKS = [
+const NavLinks = [
     {
         title: "Home",
         href: "/",
     },
     {
         title: "Events",
-        href: "/events",
+        href: "/#events",
     },
     {
-        title: "Culturals",
-        href: "/culturals",
+        title: "Proshows",
+        href: "/#proshows",
     },
     {
         title: "Accommodations",
@@ -28,4 +28,4 @@ const NAV_LINKS = [
     }
 ]
 
-export default NAV_LINKS;
+export default NavLinks;
