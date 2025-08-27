@@ -33,7 +33,7 @@ export default function EventsListing() {
     }, []);
 
     return <section className="container-cont mt-5">
-        <Header title="Events"/>
+        <Header title="Events" id="events"/>
         <div
             className="relative flex flex-col items-center justify-start gap-25 overflow-hidden max-md:gap-10 mb-10 max-md:mb-10 mt-12 max-md:mt-10 px-15 max-md:px-0">
             {/* Centered Logo */}

@@ -1,0 +1,58 @@
+const COMPETITION = [
+    {
+        image: "/culturals/2.webp",
+        date: "May 15, 2025",
+        title: "Digital Dreams Festival",
+        description: "Experience the fusion of technology and music at our flagship event.",
+        location: "Tech Arena, NYC",
+        badge: "Featured",
+        url: "http://google.com",
+    },
+    {
+        image: "https://static.vecteezy.com/system/resources/thumbnails/041/388/388/small/ai-generated-concert-crowd-enjoying-live-music-event-photo.jpg",
+        date: "June 3, 2025",
+        title: "Digital Art Summit",
+        description: "Immerse yourself in the world of digital art and NFTs.",
+        location: "Gallery X, London",
+        badge: "Latest",
+        url: "http://google.com",
+    },
+    {
+        image: "https://t3.ftcdn.net/jpg/14/12/13/58/360_F_1412135872_JPmb1j7ZubIRl6cgzC1lMdeiz1fJWij4.jpg",
+        date: "July 21, 2025",
+        title: "Tech Innovation Workshop",
+        description: "Hands-on experience with cutting-edge technology and robotics.",
+        location: "Innovation Hub, SF",
+        badge: "New",
+        url: "http://google.com",
+    },
+    {
+        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
+        date: "July 21, 2025",
+        title: "Tech Innovation Workshop",
+        description: "Hands-on experience with cutting-edge technology and robotics.",
+        location: "Innovation Hub, SF",
+        badge: "New",
+        url: "http://google.com",
+    },
+    {
+        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
+        date: "July 21, 2025",
+        title: "Tech Innovation Workshop",
+        description: "Hands-on experience with cutting-edge technology and robotics.",
+        location: "Innovation Hub, SF",
+        badge: "New",
+        url: "http://google.com",
+    },
+    {
+        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
+        date: "July 21, 2025",
+        title: "Tech Innovation Workshop",
+        description: "Hands-on experience with cutting-edge technology and robotics.",
+        location: "Innovation Hub, SF",
+        badge: "New",
+        url: "http://google.com",
+    },
+];
+
+export default COMPETITION;

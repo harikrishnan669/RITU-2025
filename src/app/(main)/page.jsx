@@ -12,8 +12,11 @@ export default function Home() {
         <LandingScreen/>
         <AboutUs/>
         <EventsListing/>
+        <br/><br/>
         <CulturalEvents/>
+        <br/><br/>
         <MeetOurSponsorsNew/>
+        <br/><br/>
         <Gallery/>
     </main>
 }

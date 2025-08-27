@@ -2,7 +2,7 @@
 
 import {ArrowRight, ArrowUpRight, ChevronRight, Globe, Mail, MapPin, PhoneCall} from "lucide-react";
 import Link from "next/link";
-import NAV_LINKS from "@/data/NAV_LINKS";
+import NavLinks from "@/data/nav-links";
 
 
 export default function Footer() {
@@ -68,7 +68,7 @@ export default function Footer() {
             <div className="flex flex-col">
                 <h1 className="text-xl w-full mb-4 max-sm:text-lg">Pages</h1>
                 <div className="flex-1 grid grid-cols-2 max-lg:pr-6 max-sm:text-sm max-sm:gap-y-4">
-                    {NAV_LINKS.map((item, key) => (
+                    {NavLinks.map((item, key) => (
                         <Link href={item.href} key={key} className="w-fit flex flex-col relative h-fit group">
                             <div className="flex gap-2 items-center">
                                 <span className="opacity-90">{item.title}</span>

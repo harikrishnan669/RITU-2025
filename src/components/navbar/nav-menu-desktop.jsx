@@ -5,7 +5,7 @@ import {AnimatePresence, motion, useMotionValue, useMotionValueEvent, useScroll,
 import {useEffect, useRef, useState} from "react";
 import {Grip} from "lucide-react";
 import "./navbar.css"
-import NAV_LINKS from "@/data/NAV_LINKS";
+import NavLinks from "@/data/nav-links";
 import Link from "next/link";
 
 const firstNavVariants = {
@@ -81,7 +81,7 @@ export default function NavMenuDesktop() {
             <AnimatePresence>
                 {(height >= 0 || !isHidden) && (
                     <motion.ul className="flex items-center gap-10 group">
-                        {NAV_LINKS.map((route, i) => (
+                        {NavLinks.map((route, i) => (
                             <motion.li
                                 key={i}
                                 className="text-white text-xl cursor-pointer transition-colors duration-300 group-hover:text-gray-500 hover:!text-white nav-item"

@@ -1,8 +1,8 @@
 "use client";
 import { useRef } from "react";
 import { ChevronDown } from "lucide-react";
-import ContactCard from "@/components/contact/contactCard";
-import WebCard from "@/components/contact/webCard";
+import ContactCard from "@/components/contact/contact-card";
+import WebCard from "@/components/contact/web-card";
 export default function TEst() {
 
     const contactRef = useRef(null);
