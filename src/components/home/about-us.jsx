@@ -12,7 +12,7 @@ export default function AboutUs() {
                     className="max-w-3xl max-md:max-w-2xl max-md:w-full max-md:mx-6 border-2 border-white p-6 max-md:p-3 rounded-[4rem_0rem_4rem_0rem] max-md:rounded-[2rem_0rem_2rem_0rem]">
                     <iframe
                         className="aspect-video md:h-[400px] max-md:w-full rounded-[calc(4rem-1.5rem)] max-md:rounded-[calc(2rem-0.75rem)]"
-                        src="https://www.youtube.com/embed/TcMBFSGVi1c"
+                        src="https://www.youtube.com/embed/Fnny2xjS_lM?si=OQEhsIwikK6OqgyC"
                         title="YouTube video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen

@@ -33,7 +33,7 @@ export default function LandingScreen() {
 
                         <BoxReveal boxColor="#d9252e" direction={1} className="max-sm:mx-auto">
                             <div className="flex items-center gap-6 text-4xl max-sm:text-xl max-sm:gap-3">
-                                <div className="font-secondary text-6xl max-sm:text-3xl">March</div>
+                                <div className="font-secondary text-6xl max-sm:text-3xl">October</div>
                                 16 to 19
                             </div>
                         </BoxReveal>
