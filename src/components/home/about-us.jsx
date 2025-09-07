@@ -24,7 +24,7 @@ export default function AboutUs() {
             >
                 <strong>RITU</strong>, the vibrant techno-cultural fest of Rajiv Gandhi Institute of Technology,
                 Kottayam, is all set to take place on
-                <strong className="ml-1">March 19 and 20</strong> with an exciting lineup of events that blend
+                <strong className="ml-1">October 16, 17, 18, and 19</strong> with an exciting lineup of events that blend
                 technology, creativity,
                 and celebration.
                 <span className="hidden md:inline">
