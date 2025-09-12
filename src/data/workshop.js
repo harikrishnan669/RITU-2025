@@ -1,59 +1,50 @@
-
 const WORKSHOPS = [
     {
-        image: "/culturals/2.webp",
-        date: "May 15, 2025",
-        title: "Digital Dreams Festival",
-        description: "Experience the fusion of technology and music at our flagship event.",
-        location: "Tech Arena, NYC",
-        badge: "Featured",
-        url: "http://google.com",
+        image: '/posters/workshops/mini-makers.webp',
+
+        title: 'MINI MAKERS - 2025',
+        date: '3rd Week September 2025',
+        description: `A day to take technology beyond the classroom!
+
+        Mini Makers opens the door for young students to explore technology in a hands-on, playful way.
+
+    Hands-on activities and showcases let students explore peer creations—making the day interactive and exciting!!
+
+    Let’s make, tinker, and have fun with technology at Mini Makers 2025!
+`,
+        instagram: "https://www.instagram.com/share/p/BAkuismkfs",
+        contact: [{name: 'Gowripriya M J', number: '9061017061'}],
+        location: 'Online'
     },
     {
-        image: "https://static.vecteezy.com/system/resources/thumbnails/041/388/388/small/ai-generated-concert-crowd-enjoying-live-music-event-photo.jpg",
-        date: "June 3, 2025",
-        title: "Digital Art Summit",
-        description: "Immerse yourself in the world of digital art and NFTs.",
-        location: "Gallery X, London",
-        badge: "Latest",
-        url: "http://google.com",
-    },
-    {
-        image: "https://t3.ftcdn.net/jpg/14/12/13/58/360_F_1412135872_JPmb1j7ZubIRl6cgzC1lMdeiz1fJWij4.jpg",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
-    {
-        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
-    {
-        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
-    {
-        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
+        image: "/posters/workshops/SAVE_20250909_204023.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204027.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204037.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204042.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204048.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204057.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204103.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204106.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204111.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_204118.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_213508.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_213516.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250909_215231.webp",
+    }, {
+        image: "/posters/workshops/SAVE_20250910_183353.webp"
+    }
 ];
 
 export default WORKSHOPS

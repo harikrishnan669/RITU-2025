@@ -54,15 +54,16 @@ export default function LandingScreen() {
 
                     <BoxReveal boxColor="#ffffff" className="max-sm:hidden">
                         <div className="flex flex-col gap-5">
-                            <a href="">
-                                <img src="/icons/instagram.png" alt=""/>
-                            </a>
-                            <a href="">
-                                <img src="/icons/youtube.png" alt=""/>
-                            </a>
-                            <a href="">
-                                <img src="/icons/facebook.png" alt=""/>
-                            </a>
+                            <img src="/sponsors/kerala-paints-poison.webp" alt="Kerala Paints" className="w-[100px]"/>
+                            {/*<a href="">*/}
+                            {/*    <img src="/icons/instagram.png" alt=""/>*/}
+                            {/*</a>*/}
+                            {/*<a href="">*/}
+                            {/*    <img src="/icons/youtube.png" alt=""/>*/}
+                            {/*</a>*/}
+                            {/*<a href="">*/}
+                            {/*    <img src="/icons/facebook.png" alt=""/>*/}
+                            {/*</a>*/}
                         </div>
                     </BoxReveal>
                 </div>

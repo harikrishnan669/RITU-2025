@@ -1,58 +1,49 @@
 const COMPETITION = [
     {
-        image: "/culturals/2.webp",
-        date: "May 15, 2025",
-        title: "Digital Dreams Festival",
-        description: "Experience the fusion of technology and music at our flagship event.",
-        location: "Tech Arena, NYC",
-        badge: "Featured",
-        url: "http://google.com",
+        image: '/posters/competition/capture-the-flag.webp',
+        date: 'Till 6th September 2025',
+        title: 'CAPTURE THE FLAG',
+        description: `
+A quest for the sharpest minds!
+Over two weeks, participants will step into a web of codes, riddles, and hidden clues, where every solution leads to another puzzle. 
+Nothing is as it seems - some paths mislead. Every stage challenges your logic, wit, and intuition, pulling you deeper into the game...!`,
+        instagram: "https://www.instagram.com/share/p/BAkuismkfs",
+        contact: [{name: 'Jyothsna Treesa George', number: '8547432646'}],
+        location: 'Online'
     },
+
     {
-        image: "https://static.vecteezy.com/system/resources/thumbnails/041/388/388/small/ai-generated-concert-crowd-enjoying-live-music-event-photo.jpg",
-        date: "June 3, 2025",
-        title: "Digital Art Summit",
-        description: "Immerse yourself in the world of digital art and NFTs.",
-        location: "Gallery X, London",
-        badge: "Latest",
-        url: "http://google.com",
+        image: '/posters/competition/code-a-pookalam.webp',
+        date: 'Till 6th September 2025',
+        title: 'CODE A POOKALAM',
+        description: `
+A coding twist to the spirit of Onam, as part of RITU’25
+
+💻 Bring out your creativity with code!
+✨ Design your very own digital Pookalam in any programming language and celebrate tradition the RIT way.
+
+🏆 Prize Pool: ₹1000
+📅 Deadline: 6th September 2025
+🌐 Mode: Online
+🎓 Eligibility: Open to all college students
+💸 Entry: Free for everyone!
+
+✨ Let’s code, celebrate, and keep the Onam vibes alive at RITU’25!`,
+        url: 'tally.so/r/wzkyrM',
+        instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
+        location: 'Online',
     },
-    {
-        image: "https://t3.ftcdn.net/jpg/14/12/13/58/360_F_1412135872_JPmb1j7ZubIRl6cgzC1lMdeiz1fJWij4.jpg",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
-    {
-        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
-    {
-        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
-    {
-        image: "https://dht7q8fif4gks.cloudfront.net/2022-07/istockphoto-1247853982-612x612.jpg ",
-        date: "July 21, 2025",
-        title: "Tech Innovation Workshop",
-        description: "Hands-on experience with cutting-edge technology and robotics.",
-        location: "Innovation Hub, SF",
-        badge: "New",
-        url: "http://google.com",
-    },
+
+    // {
+    //     image: "/culturals/2.webp",
+    //     date: "May 15, 2025",
+    //     title: "Digital Dreams Festival",
+    //     description: "Experience the fusion of technology and music at our flagship event.",
+    //     location: "Tech Arena, NYC",
+    //     badge: "Featured",
+    //     url: "http://google.com",
+    // },
+
 ];
 
 export default COMPETITION;
