@@ -2,15 +2,11 @@ import Header from "@/components/header";
 import {ArrowRight} from "lucide-react";
 import Link from 'next/link';
 import BlurFade from "@/components/magicui/blurr-fade";
+import GALLERY_IMAGES from "@/data/gallery";
 
+const images = GALLERY_IMAGES.slice(0, 8);
 
 export default function Gallery() {
-    const images = [...Array(9)].map((_, i) => {
-        const isLandscape = i % 2 === 0;
-        const width = isLandscape ? 800 : 600;
-        const height = isLandscape ? 600 : 800;
-        return `https://picsum.photos/seed/${i + 50}/${width}/${height}`;
-    });
 
     return <section className="container-cont">
         <Header title="Gallery"/>

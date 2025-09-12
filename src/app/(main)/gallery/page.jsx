@@ -3,14 +3,11 @@
 import BlurFade from "@/components/magicui/blurr-fade";
 import {useEffect, useRef, useState} from "react";
 import LandingBanner from "@/components/pages/landing-banner";
+import GALLERY_IMAGES from "@/data/gallery";
+
+const images = GALLERY_IMAGES;
 
 export default function Test() {
-    const images = [...Array(20)].map((_, i) => {
-        const isLandscape = i % 2 === 0;
-        const width = isLandscape ? 800 : 600;
-        const height = isLandscape ? 600 : 800;
-        return `https://picsum.photos/seed/${i + 10}/${width}/${height}`;
-    });
 
     const BgImgRef = useRef(null)
     const [, setTitleHeight] = useState(1100);
