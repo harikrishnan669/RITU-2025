@@ -49,8 +49,8 @@ export default function Footer() {
                     <p>RITU</p>
                 </div>
                 <p className="text-sm opacity-80 mt-4 max-sm:mt-2 max-w-[400px] max-sm:max-w-full">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates placeat, repudiandae
-                    nemo nulla amet id officiis molestias.
+                    RITU, the techno-cultural fest of RIT, is happening on
+                    October 16–19. Join us for an unforgettable experience filled with innovation.
                 </p>
                 <div className="flex items-center gap-6 mt-5 max-sm:mt-2">
                     <a href="">
@@ -85,14 +85,16 @@ export default function Footer() {
             <div className="flex flex-col">
                 <h1 className="text-xl w-full mb-4 max-sm:text-lg">Get Updates</h1>
                 <form className="relative bg-white rounded-full overflow-hidden flex items-center max-sm:text-sm">
-                    <input className="w-full h-full text-black pl-6 py-3 max-sm:pl-5 max-sm:py-2.5" type="email" required placeholder="Enter email"/>
+                    <input className="w-full h-full text-black pl-6 py-3 max-sm:pl-5 max-sm:py-2.5" type="email"
+                           required placeholder="Enter email"/>
                     <button
                         className="right-1 max-sm:right-0 absolute rounded-full bg-[#624de7] flex items-center justify-center p-2 max-sm:p-1.5 m-1 aspect-square">
                         <ArrowRight/>
                     </button>
                 </form>
                 <p className="opacity-80 mt-6 max-sm:text-sm">If you have any queries mail us at:</p>
-                <div className="max-sm:text-sm mt-2 hover:opacity-100 cursor-pointer flex gap-2 items-center opacity-80">
+                <div
+                    className="max-sm:text-sm mt-2 hover:opacity-100 cursor-pointer flex gap-2 items-center opacity-80">
                     <Mail className="size-5"/><a href="mailto:ritu@rit.ac.in">ritu@rit.ac.in</a>
                 </div>
             </div>
