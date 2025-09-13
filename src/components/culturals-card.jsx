@@ -6,6 +6,7 @@ export default function CulturalsCard({
 	imgSource,
 	date,
 	location,
+	placeholder = false,
 	buttonColor = "bg-blue-500",
 }) {
 	return (
@@ -20,7 +21,7 @@ export default function CulturalsCard({
 					className="w-full object-contain"
 				/>
 
-				<div className="flex flex-col justify-center items-center mb-6">
+				{!placeholder && <div className="flex flex-col justify-center items-center mb-6">
 					<div className="flex flex-col gap-y-4 my-4 mx-2 justify-center items-start ">
 						<div className="flex flex-row items-center gap-2">
 							<MapPin color="white" />
@@ -33,7 +34,7 @@ export default function CulturalsCard({
 					</div>
 
 					<BookNow btnColor={buttonColor} />
-				</div>
+				</div>}
 			</div>
 		</div>
 	);

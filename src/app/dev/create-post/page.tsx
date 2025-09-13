@@ -7,8 +7,12 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Copy, Plus, Trash2 } from "lucide-react"
-import {IEventData} from "@/types/event";
+import { Calendar } from "@/components/ui/calendar"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { Copy, Plus, Trash2, CalendarIcon } from "lucide-react"
+import { format } from "date-fns"
+import { cn } from "@/lib/utils"
+import { IEventData } from "@/types/event"
 
 
 export default function EventDataBuilder() {
@@ -18,15 +22,88 @@ export default function EventDataBuilder() {
         title: "",
         description: "",
         location: "Online",
+        createdDate: new Date().toISOString(),
     })
 
     const [contacts, setContacts] = useState<{ name: string; number: string }[]>([])
+    const [startDate, setStartDate] = useState<Date>()
+    const [endDate, setEndDate] = useState<Date>()
+    const [createdDate, setCreatedDate] = useState<Date>()
+    const [startTime, setStartTime] = useState<string>("")
+    const [endTime, setEndTime] = useState<string>("")
+    const [createdTime, setCreatedTime] = useState<string>("")
 
     const updateEventData = (field: keyof IEventData, value: any) => {
         setEventData((prev) => ({
             ...prev,
             [field]: value,
         }))
+    }
+
+    const formatDateTime = (date: Date | undefined, time: string): string => {
+        if (!date) return ""
+        const timeValue = time || "00:00"
+        const [hours, minutes] = timeValue.split(":")
+
+        // Create date in IST timezone
+        const dateTime = new Date(date)
+        dateTime.setHours(Number.parseInt(hours), Number.parseInt(minutes), 0, 0)
+
+        // Convert IST to UTC (IST is UTC+5:30)
+        const utcDateTime = new Date(dateTime.getTime() - 5.5 * 60 * 60 * 1000)
+        return utcDateTime.toISOString()
+    }
+
+    // const parseUTCToIST = (utcString: string): { date: Date; time: string } => {
+    //     if (!utcString) return { date: new Date(), time: "" }
+    //
+    //     const utcDate = new Date(utcString)
+    //     // Convert UTC to IST (UTC+5:30)
+    //     const istDate = new Date(utcDate.getTime() + 5.5 * 60 * 60 * 1000)
+    //
+    //     const hours = istDate.getHours().toString().padStart(2, "0")
+    //     const minutes = istDate.getMinutes().toString().padStart(2, "0")
+    //
+    //     return {
+    //         date: new Date(istDate.getFullYear(), istDate.getMonth(), istDate.getDate()),
+    //         time: `${hours}:${minutes}`,
+    //     }
+    // }
+
+    const handleStartDateChange = (date: Date | undefined) => {
+        setStartDate(date)
+        const isoString = formatDateTime(date, startTime)
+        updateEventData("date", isoString)
+    }
+
+    const handleStartTimeChange = (time: string) => {
+        setStartTime(time)
+        const isoString = formatDateTime(startDate, time)
+        updateEventData("date", isoString)
+    }
+
+    const handleEndDateChange = (date: Date | undefined) => {
+        setEndDate(date)
+        const isoString = formatDateTime(date, endTime)
+        updateEventData("endDate", isoString || undefined)
+    }
+
+    const handleEndTimeChange = (time: string) => {
+        setEndTime(time)
+        const isoString = formatDateTime(endDate, time)
+        updateEventData("endDate", isoString || undefined)
+    }
+
+    const handleCreatedDateChange = (date: Date | undefined) => {
+        setCreatedDate(date)
+        const isoString = formatDateTime(date, createdTime)
+        updateEventData("createdDate", isoString || undefined)
+    }
+
+    const handleCreatedTimeChange = (time: string) => {
+        setCreatedTime(time)
+        const isoString = formatDateTime(createdDate, time)
+        updateEventData("createdDate", isoString || undefined)
     }
 
     const addContact = () => {
@@ -54,13 +131,13 @@ export default function EventDataBuilder() {
             location: eventData.location,
         }
 
-        // Add optional fields only if they have values
         if (eventData.instagram) result.instagram = eventData.instagram
         if (eventData.url) result.url = eventData.url
         if (contacts.length > 0) result.contact = contacts
         if (eventData.endDate) result.endDate = eventData.endDate
         if (eventData.badge) result.badge = eventData.badge
         if (eventData.club) result.club = eventData.club
+        if (eventData.createdDate) result.createdDate = eventData.createdDate
 
         return result
     }
@@ -70,7 +147,7 @@ export default function EventDataBuilder() {
         try {
             await navigator.clipboard.writeText(objectString)
         } catch (err) {
-            console.log("ERROR", err);
+            console.log(err)
         }
     }
 
@@ -80,6 +157,7 @@ export default function EventDataBuilder() {
                 <div className="text-center space-y-2">
                     <h1 className="text-3xl font-bold">Event Data Builder</h1>
                     <p className="text-muted-foreground">Build your IEventData object with this simple form</p>
+                    <p className="text-sm text-muted-foreground">Times are displayed in IST but stored as UTC</p>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -121,13 +199,32 @@ export default function EventDataBuilder() {
                             </div>
 
                             <div className="space-y-2">
-                                <Label htmlFor="date">Start Date (UTC) *</Label>
-                                <Input
-                                    id="date"
-                                    type="datetime-local"
-                                    value={eventData.date}
-                                    onChange={(e) => updateEventData("date", e.target.value)}
-                                />
+                                <Label>Start Date & Time (IST) *</Label>
+                                <div className="flex gap-2">
+                                    <Popover>
+                                        <PopoverTrigger asChild>
+                                            <Button
+                                                variant="outline"
+                                                className={cn(
+                                                    "flex-1 justify-start text-left font-normal",
+                                                    !startDate && "text-muted-foreground",
+                                                )}
+                                            >
+                                                <CalendarIcon className="mr-2 h-4 w-4" />
+                                                {startDate ? format(startDate, "PPP") : "Pick a date"}
+                                            </Button>
+                                        </PopoverTrigger>
+                                        <PopoverContent className="w-auto p-0" align="start">
+                                            <Calendar mode="single" selected={startDate} onSelect={handleStartDateChange} initialFocus />
+                                        </PopoverContent>
+                                    </Popover>
+                                    <Input
+                                        type="time"
+                                        value={startTime}
+                                        onChange={(e) => handleStartTimeChange(e.target.value)}
+                                        className="w-32"
+                                    />
+                                </div>
                             </div>
 
                             <div className="space-y-2">
@@ -156,13 +253,67 @@ export default function EventDataBuilder() {
 
                                 <div className="space-y-4">
                                     <div className="space-y-2">
-                                        <Label htmlFor="endDate">End Date (UTC)</Label>
-                                        <Input
-                                            id="endDate"
-                                            type="datetime-local"
-                                            value={eventData.endDate || ""}
-                                            onChange={(e) => updateEventData("endDate", e.target.value || undefined)}
-                                        />
+                                        <Label>Created Date & Time (IST)</Label>
+                                        <div className="flex gap-2">
+                                            <Popover>
+                                                <PopoverTrigger asChild>
+                                                    <Button
+                                                        variant="outline"
+                                                        className={cn(
+                                                            "flex-1 justify-start text-left font-normal",
+                                                            !createdDate && "text-muted-foreground",
+                                                        )}
+                                                    >
+                                                        <CalendarIcon className="mr-2 h-4 w-4" />
+                                                        {createdDate ? format(createdDate, "PPP") : "Pick a date"}
+                                                    </Button>
+                                                </PopoverTrigger>
+                                                <PopoverContent className="w-auto p-0" align="start">
+                                                    <Calendar
+                                                        mode="single"
+                                                        selected={createdDate}
+                                                        onSelect={handleCreatedDateChange}
+                                                        initialFocus
+                                                    />
+                                                </PopoverContent>
+                                            </Popover>
+                                            <Input
+                                                type="time"
+                                                value={createdTime}
+                                                onChange={(e) => handleCreatedTimeChange(e.target.value)}
+                                                className="w-32"
+                                            />
+                                        </div>
+                                        <p className="text-xs text-muted-foreground">Defaults to current date/time, stored as UTC</p>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <Label>End Date & Time (IST)</Label>
+                                        <div className="flex gap-2">
+                                            <Popover>
+                                                <PopoverTrigger asChild>
+                                                    <Button
+                                                        variant="outline"
+                                                        className={cn(
+                                                            "flex-1 justify-start text-left font-normal",
+                                                            !endDate && "text-muted-foreground",
+                                                        )}
+                                                    >
+                                                        <CalendarIcon className="mr-2 h-4 w-4" />
+                                                        {endDate ? format(endDate, "PPP") : "Pick a date"}
+                                                    </Button>
+                                                </PopoverTrigger>
+                                                <PopoverContent className="w-auto p-0" align="start">
+                                                    <Calendar mode="single" selected={endDate} onSelect={handleEndDateChange} initialFocus />
+                                                </PopoverContent>
+                                            </Popover>
+                                            <Input
+                                                type="time"
+                                                value={endTime}
+                                                onChange={(e) => handleEndTimeChange(e.target.value)}
+                                                className="w-32"
+                                            />
+                                        </div>
                                     </div>
 
                                     <div className="space-y-2">

@@ -15,4 +15,5 @@ export interface IEventData {
     endDate?: string;
     badge?: 'new' | 'workshop' | 'competition' | 'talk' | 'exhibition' | 'performance' | string;
     club?: 'Tinkerhub' | 'IEEE' | 'ISTE' | 'IEDC' | string;
+    createdDate?: string;
 }

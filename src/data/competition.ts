@@ -13,7 +13,7 @@ Nothing is as it seems - some paths mislead. Every stage challenges your logic, 
         contact: [{name: 'Jyothsna Treesa George', number: '8547432646'}],
         location: 'Online',
         badge: 'Test',
-        endDate: ''
+        club: 'Test'
     },
     {
         image: '/posters/competition/code-a-pookalam.webp',

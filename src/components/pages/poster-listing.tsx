@@ -1,6 +1,6 @@
 "use client"
 
-import {Funnel} from "lucide-react"
+import {Fuel as Funnel} from "lucide-react"
 import {useState} from "react"
 import {
     DropdownMenu,
@@ -11,17 +11,21 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {Button} from "@/components/ui/button"
-import EventModal from "@/components/events/event-modal";
-import EventCard from "@/components/events/event-cards";
-import {IEventData} from "@/types/event";
+import EventModal from "@/components/events/event-modal"
+import EventCard from "@/components/events/event-cards"
+import type {IEventData} from "@/types/event"
 
-export default function PosterListing({events, maxVisibleCount = 3}: {
-    events: IEventData[],
+export default function PosterListing({
+                                          events,
+                                          maxVisibleCount = 3,
+                                      }: {
+    events: IEventData[]
     maxVisibleCount?: number
 }) {
     const [visibleCount, setVisibleCount] = useState(maxVisibleCount)
     const [selectedBadges, setSelectedBadges] = useState(new Set())
     const [selectedLocations, setSelectedLocations] = useState(new Set())
+    const [selectedClubs, setSelectedClubs] = useState(new Set())
     const [selectedEvent, setSelectedEvent] = useState(null)
     const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -36,17 +40,41 @@ export default function PosterListing({events, maxVisibleCount = 3}: {
     }
 
     const toggleMoreLess = () => {
-        if (visibleCount === maxVisibleCount) setVisibleCount(filteredEvents.length)
+        if (visibleCount === maxVisibleCount) setVisibleCount(filteredAndSortedEvents.length)
         else setVisibleCount(maxVisibleCount)
     }
 
-    const uniqueBadges = [...new Set(events.map((event) => event.badge))]
-    const uniqueLocations = [...new Set(events.map((event) => event.location))]
+    const uniqueBadges = [...new Set(events.map((event) => event.badge).filter(Boolean))]
+    const uniqueLocations = [...new Set(events.map((event) => event.location).filter(Boolean))]
+    const uniqueClubs = [...new Set(events.map((event) => event.club).filter(Boolean))]
 
     const filteredEvents = events.filter((event) => {
         const badgeMatch = selectedBadges.size === 0 || selectedBadges.has(event.badge)
         const locationMatch = selectedLocations.size === 0 || selectedLocations.has(event.location)
-        return badgeMatch && locationMatch
+        const clubMatch = selectedClubs.size === 0 || selectedClubs.has(event.club)
+        return badgeMatch && locationMatch && clubMatch
+    })
+
+    const filteredAndSortedEvents = filteredEvents.sort((a, b) => {
+        const currentDate = new Date()
+        const aEnded = a.endDate ? new Date(a.endDate) <= currentDate : false
+        const bEnded = b.endDate ? new Date(b.endDate) <= currentDate : false
+
+        // If one event has ended and the other hasn't, prioritize the active one
+        if (aEnded && !bEnded) return 1
+        if (!aEnded && bEnded) return -1
+
+        // If both are active or both have ended, sort by createdDate (newest first)
+        if (a.createdDate && b.createdDate) {
+            return new Date(b.createdDate).getTime() - new Date(a.createdDate).getTime()
+        }
+
+        // If only one has createdDate, prioritize it
+        if (a.createdDate && !b.createdDate) return -1
+        if (!a.createdDate && b.createdDate) return 1
+
+        // Fallback to date comparison
+        return new Date(b.date).getTime() - new Date(a.date).getTime()
     })
 
     const toggleBadgeFilter = (badge) => {
@@ -69,9 +97,20 @@ export default function PosterListing({events, maxVisibleCount = 3}: {
         setSelectedLocations(newSelected)
     }
 
+    const toggleClubFilter = (club) => {
+        const newSelected = new Set(selectedClubs)
+        if (newSelected.has(club)) {
+            newSelected.delete(club)
+        } else {
+            newSelected.add(club)
+        }
+        setSelectedClubs(newSelected)
+    }
+
     const clearAllFilters = () => {
         setSelectedBadges(new Set())
         setSelectedLocations(new Set())
+        setSelectedClubs(new Set())
     }
 
     return (
@@ -85,9 +124,9 @@ export default function PosterListing({events, maxVisibleCount = 3}: {
                         >
                             Filter
                             <Funnel className="size-5"/>
-                            {(selectedBadges.size > 0 || selectedLocations.size > 0) && (
+                            {(selectedBadges.size > 0 || selectedLocations.size > 0 || selectedClubs.size > 0) && (
                                 <span className="ml-1 bg-white/30 text-xs px-2 py-1 rounded-full">
-                  {selectedBadges.size + selectedLocations.size}
+                  {selectedBadges.size + selectedLocations.size + selectedClubs.size}
                 </span>
                             )}
                         </Button>
@@ -117,7 +156,23 @@ export default function PosterListing({events, maxVisibleCount = 3}: {
                             </DropdownMenuCheckboxItem>
                         ))}
 
-                        {(selectedBadges.size > 0 || selectedLocations.size > 0) && (
+                        {uniqueClubs.length > 0 && (
+                            <>
+                                <DropdownMenuSeparator/>
+                                <div className="px-2 py-1.5 text-sm font-semibold">Filter by Club</div>
+                                {uniqueClubs.map((club) => (
+                                    <DropdownMenuCheckboxItem
+                                        key={club}
+                                        checked={selectedClubs.has(club)}
+                                        onCheckedChange={() => toggleClubFilter(club)}
+                                    >
+                                        {club}
+                                    </DropdownMenuCheckboxItem>
+                                ))}
+                            </>
+                        )}
+
+                        {(selectedBadges.size > 0 || selectedLocations.size > 0 || selectedClubs.size > 0) && (
                             <>
                                 <DropdownMenuSeparator/>
                                 <DropdownMenuItem onClick={clearAllFilters}>Clear all filters</DropdownMenuItem>
@@ -128,11 +183,11 @@ export default function PosterListing({events, maxVisibleCount = 3}: {
             </div>
             <div className="w-full max-w-[1200px] px-4 flex flex-col items-center py-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full justify-items-center">
-                    {filteredEvents.slice(0, visibleCount).map((event, idx) => (
+                    {filteredAndSortedEvents.slice(0, visibleCount).map((event, idx) => (
                         <EventCard key={idx} event={event} onClick={() => handleCardClick(event)}/>
                     ))}
                 </div>
-                {filteredEvents.length > maxVisibleCount && (
+                {filteredAndSortedEvents.length > maxVisibleCount && (
                     <button
                         onClick={toggleMoreLess}
                         className="mt-10 bg-white/20 border border-white/30 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
@@ -140,11 +195,11 @@ export default function PosterListing({events, maxVisibleCount = 3}: {
                         {visibleCount === maxVisibleCount ? "View All" : "View Less"}
                     </button>
                 )}
-                {filteredEvents.length === 0 && (
+                {filteredAndSortedEvents.length === 0 && (
                     <div className="text-white/70 text-center py-10">No events match your current filters.</div>
                 )}
             </div>
-
+            <br/><br/><br/>
             <EventModal event={selectedEvent} isOpen={isModalOpen} onClose={closeModal}/>
         </div>
     )

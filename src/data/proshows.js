@@ -1,25 +1,29 @@
-const CULTURAL_EVENTS = [
+const PROSHOWS = [
     {
         img: "/placeholder/coming-soon-proshow.webp",
         date: "March 21, 7pm-12pm",
         location: "College Auditorium",
         buttonColor: "#08070D",
+        placeholder: true
     }, {
         img: "/placeholder/coming-soon-proshow.webp",
         date: "March 21, 7pm-12pm",
         location: "College Auditorium",
         buttonColor: "#08070D",
+        placeholder: true
     }, {
         img: "/placeholder/coming-soon-proshow.webp",
         date: "March 21, 7pm-12pm",
         location: "College Auditorium",
         buttonColor: "#08070D",
+        placeholder: true
     }, {
         img: "/placeholder/coming-soon-proshow.webp",
         date: "March 21, 7pm-12pm",
         location: "College Auditorium",
         buttonColor: "#08070D",
+        placeholder: true
     }
 ]
 
-export default CULTURAL_EVENTS;
+export default PROSHOWS;

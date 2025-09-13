@@ -8,13 +8,24 @@ export default function EventCard({event, onClick}: {
     event: IEventData,
     onClick: Function,
 }) {
+    const endDate = event.endDate && new Date(event.endDate);
+    let eventEnded = false;
+
+    if (endDate) {
+        eventEnded = new Date() >= endDate;
+    }
+
+
     return (
         <div
             className={cn(
-                "bg-white/10 border border-white/20 rounded-xl shadow-lg overflow-hidden max-w-sm w-full flex flex-col",
-
+                "bg-white/10 border border-white/20 rounded-xl shadow-lg overflow-hidden max-w-sm w-full flex flex-col cursor-pointer",
+                eventEnded && 'grayscale-100 cursor-not-allowed'
             )}
-            onClick={() => onClick(event)}
+            onClick={() => {
+                if (!eventEnded)
+                    onClick(event);
+            }}
         >
             <div className="relative">
                 <img
@@ -23,8 +34,14 @@ export default function EventCard({event, onClick}: {
                     className="w-full h-60 object-cover"
                 />
                 {event.badge && (
-                    <span
-                        className="absolute top-2 right-2 bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    eventEnded ?
+                        <span
+                            className="absolute top-2 right-2 bg-gray-600 text-white text-xs font-semibold px-3 py-1 rounded-full"
+                        >
+                            Event Ended
+                        </span> :
+                        <span
+                            className="absolute top-2 right-2 bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
                             {event.badge}
                     </span>
                 )}

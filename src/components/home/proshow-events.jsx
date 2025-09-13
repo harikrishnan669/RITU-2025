@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import React from "react";
 import {useRouter} from "next/navigation";
-import CULTURAL_EVENTS from "@/data/cultural-events";
+import PROSHOWS from "@/data/proshows";
 
 export default function ProshowEvents() {
     const router = useRouter();
@@ -61,7 +61,7 @@ export default function ProshowEvents() {
                         }
                     }}
                 >
-                    {CULTURAL_EVENTS.map((item, i) =>
+                    {PROSHOWS.map((item, i) =>
                         <SwiperSlide
                             key={i}
                             className="w-full flex justify-center items-center z-30"
@@ -84,6 +84,7 @@ export default function ProshowEvents() {
                                 }}
                             >
                                 <CulturalsCard
+                                    placeholder={item.placeholder}
                                     imgSource={item.img}
                                     buttonColor={item.buttonColor ?? "#08070D"}
                                     date={item.date}
