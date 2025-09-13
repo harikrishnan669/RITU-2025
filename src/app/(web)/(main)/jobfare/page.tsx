@@ -121,7 +121,7 @@ export default function JobFare() {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="flex justify-center items-center flex-wrap gap-8">
                             <Card
                                 className="bg-gray-900/50 backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 text-center">
                                 <CardContent className="p-6">
@@ -148,15 +148,6 @@ export default function JobFare() {
                                     <div className="text-gray-400 text-sm">Non-stop networking and interviews</div>
                                 </CardContent>
                             </Card>
-
-                            <Card
-                                className="bg-gray-900/50 backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 text-center">
-                                <CardContent className="p-6">
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">100%</div>
-                                    <div className="text-lg font-semibold mb-2 text-white">Virtual</div>
-                                    <div className="text-gray-400 text-sm">Join from anywhere in India</div>
-                                </CardContent>
-                            </Card>
                         </div>
                     </div>
                 </section>
@@ -173,7 +164,7 @@ export default function JobFare() {
                             </p>
                         </div>
 
-                        <div className="flex justify-center items-center gap-8 mb-16">
+                        <div className="flex flex-wrap justify-center items-center gap-8 mb-16">
                             {applicationSteps.map((step, index) => (
                                 <div key={index} className="relative">
                                     <Card
