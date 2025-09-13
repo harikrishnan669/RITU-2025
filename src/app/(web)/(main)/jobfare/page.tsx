@@ -31,7 +31,7 @@ const applicationSteps = [
     },
     {
         title: "2. Upload Your Resume",
-        description: "Submit your updated resume to be shared with participating companies.",
+        description: "Submit your resume to be shared with participating companies.",
     },
     {
         title: "3. Confirmation",
@@ -168,7 +168,7 @@ export default function JobFare() {
                             {applicationSteps.map((step, index) => (
                                 <div key={index} className="relative">
                                     <Card
-                                        className="bg-gray-900/50 backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 h-full">
+                                        className="bg-gray-900/50 max-w-[250px] backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 h-full">
                                         <CardContent className="p-6 text-center">
                                             <h3 className="text-xl font-bold mb-3 text-white">{step.title}</h3>
                                             <p className="text-gray-400 text-pretty">{step.description}</p>
