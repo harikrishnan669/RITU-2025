@@ -13,7 +13,7 @@ export default function LandingScreen() {
                     </BoxReveal>
                 </div>
                 <div className="flex items-center justify-center w-full relative max-sm:order-1">
-                    <img src="/ritu-ballon.png" className="sm:hidden relative z-1 w-[90%]" alt="RITU 3D Logo"/>
+                    <img src="/ritu-ballon.png" draggable={false} className="select-none sm:hidden relative z-1 w-[90%]" alt="RITU 3D Logo"/>
                     <div
                         className="w-full h-fit p-0 text-[15vw]/[1] flex justify-between font-bold text-center blur-lg max-sm:blur-xs max-sm:hidden"
                     >

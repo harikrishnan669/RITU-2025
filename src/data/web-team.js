@@ -4,9 +4,8 @@ const WEB_TEAM = [
     {
         name: "Febin Nelson P",
         image: "",
-        github: "",
-        linkedin: "",
-        role: "Lead"
+        github: "https://github.com/fbn776",
+        linkedin: "https://www.linkedin.com/in/febin-nelson/",
     },
     {
         name: "Abhiram Ashok",

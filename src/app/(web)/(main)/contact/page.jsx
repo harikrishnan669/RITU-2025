@@ -9,7 +9,7 @@ export default function TEst() {
 
 
     return (
-        <div>
+        <div className="w-full">
             <LandingBanner
                 bg="/bg/contact.webp"
                 title="Contact"
@@ -20,7 +20,7 @@ export default function TEst() {
                     <h2 className="text-4xl mb-8 max-md:mb-4  text-white text-center tracking-widest max-md:text-xl font-bold">
                         STUDENT COORDINATORS
                     </h2>
-                    <div className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_1fr_1fr]  gap-6 md:gap-12">
+                    <div className="w-full my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_1fr_1fr]  gap-6 md:gap-12">
                         {COORDINATORS.map((item, i) =>
                             <ContactCard
                                 key={i}
@@ -38,7 +38,7 @@ export default function TEst() {
                     <h2 className="text-4xl mb-8 max-md:mb-4  text-white text-center tracking-widest max-md:text-xl font-bold">
                         WEB TEAM
                     </h2>
-                    <div className="my-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[1fr_1fr_1fr]  gap-6 md:gap-12">
+                    <div className="w-full my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_1fr_1fr] gap-6 md:gap-12">
                         {WEB_TEAM.map((item, i) =>
                             <WebCard
                                 key={i}
@@ -52,6 +52,7 @@ export default function TEst() {
                     </div>
                 </div>
             </div>
+            <br/><br/><br/>
         </div>
     );
 }

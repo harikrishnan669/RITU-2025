@@ -22,8 +22,8 @@ export default function Footer() {
                     <PhoneCall size={32}/>
                 </div>
                 <div className="tracking-wide md:tracking-widest">
-                    <p>+91 1234567890</p>
-                    <p className="text-sm px-1 opacity-70">Hotline 24/7</p>
+                    <p>+91 9778190587</p>
+                    <p className="text-sm px-1 opacity-70">RITU Team</p>
                 </div>
             </div>
             <a href='https://www.rit.ac.in/' className="flex items-center">
@@ -32,13 +32,13 @@ export default function Footer() {
                 </div>
                 <div className="tracking-wide md:tracking-widest">
                     <p>www.rit.ac.in</p>
-                    <p className="text-sm opacity-70">Vist College</p>
+                    <p className="text-sm opacity-70">Visit College</p>
                 </div>
             </a>
-            <div className="flex gap-2 h-full">
+            <a href="tel:+919778190587" className="flex gap-2 h-full">
                 <p>GET IN TOUCH</p>
                 <ChevronRight/>
-            </div>
+            </a>
         </div>
         <hr className="my-6 border-gray-700 max-lg:hidden" color="#9483FF"/>
 

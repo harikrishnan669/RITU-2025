@@ -18,5 +18,6 @@ export default function Home() {
         <MeetOurSponsorsNew/>
         <br/><br/>
         <Gallery/>
+        <br/><br/>
     </main>
 }

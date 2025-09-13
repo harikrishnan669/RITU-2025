@@ -5,7 +5,7 @@ export default function AboutUs() {
 
     return (
         <section>
-            <Header title={"#HIGHONRITU"}/>
+            <Header title={"#LETSRITU"}/>
 
             <div className="mt-18 relative w-full flex justify-center">
                 <div

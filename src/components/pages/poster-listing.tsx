@@ -113,6 +113,10 @@ export default function PosterListing({
         setSelectedClubs(new Set())
     }
 
+    if (events.length === 0) {
+        return <div className="w-full text-center py-10 text-white/70">No events available at the moment.</div>
+    }
+
     return (
         <div>
             <div className="w-full flex justify-end pr-6 mt-10">
