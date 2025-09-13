@@ -13,10 +13,10 @@ import {
 import {Button} from "@/components/ui/button"
 import EventModal from "@/components/events/event-modal";
 import EventCard from "@/components/events/event-cards";
-import {EventData} from "@/types/event";
+import {IEventData} from "@/types/event";
 
 export default function PosterListing({events, maxVisibleCount = 3}: {
-    events: EventData[],
+    events: IEventData[],
     maxVisibleCount?: number
 }) {
     const [visibleCount, setVisibleCount] = useState(maxVisibleCount)

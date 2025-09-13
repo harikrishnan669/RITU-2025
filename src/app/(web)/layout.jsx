@@ -1,6 +1,9 @@
 import {Bilbo_Swash_Caps, Poppins} from "next/font/google";
-import "./globals.css";
-import "./app.css";
+import "../globals.css";
+import "../app.css";
+import Background from "@/components/background";
+import {Analytics} from "@vercel/analytics/next";
+import NotFoundPage from "@/app/not-found-page";
 
 
 const poppins = Poppins({
@@ -27,11 +30,22 @@ export const viewport = {
 
 
 export default function RootLayout({children}) {
+    if (process.env.SITE_LIVE === 'false') {
+        return <>
+            <Background/>
+
+            <NotFoundPage/>
+        </>
+    }
+
+
     return (
         <html lang="en">
         <body
             className={`${poppins.className} ${bilboSwashCaps.variable} antialiased`}
         >
+        <Background/>
+        <Analytics/>
         {children}
         </body>
         </html>

@@ -1,0 +1,285 @@
+"use client"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Copy, Plus, Trash2 } from "lucide-react"
+import {IEventData} from "@/types/event";
+
+
+export default function EventDataBuilder() {
+    const [eventData, setEventData] = useState<IEventData>({
+        image: "",
+        date: "",
+        title: "",
+        description: "",
+        location: "Online",
+    })
+
+    const [contacts, setContacts] = useState<{ name: string; number: string }[]>([])
+
+    const updateEventData = (field: keyof IEventData, value: any) => {
+        setEventData((prev) => ({
+            ...prev,
+            [field]: value,
+        }))
+    }
+
+    const addContact = () => {
+        setContacts((prev) => [...prev, { name: "", number: "" }])
+    }
+
+    const updateContact = (index: number, field: "name" | "number", value: string) => {
+        const updatedContacts = contacts.map((contact, i) => (i === index ? { ...contact, [field]: value } : contact))
+        setContacts(updatedContacts)
+        updateEventData("contact", updatedContacts.length > 0 ? updatedContacts : undefined)
+    }
+
+    const removeContact = (index: number) => {
+        const updatedContacts = contacts.filter((_, i) => i !== index)
+        setContacts(updatedContacts)
+        updateEventData("contact", updatedContacts.length > 0 ? updatedContacts : undefined)
+    }
+
+    const generateObject = (): IEventData => {
+        const result: IEventData = {
+            image: eventData.image,
+            date: eventData.date,
+            title: eventData.title,
+            description: eventData.description,
+            location: eventData.location,
+        }
+
+        // Add optional fields only if they have values
+        if (eventData.instagram) result.instagram = eventData.instagram
+        if (eventData.url) result.url = eventData.url
+        if (contacts.length > 0) result.contact = contacts
+        if (eventData.endDate) result.endDate = eventData.endDate
+        if (eventData.badge) result.badge = eventData.badge
+        if (eventData.club) result.club = eventData.club
+
+        return result
+    }
+
+    const copyToClipboard = async () => {
+        const objectString = JSON.stringify(generateObject(), null, 2)
+        try {
+            await navigator.clipboard.writeText(objectString)
+        } catch (err) {
+            console.log("ERROR", err);
+        }
+    }
+
+    return (
+        <div className="min-h-screen bg-background p-4">
+            <div className="max-w-4xl mx-auto space-y-6">
+                <div className="text-center space-y-2">
+                    <h1 className="text-3xl font-bold">Event Data Builder</h1>
+                    <p className="text-muted-foreground">Build your IEventData object with this simple form</p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    {/* Form Section */}
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Event Details</CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-4">
+                            {/* Required Fields */}
+                            <div className="space-y-2">
+                                <Label htmlFor="image">Image URL *</Label>
+                                <Input
+                                    id="image"
+                                    placeholder="https://example.com/image.jpg"
+                                    value={eventData.image}
+                                    onChange={(e) => updateEventData("image", e.target.value)}
+                                />
+                            </div>
+
+                            <div className="space-y-2">
+                                <Label htmlFor="title">Title *</Label>
+                                <Input
+                                    id="title"
+                                    placeholder="Event title"
+                                    value={eventData.title}
+                                    onChange={(e) => updateEventData("title", e.target.value)}
+                                />
+                            </div>
+
+                            <div className="space-y-2">
+                                <Label htmlFor="description">Description *</Label>
+                                <Textarea
+                                    id="description"
+                                    placeholder="Event description"
+                                    value={eventData.description}
+                                    onChange={(e) => updateEventData("description", e.target.value)}
+                                />
+                            </div>
+
+                            <div className="space-y-2">
+                                <Label htmlFor="date">Start Date (UTC) *</Label>
+                                <Input
+                                    id="date"
+                                    type="datetime-local"
+                                    value={eventData.date}
+                                    onChange={(e) => updateEventData("date", e.target.value)}
+                                />
+                            </div>
+
+                            <div className="space-y-2">
+                                <Label htmlFor="location">Location *</Label>
+                                <Select value={eventData.location} onValueChange={(value) => updateEventData("location", value)}>
+                                    <SelectTrigger>
+                                        <SelectValue />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="Online">Online</SelectItem>
+                                        <SelectItem value="RIT">RIT</SelectItem>
+                                        <SelectItem value="custom">Custom Location</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                                {eventData.location === "custom" && (
+                                    <Input
+                                        placeholder="Enter custom location"
+                                        onChange={(e) => updateEventData("location", e.target.value)}
+                                    />
+                                )}
+                            </div>
+
+                            {/* Optional Fields */}
+                            <div className="pt-4 border-t">
+                                <h3 className="font-semibold mb-4">Optional Fields</h3>
+
+                                <div className="space-y-4">
+                                    <div className="space-y-2">
+                                        <Label htmlFor="endDate">End Date (UTC)</Label>
+                                        <Input
+                                            id="endDate"
+                                            type="datetime-local"
+                                            value={eventData.endDate || ""}
+                                            onChange={(e) => updateEventData("endDate", e.target.value || undefined)}
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <Label htmlFor="instagram">Instagram</Label>
+                                        <Input
+                                            id="instagram"
+                                            placeholder="@username or URL"
+                                            value={eventData.instagram || ""}
+                                            onChange={(e) => updateEventData("instagram", e.target.value || undefined)}
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <Label htmlFor="url">URL</Label>
+                                        <Input
+                                            id="url"
+                                            placeholder="https://example.com"
+                                            value={eventData.url || ""}
+                                            onChange={(e) => updateEventData("url", e.target.value || undefined)}
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <Label>Badge</Label>
+                                        <Select
+                                            value={eventData.badge || "none"}
+                                            onValueChange={(value) => updateEventData("badge", value || undefined)}
+                                        >
+                                            <SelectTrigger>
+                                                <SelectValue placeholder="Select badge" />
+                                            </SelectTrigger>
+                                            <SelectContent>
+                                                <SelectItem value="none">None</SelectItem>
+                                                <SelectItem value="new">New</SelectItem>
+                                                <SelectItem value="workshop">Workshop</SelectItem>
+                                                <SelectItem value="competition">Competition</SelectItem>
+                                                <SelectItem value="talk">Talk</SelectItem>
+                                                <SelectItem value="exhibition">Exhibition</SelectItem>
+                                                <SelectItem value="performance">Performance</SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <Label>Club</Label>
+                                        <Select
+                                            value={eventData.club || "none"}
+                                            onValueChange={(value) => updateEventData("club", value || undefined)}
+                                        >
+                                            <SelectTrigger>
+                                                <SelectValue placeholder="Select club" />
+                                            </SelectTrigger>
+                                            <SelectContent>
+                                                <SelectItem value="none">None</SelectItem>
+                                                <SelectItem value="Tinkerhub">Tinkerhub</SelectItem>
+                                                <SelectItem value="IEEE">IEEE</SelectItem>
+                                                <SelectItem value="ISTE">ISTE</SelectItem>
+                                                <SelectItem value="IEDC">IEDC</SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
+
+                                    {/* Contacts Section */}
+                                    <div className="space-y-2">
+                                        <div className="flex items-center justify-between">
+                                            <Label>Contacts</Label>
+                                            <Button type="button" variant="outline" size="sm" onClick={addContact}>
+                                                <Plus className="h-4 w-4 mr-1" />
+                                                Add Contact
+                                            </Button>
+                                        </div>
+                                        {contacts.map((contact, index) => (
+                                            <div key={index} className="flex gap-2 items-end">
+                                                <div className="flex-1">
+                                                    <Input
+                                                        placeholder="Name"
+                                                        value={contact.name}
+                                                        onChange={(e) => updateContact(index, "name", e.target.value)}
+                                                    />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <Input
+                                                        placeholder="Phone number"
+                                                        value={contact.number}
+                                                        onChange={(e) => updateContact(index, "number", e.target.value)}
+                                                    />
+                                                </div>
+                                                <Button type="button" variant="outline" size="sm" onClick={() => removeContact(index)}>
+                                                    <Trash2 className="h-4 w-4" />
+                                                </Button>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    {/* Preview Section */}
+                    <Card>
+                        <CardHeader>
+                            <div className="flex items-center justify-between">
+                                <CardTitle>Generated Object</CardTitle>
+                                <Button onClick={copyToClipboard} size="sm">
+                                    <Copy className="h-4 w-4 mr-2" />
+                                    Copy
+                                </Button>
+                            </div>
+                        </CardHeader>
+                        <CardContent>
+              <pre className="bg-muted p-4 rounded-lg text-sm overflow-auto max-h-96 whitespace-pre-wrap">
+                {JSON.stringify(generateObject(), null, 2)}
+              </pre>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </div>
+    )
+}

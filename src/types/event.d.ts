@@ -1,7 +1,9 @@
 
 
-export interface EventData {
+export interface IEventData {
+    /** The image url*/
     image: string;
+    /** Date: Use UTC*/
     date: string;
     title: string;
     description: string;
@@ -9,6 +11,8 @@ export interface EventData {
     url?: string;
     contact?: { name: string; number: string }[];
     location: 'Online' | 'RIT' | string;
+    /** UTC Date*/
     endDate?: string;
-    badge?: 'new' | 'workshop' | 'competition' | 'talk' | 'exhibition' | 'performance' | 'other';
+    badge?: 'new' | 'workshop' | 'competition' | 'talk' | 'exhibition' | 'performance' | string;
+    club?: 'Tinkerhub' | 'IEEE' | 'ISTE' | 'IEDC' | string;
 }

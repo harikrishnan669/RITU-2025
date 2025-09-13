@@ -1,6 +1,6 @@
-import {EventData} from "@/types/event";
+import {IEventData} from "@/types/event";
 
-const COMPETITION: EventData[] = [
+const COMPETITION: IEventData[] = [
     {
         image: '/posters/competition/capture-the-flag.webp',
         date: 'Till 6th September 2025',
@@ -11,7 +11,9 @@ Over two weeks, participants will step into a web of codes, riddles, and hidden 
 Nothing is as it seems - some paths mislead. Every stage challenges your logic, wit, and intuition, pulling you deeper into the game...!`,
         instagram: "https://www.instagram.com/share/p/BAkuismkfs",
         contact: [{name: 'Jyothsna Treesa George', number: '8547432646'}],
-        location: 'Online'
+        location: 'Online',
+        badge: 'Test',
+        endDate: ''
     },
     {
         image: '/posters/competition/code-a-pookalam.webp',
