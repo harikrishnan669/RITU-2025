@@ -1,4 +1,6 @@
-const COMPETITION = [
+import {EventData} from "@/types/event";
+
+const COMPETITION: EventData[] = [
     {
         image: '/posters/competition/capture-the-flag.webp',
         date: 'Till 6th September 2025',
@@ -11,7 +13,6 @@ Nothing is as it seems - some paths mislead. Every stage challenges your logic, 
         contact: [{name: 'Jyothsna Treesa George', number: '8547432646'}],
         location: 'Online'
     },
-
     {
         image: '/posters/competition/code-a-pookalam.webp',
         date: 'Till 6th September 2025',
@@ -33,17 +34,6 @@ A coding twist to the spirit of Onam, as part of RITU’25
         instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
         location: 'Online',
     },
-
-    // {
-    //     image: "/culturals/2.webp",
-    //     date: "May 15, 2025",
-    //     title: "Digital Dreams Festival",
-    //     description: "Experience the fusion of technology and music at our flagship event.",
-    //     location: "Tech Arena, NYC",
-    //     badge: "Featured",
-    //     url: "http://google.com",
-    // },
-
 ];
 
 export default COMPETITION;

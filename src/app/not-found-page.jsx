@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function NotFound() {
+export default function NotFoundPage() {
     return (
         <div className="flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-0">
             <div className="flex flex-col items-center md:items-start md:ml-20">

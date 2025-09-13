@@ -10,10 +10,10 @@ import Gallery from "@/components/home/gallery";
 export default function Home() {
     return <main className="overflow-y-auto size-full">
         <LandingScreen/>
+        <ProshowEvents/>
+        <br/><br/>
         <AboutUs/>
         <EventsListing/>
-        <br/><br/>
-        <ProshowEvents/>
         <br/><br/>
         <MeetOurSponsorsNew/>
         <br/><br/>

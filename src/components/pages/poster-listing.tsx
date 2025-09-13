@@ -13,14 +13,12 @@ import {
 import {Button} from "@/components/ui/button"
 import EventModal from "@/components/events/event-modal";
 import EventCard from "@/components/events/event-cards";
+import {EventData} from "@/types/event";
 
-/**
- *
- * @param events {{image: string, date: string, title: string, description: string, location: string, badge: string}[]}
- * @param maxVisibleCount
- * @constructor
- */
-export default function PosterListing({events, maxVisibleCount = 3}) {
+export default function PosterListing({events, maxVisibleCount = 3}: {
+    events: EventData[],
+    maxVisibleCount?: number
+}) {
     const [visibleCount, setVisibleCount] = useState(maxVisibleCount)
     const [selectedBadges, setSelectedBadges] = useState(new Set())
     const [selectedLocations, setSelectedLocations] = useState(new Set())
