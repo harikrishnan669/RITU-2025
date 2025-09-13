@@ -1,8 +1,5 @@
-"use client"
-
 import {Button} from "@/components/ui/button"
 import {Card, CardContent} from "@/components/ui/card"
-import {useEffect, useState} from "react"
 
 const companies = [
     {name: "Kerala Paints", logo: "/placeholder/ritu-white.webp"},
@@ -58,16 +55,16 @@ export default function JobFare() {
                     <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                         <div className="text-center">
                             <h1 className="flex flex-col text-4xl sm:text-6xl lg:text-7xl font-bold text-balance mb-6">
+                                <span className="text-white">RITU 2025</span>
                                 <span
-                                    className="bg-gradient-to-r from-cyan-300 via-cyan-500 to-purple-700 bg-clip-text text-transparent pb-5">
-                                    India's Largest
+                                    className="mt-4 font-secondary bg-gradient-to-r from-cyan-300 via-cyan-500 to-purple-700 bg-clip-text text-transparent pb-5">
+                                    Job Fair
                                 </span>
-                                <span className="mt-1 text-white"> JobFare 2025</span>
                             </h1>
 
                             <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 text-pretty">
                                 Meet top recruiters, explore exciting opportunities, and connect directly with hiring
-                                teams — right here on RIT.
+                                teams, right here on RIT.
                             </p>
 
                             {/*<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">*/}
@@ -112,10 +109,10 @@ export default function JobFare() {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance text-white">
-                                Why Choose <span className="text-blue-400">JobFare 2025?</span>
+                                Why Choose <span className="text-blue-400 font-secondary">JobFare 2025?</span>
                             </h2>
                             <p className="text-xl text-gray-300 max-w-3xl mx-auto text-pretty">
-                                Experience India's most comprehensive virtual job fair with cutting-edge technology and
+                                Experience India&#39;s most comprehensive virtual job fair with cutting-edge technology and
                                 unparalleled
                                 opportunities.
                             </p>
@@ -157,7 +154,7 @@ export default function JobFare() {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance text-white">
-                                How to <span className="text-blue-400">Apply</span>
+                                How to <span className="text-blue-400 font-secondary">Apply</span>
                             </h2>
                             <p className="text-xl text-gray-300 max-w-3xl mx-auto text-pretty">
                                 Join thousands of job seekers in just 5 simple steps. The process is fast and easy
@@ -185,7 +182,7 @@ export default function JobFare() {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance text-white">
-                                Meet Your <span className="text-blue-400">Employers</span>
+                                Meet Your <span className="text-blue-400 font-secondary">Employers</span>
                             </h2>
                         </div>
 
