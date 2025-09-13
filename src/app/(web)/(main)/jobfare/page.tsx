@@ -5,23 +5,23 @@ import {Card, CardContent} from "@/components/ui/card"
 import {useEffect, useState} from "react"
 
 const companies = [
-    {name: "Kerala Paints", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "Kerala Paints", logo: "/placeholder/ritu-white.webp"},
     {name: "TechCorp", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "FinanceFirst", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "FinanceFirst", logo: "/placeholder/ritu-white.webp"},
     {name: "HealthTech", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "EduLearn", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "EduLearn", logo: "/placeholder/ritu-white.webp"},
     {name: "GreenEnergy", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "RetailMax", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "RetailMax", logo: "/placeholder/ritu-white.webp"},
     {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "DataSoft", logo: "/placeholder/ritu-white.webp"},
     {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "DataSoft", logo: "/placeholder/ritu-white.webp"},
     {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "DataSoft", logo: "/placeholder/ritu-white.webp"},
     {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "DataSoft", logo: "/placeholder/ritu-white.webp"},
     {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
-    {name: "DataSoft", logo: "/sponsors/kerala-paints-poison.webp"},
+    {name: "DataSoft", logo: "/placeholder/ritu-white.webp"},
 ]
 
 const applicationSteps = [
@@ -59,7 +59,7 @@ export default function JobFare() {
                         <div className="text-center">
                             <h1 className="flex flex-col text-4xl sm:text-6xl lg:text-7xl font-bold text-balance mb-6">
                                 <span
-                                    className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent pb-5">
+                                    className="bg-gradient-to-r from-cyan-300 via-cyan-500 to-purple-700 bg-clip-text text-transparent pb-5">
                                     India's Largest
                                 </span>
                                 <span className="mt-1 text-white"> JobFare 2025</span>
@@ -98,7 +98,7 @@ export default function JobFare() {
                                 <Button
                                     size="lg"
                                     variant="outline"
-                                    className="bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300 text-lg px-8 py-6 border-gray-600 text-gray-200 hover:text-white mt-3"
+                                    className="cursor-pointer bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300 text-lg px-8 py-6 border-gray-600 text-gray-200 hover:text-white mt-3"
                                 >
                                     Apply for the Event
                                 </Button>
