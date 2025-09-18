@@ -12,8 +12,8 @@ Nothing is as it seems - some paths mislead. Every stage challenges your logic, 
         instagram: "https://www.instagram.com/share/p/BAkuismkfs",
         contact: [{name: 'Jyothsna Treesa George', number: '8547432646'}],
         location: 'Online',
-        badge: 'Test',
-        club: 'Test'
+        // badge: '',
+        club: 'Tinkerhub'
     },
     {
         image: '/posters/competition/code-a-pookalam.webp',

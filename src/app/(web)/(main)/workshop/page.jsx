@@ -1,7 +1,7 @@
 "use client";
 import LandingBanner from "@/components/pages/landing-banner";
 import PosterListing from "@/components/pages/poster-listing";
-import WORKSHOPS from "@/data/workshop";
+import WORKSHOPS from "@/data/events/workshop";
 
 
 export default function WorkshopPage() {

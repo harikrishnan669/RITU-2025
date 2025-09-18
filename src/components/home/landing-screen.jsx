@@ -1,5 +1,6 @@
 import BoxReveal from "@/components/magicui/box-reveal";
 import Wave from "@/components/wave/wave";
+import SOCIALS from "@/data/socials";
 
 export default function LandingScreen() {
     return (
@@ -54,16 +55,16 @@ export default function LandingScreen() {
 
                     <BoxReveal boxColor="#ffffff" className="max-sm:hidden">
                         <div className="flex flex-col gap-5">
-                            <img src="/sponsors/kerala-paints-poison.webp" alt="Kerala Paints" className="w-[100px]"/>
-                            {/*<a href="">*/}
-                            {/*    <img src="/icons/instagram.png" alt=""/>*/}
-                            {/*</a>*/}
-                            {/*<a href="">*/}
-                            {/*    <img src="/icons/youtube.png" alt=""/>*/}
-                            {/*</a>*/}
-                            {/*<a href="">*/}
-                            {/*    <img src="/icons/facebook.png" alt=""/>*/}
-                            {/*</a>*/}
+                            {/*<img src="/sponsors/kerala-paints-poison.webp" alt="Kerala Paints" className="w-[100px]"/>*/}
+                            <a href={SOCIALS.instagram}>
+                                <img src="/icons/instagram.png" alt=""/>
+                            </a>
+                            <a href={SOCIALS.youtube}>
+                                <img src="/icons/youtube.png" alt=""/>
+                            </a>
+                            <a href={SOCIALS.facebook}>
+                                <img src="/icons/facebook.png" alt=""/>
+                            </a>
                         </div>
                     </BoxReveal>
                 </div>

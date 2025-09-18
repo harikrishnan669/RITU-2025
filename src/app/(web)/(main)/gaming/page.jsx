@@ -2,7 +2,7 @@
 
 import LandingBanner from "@/components/pages/landing-banner";
 import PosterListing from "@/components/pages/poster-listing";
-import GAMING from "@/data/gaming";
+import GAMING from "@/data/events/gaming";
 
 export default function Gaming() {
     return (

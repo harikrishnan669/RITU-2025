@@ -1,7 +1,7 @@
 "use client";
 import LandingBanner from "@/components/pages/landing-banner";
 import PosterListing from "@/components/pages/poster-listing";
-import COMPETITION from "@/data/competition";
+import COMPETITION from "@/data/events/competition";
 
 
 export default function CompetitionPage() {

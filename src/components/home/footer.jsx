@@ -3,6 +3,7 @@
 import {ArrowRight, ArrowUpRight, ChevronRight, Globe, Mail, MapPin, PhoneCall} from "lucide-react";
 import Link from "next/link";
 import NavLinks from "@/data/nav-links";
+import SOCIALS from "@/data/socials";
 
 
 export default function Footer() {
@@ -45,7 +46,7 @@ export default function Footer() {
         <div className="flex w-full justify-between h-full gap-4 max-lg:flex-col">
             <div>
                 <div className="text-4xl max-sm:text-2xl flex items-center gap-2 mb-1">
-                    <img src="/icons/Vector.png" className="max-sm:h-5" alt=""/>
+                    <img src="/icons/ritu-mala.webp" className="max-sm:h-5 h-8" alt=""/>
                     <p>RITU</p>
                 </div>
                 <p className="text-sm opacity-80 mt-4 max-sm:mt-2 max-w-[400px] max-sm:max-w-full">
@@ -53,14 +54,14 @@ export default function Footer() {
                     October 16–19. Join us for an unforgettable experience filled with innovation.
                 </p>
                 <div className="flex items-center gap-6 mt-5 max-sm:mt-2">
-                    <a href="">
-                        <img src="/icons/instagram.png" className="size-8 max-sm:size-6" alt=""/>
+                    <a href={SOCIALS.instagram}>
+                        <img src="/icons/instagram.png" className="size-8 max-sm:size-6" alt="Instagram icon"/>
                     </a>
-                    <a href="">
-                        <img src="/icons/youtube.png" className="size-8 max-sm:size-6" alt=""/>
+                    <a href={SOCIALS.youtube}>
+                        <img src="/icons/youtube.png" className="size-8 max-sm:size-6" alt="Youtube icon"/>
                     </a>
-                    <a href="">
-                        <img src="/icons/facebook.png" className="size-8 max-sm:size-6" alt=""/>
+                    <a href={SOCIALS.facebook}>
+                        <img src="/icons/facebook.png" className="size-8 max-sm:size-6" alt="Facebook icon"/>
                     </a>
                 </div>
             </div>

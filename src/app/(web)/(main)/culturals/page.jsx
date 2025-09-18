@@ -1,7 +1,7 @@
 "use client";
 import LandingBanner from "@/components/pages/landing-banner";
 import PosterListing from "@/components/pages/poster-listing";
-import CULTURALS from "@/data/culturals";
+import CULTURALS from "@/data/events/culturals";
 
 
 export default function CulturalsPage() {
