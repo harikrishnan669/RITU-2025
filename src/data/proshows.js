@@ -7,7 +7,7 @@ const PROSHOWS = [
         placeholder: true
     }, {
         img: "/posters/proshows/jobkurian.webp",
-
+        placeholder: true
     }, {
         img: "/placeholder/coming-soon-proshow.webp",
         date: "March 21, 7pm-12pm",
