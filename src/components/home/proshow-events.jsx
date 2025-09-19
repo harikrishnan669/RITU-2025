@@ -5,11 +5,10 @@ import {Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import React from "react";
-import {useRouter} from "next/navigation";
 import PROSHOWS from "@/data/proshows";
 
 export default function ProshowEvents() {
-    const router = useRouter();
+    // const router = useRouter();
     const swiperRef = React.useRef(null);
     const [activeIndex, setActiveIndex] = React.useState(-1);
     const [isMobile, setIsMobile] = React.useState(false);
@@ -75,13 +74,13 @@ export default function ProshowEvents() {
                         >
                             <div
                                 className="w-full max-sm:flex justify-center items-center"
-                                onClick={() => {
-                                    if (!isMobile) {
-                                        router.push(
-                                            `/culturals?img=${encodeURIComponent(`/culturals/1.png`)}`
-                                        );
-                                    }
-                                }}
+                                // onClick={() => {
+                                //     if (!isMobile) {
+                                //         router.push(
+                                //             `/culturals?img=${encodeURIComponent(`/culturals/1.png`)}`
+                                //         );
+                                //     }
+                                // }}
                             >
                                 <CulturalsCard
                                     placeholder={item.placeholder}
