@@ -28,13 +28,13 @@ const WEB_TEAM = [
     {
         name: "Dhananjay R",
         image: "",
-        github: "github.com/dhjr",
+        github: "https://github.com/dhjr",
         linkedin: "https://www.linkedin.com/in/dhananjayr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
         name: "Farzan R S",
         image: "",
-        github: "github.com/f7z7",
+        github: "https://github.com/f7z7",
         linkedin: "https://www.linkedin.com/in/farzan7/",
     }
 ]
