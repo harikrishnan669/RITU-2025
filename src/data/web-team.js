@@ -10,32 +10,32 @@ const WEB_TEAM = [
     {
         name: "Abhiram Ashok",
         image: "",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/abhi5455",
+        linkedin: "https://www.linkedin.com/in/abhi5455/",
     },
     {
         name: "R Harikrishnan",
         image: "",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/harikrishnan669",
+        linkedin: "https://www.linkedin.com/in/r-harikrishnan-13a250258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
         name: "Max Cletus",
         image: "",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/Maxcleetus",
+        linkedin: "https://www.linkedin.com/in/max-cleetus?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
         name: "Dhananjay R",
         image: "",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/dhjr",
+        linkedin: "https://www.linkedin.com/in/dhananjayr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
         name: "Farzan R S",
         image: "",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/f7z7",
+        linkedin: "https://www.linkedin.com/in/farzan7/",
     }
 ]
 
