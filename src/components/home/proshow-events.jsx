@@ -1,14 +1,13 @@
 import Header from "@/components/header";
 import CulturalsCard from "@/components/culturals-card";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import React from "react";
 import PROSHOWS from "@/data/proshows";
+import {Autoplay, Navigation} from "swiper/modules";
 
 export default function ProshowEvents() {
-    // const router = useRouter();
     const swiperRef = React.useRef(null);
     const [activeIndex, setActiveIndex] = React.useState(-1);
     const [isMobile, setIsMobile] = React.useState(false);
@@ -41,8 +40,9 @@ export default function ProshowEvents() {
                     autoplay={true}
                     effect="slide"
                     navigation
-                    modules={[Navigation]}
+                    modules={[Navigation, Autoplay]}
                     slidesPerView={1}
+
                     speed={700}
                     breakpoints={{
                         640: {
@@ -60,37 +60,34 @@ export default function ProshowEvents() {
                         }
                     }}
                 >
-                    {PROSHOWS.map((item, i) =>
-                        <SwiperSlide
-                            key={i}
-                            className="w-full flex justify-center items-center z-30"
-                            style={{
-                                transform: activeIndex === i ? "scale(1.10)" : "scale(0.90)",
-                                opacity: activeIndex === i ? 1 : 0.6,
-                                zIndex: activeIndex === i ? 40 : 30,
-                                transition:
-                                    "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s cubic-bezier(0.4,0,0.2,1)",
-                            }}
-                        >
-                            <div
-                                className="w-full max-sm:flex justify-center items-center"
-                                // onClick={() => {
-                                //     if (!isMobile) {
-                                //         router.push(
-                                //             `/culturals?img=${encodeURIComponent(`/culturals/1.png`)}`
-                                //         );
-                                //     }
-                                // }}
+                    {PROSHOWS.map((temp, i) => {
+                        // TODO: Thattikootte... Needed to show Job Kurian first on mobile and second on desktop, so did this.
+                        const item = isMobile ? PROSHOWS[(i + 1) % PROSHOWS.length] : temp;
+
+                        return <SwiperSlide
+                                key={i}
+                                className="w-full flex justify-center items-center z-30"
+                                style={{
+                                    transform: activeIndex === i ? "scale(1.10)" : "scale(0.90)",
+                                    opacity: activeIndex === i ? 1 : 0.6,
+                                    zIndex: activeIndex === i ? 40 : 30,
+                                    transition:
+                                        "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s cubic-bezier(0.4,0,0.2,1)",
+                                }}
                             >
-                                <CulturalsCard
-                                    placeholder={item.placeholder}
-                                    imgSource={item.img}
-                                    buttonColor={item.buttonColor ?? "#08070D"}
-                                    date={item.date}
-                                    location={item.location}
-                                />
-                            </div>
-                        </SwiperSlide>
+                                <div
+                                    className="w-full max-sm:flex justify-center items-center"
+                                >
+                                    <CulturalsCard
+                                        placeholder={item.placeholder}
+                                        imgSource={item.img}
+                                        buttonColor={item.buttonColor ?? "#08070D"}
+                                        date={item.date}
+                                        location={item.location}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        }
                     )}
                 </Swiper>
             </section>
