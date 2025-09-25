@@ -35,7 +35,26 @@ A coding twist to the spirit of Onam, as part of RITU’25
         url: 'tally.so/r/wzkyrM',
         instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
         location: 'Online',
-    },
+    },{
+        "image": "/posters/competition/handball.webp",
+        "date": "2025-10-01T13:00:00.000Z",
+        "title": "Handball Tournament",
+        "description": "🏆 BREAKTHROUGH – Men’s Handball Tournament 🏆\n\nSpeed. Power. Grit.\nDo you have what it takes to BREAK THROUGH?\n\n🔥 Pre-event of RITU’25 | RIT Kottayam\n📅 Oct 2 & 3\n📍 College Ground, RIT Kottayam\n💰 Prize Pool: 7K\n\n\nFollow RITU’25 on WhatsApp:\nhttps://whatsapp.com/channel/0029VbB6DeSBfxo3UnDkpm3G",
+        "location": "RIT",
+        "contact": [
+            {
+                "name": "Shaik",
+                "number": "+91 83048 48658"
+            },
+            {
+                "name": "Sinan",
+                "number": "+91 73062 09452"
+            }
+        ],
+        "endDate": "2025-10-02T13:00:00.000Z",
+        "badge": "competition",
+        "createdDate": "2025-09-25T07:44:12.552Z"
+    }
 ];
 
 export default COMPETITION;
