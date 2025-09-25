@@ -30,7 +30,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
 🌐 Mode: Online
 🎓 Eligibility: Open to all college students
 💸 Entry: Free for everyone!
- 
+
 ✨ Let’s code, celebrate, and keep the Onam vibes alive at RITU’25!`,
         url: 'tally.so/r/wzkyrM',
         instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
@@ -41,6 +41,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "title": "Handball Tournament",
         "description": "🏆 BREAKTHROUGH – Men’s Handball Tournament 🏆\n\nSpeed. Power. Grit.\nDo you have what it takes to BREAK THROUGH?\n\n🔥 Pre-event of RITU’25 | RIT Kottayam\n📅 Oct 2 & 3\n📍 College Ground, RIT Kottayam\n💰 Prize Pool: 7K\n\n\nFollow RITU’25 on WhatsApp:\nhttps://whatsapp.com/channel/0029VbB6DeSBfxo3UnDkpm3G",
         "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68d4f04d46e0fb0001226521/ef234emfq2",
         "contact": [
             {
                 "name": "Shaik",
