@@ -30,7 +30,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
 🌐 Mode: Online
 🎓 Eligibility: Open to all college students
 💸 Entry: Free for everyone!
-
+ 
 ✨ Let’s code, celebrate, and keep the Onam vibes alive at RITU’25!`,
         url: 'tally.so/r/wzkyrM',
         instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
