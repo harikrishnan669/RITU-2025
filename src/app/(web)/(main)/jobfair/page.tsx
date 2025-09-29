@@ -27,42 +27,45 @@ const applicationSteps = [
         description: "Register online for the Job Fair and secure your spot.",
     },
     {
-        title: "2. Upload Your Resume",
-        description: "Submit your resume to be shared with participating companies.",
+        title: "2. Pay through YepDesk",
+        description: "Complete the payment process via YepDesk to confirm your registration and participation."
     },
     {
-        title: "3. Confirmation",
-        description: "Receive an email with confirmation and further instructions.",
+        title: "3. Fill Google Form",
+        description: "Provide your details and upload your resume through the Google Form to share your profile with recruiters."
     },
     {
-        title: "4. Attend Interviews",
-        description: "Join scheduled interviews with recruiters during the Job Fair.",
+        title: "4. Upload Your Resume",
+        description: "Ensure your resume is uploaded in the Google Form."
     },
     {
-        title: "5. Get Hired",
-        description: "Receive offers and kickstart your career with top companies.",
+        title: "5. Attend Interviews",
+        description: "Participate in scheduled interviews with recruiters and showcase your skills during the Job Fair."
     },
-
+    {
+        title: "6. Get Hired",
+        description: "Receive job offers from top companies and take the next step in your career journey."
+    }
 ]
 
-export default function JobFare() {
+export default function JobFair() {
 
     return (
         <div className="min-h-screen">
             <main>
                 {/* Hero Section */}
                 <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-                    <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+                    <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-16 max-md:pt-0">
                         <div className="text-center">
                             <h1 className="flex flex-col text-4xl sm:text-6xl lg:text-7xl font-bold text-balance mb-6">
                                 <span className="text-white">RITU 2025</span>
                                 <span
-                                    className="mt-4 font-secondary bg-gradient-to-r from-cyan-300 via-cyan-500 to-purple-700 bg-clip-text text-transparent pb-5">
+                                    className="mt-4 font-secondary bg-gradient-to-r from-cyan-300 via-cyan-500 to-purple-700 bg-clip-text text-transparent pb-5 text-1xl">
                                     Job Fair
                                 </span>
                             </h1>
 
-                            <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 text-pretty">
+                            <p className="text-xl max-md:text-lg sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 text-pretty">
                                 Meet top recruiters, explore exciting opportunities, and connect directly with hiring
                                 teams, right here on RIT.
                             </p>
@@ -95,9 +98,9 @@ export default function JobFare() {
                                 <Button
                                     size="lg"
                                     variant="outline"
-                                    className="cursor-pointer bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300 text-lg px-8 py-6 border-gray-600 text-gray-200 hover:text-white mt-3"
+                                    className="cursor-pointer bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300 text-lg px-8 max-md:mx-10 py-6 border-gray-600 text-gray-200 hover:text-white mt-3"
                                 >
-                                    Apply for the Event
+                                    Apply Now
                                 </Button>
                             </div>
                         </div>
@@ -109,7 +112,7 @@ export default function JobFare() {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance text-white">
-                                Why Choose <span className="text-blue-400 font-secondary">JobFare 2025?</span>
+                                Why Choose <span className="text-blue-400 font-secondary">JobFair 2025?</span>
                             </h2>
                             <p className="text-xl text-gray-300 max-w-3xl mx-auto text-pretty">
                                 Experience India&#39;s most comprehensive virtual job fair with cutting-edge technology and
@@ -140,7 +143,7 @@ export default function JobFare() {
                             <Card
                                 className="bg-gray-900/50 backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 text-center">
                                 <CardContent className="p-6">
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">3</div>
+                                    <div className="text-4xl font-bold text-blue-400 mb-2">4</div>
                                     <div className="text-lg font-semibold mb-2 text-white">Days</div>
                                     <div className="text-gray-400 text-sm">Non-stop networking and interviews</div>
                                 </CardContent>
@@ -190,10 +193,10 @@ export default function JobFare() {
                             {companies.map((company, index) => (
                                 <Card
                                     key={index}
-                                    className="bg-gray-900/50 backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 max-w-[180px] min-w-[180px] max-h-[180px] min-h-[180px] flex items-center justify-center"
+                                    className="bg-gray-900/50 backdrop-blur-sm border-gray-700 hover:bg-gray-800/70 transition-all duration-300 max-w-[180px] min-w-[180px] max-h-[180px] min-h-[180px] max-md:max-w-[150px] max-md:min-w-[150px] max-md:max-h-[150px] max-md:min-h-[150px] flex items-center justify-center"
                                 >
                                     <div className='opacity-75'>
-                                        <img src={company.logo} width={85} height={90}/>
+                                        <img src={company.logo} className="w-[85px] h-[90px] max-md:w-[70px] max-md:h-[80px]"/>
                                     </div>
                                 </Card>
                             ))}
