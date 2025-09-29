@@ -55,6 +55,26 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "endDate": "2025-10-02T13:00:00.000Z",
         "badge": "competition",
         "createdDate": "2025-09-25T07:44:12.552Z"
+    }, {
+        "image": "/posters/competition/battle_of_bands.webp",
+        "date": "2025-10-18T06:00:00.000Z",
+        "title": "Battle Of Bands",
+        "description": "🎤 “Bands don’t just play music, they create revolutions.” 🎶\n\nAs part of RITU 2025, the techno-cultural fest of Rajiv Gandhi Institute of Technology, Govt. Engineering College, Kottayam, this is your moment to shine, to roar, and to claim the spotlight. 🔥\n\nWe welcome all those amazing bands to be part of BATTLE OF BANDS, a musical extravaganza with a prize pool of 25K, and make unforgettable memories with your music! 🎸✨.The guidelines for the competition are as follows:\n\nRules and Regulations\n\n📌 Each team must consist of a minimum of 3 members and a maximum of 10 members.\n\n📌 The registration fee for the event is Rs. 1300/- per team.\n\n📌 Each team will be allotted a total of 15 minutes: 10 minutes for performance and 5 minutes for soundcheck. Strict adherence to the allotted time is required, as both exceeding and falling short will affect evaluation.\n\n📌 Performances are open to all musical genres.\n\n📌 Extra credit will be awarded for original compositions, showcasing creativity and uniqueness.\n\n📌 Teams must bring their own instruments. A drum set will be provided by the organizers.\n \n📌 Performances must be strictly live. Use of karaoke tracks or pre-recorded backgrounds is not permitted.\n\n📌 Judges will value based on rhythm, tempo control, and overall musical flow. Smooth transitions between sections-and, where multiple genres are blended, transitions between genres-will be given special consideration\n\n📌 Coordination, communication among team members, and overall stage presence will also be taken into account.\n\n📌 The decision of the judges will be final and binding.\n\n\n✨ Event Highlights ✨\n\n🗓️ Date: 18th October\n\n💰 Prize Pool: 25K\n\n📝 Registration Fee: ₹1300\n\n🔗 Register now at: ritu25.live",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68d3038546e0fb00011d98ea/ru3h6jsdcd",
+        "contact": [
+            {
+                "name": "Abhishek",
+                "number": "9495673048"
+            },
+            {
+                "name": "Abhinav",
+                "number": "8921193797"
+            }
+        ],
+        "endDate": "2025-10-17T13:00:00.000Z",
+        "badge": "competition",
+        "createdDate": "2025-10-17T13:00:00.000Z"
     }
 ];
 
