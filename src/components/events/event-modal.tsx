@@ -87,7 +87,7 @@ export default function EventModal({event, isOpen, onClose}: {
                             <div className="mt-8 pt-6 border-t border-black/10">
                                 <a className="block px-4 py-3 rounded-lg text-center w-full bg-black text-white hover:bg-black/80"
                                    href={event.url}>Get
-                                    Tickets</a>
+                                    Pass</a>
                             </div>
                         }
 
