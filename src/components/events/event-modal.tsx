@@ -4,7 +4,16 @@ import {Calendar, MapPin, Phone} from "lucide-react"
 import {Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle} from "@/components/ui/dialog"
 import {IEventData} from "@/types/event";
 import {Instagram} from "@/components/logos/social";
+import {showTimeToGo} from "@/lib/utils";
 
+
+function showEventTime(date: string) {
+    const dateObj = new Date(date);
+    if (!isNaN(dateObj.getTime())) {
+        return `${dateObj.getDate().toString().padStart(2, '0')}-${(dateObj.getMonth() + 1).toString().padStart(2, '0')}-${dateObj.getFullYear()}`;
+    }
+    return date;
+}
 
 export default function EventModal({event, isOpen, onClose}: {
     event: IEventData;
@@ -45,7 +54,7 @@ export default function EventModal({event, isOpen, onClose}: {
                         <div className="flex-1 space-y-1 text-sm">
                             <div className="flex items-center gap-3 text-black/70">
                                 <Calendar className="size-5"/>
-                                {event.date}
+                                {showEventTime(event.date)}
                             </div>
 
                             <div className="flex items-center gap-3 text-black/70">
@@ -86,8 +95,9 @@ export default function EventModal({event, isOpen, onClose}: {
                         {event.url &&
                             <div className="mt-8 pt-6 border-t border-black/10">
                                 <a className="block px-4 py-3 rounded-lg text-center w-full bg-black text-white hover:bg-black/80"
-                                   href={event.url}>Get
-                                    Tickets</a>
+                                   href={event.url}>
+                                    Get Tickets
+                                </a>
                             </div>
                         }
 

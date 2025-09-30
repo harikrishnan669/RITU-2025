@@ -75,6 +75,27 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "endDate": "2025-10-17T13:00:00.000Z",
         "badge": "competition",
         "createdDate": "2025-10-17T13:00:00.000Z"
+    }, {
+        "image": "/posters/competition/voice-of-ritu.webp",
+        "date": "2025-10-17T13:00:00.000Z",
+        "title": "Voice Of RITU",
+        "description": "https://www.instagram.com/share/p/BAUJdZdRxa\n\nThis RITU 2025, let your voice take the center stage and echo across the festival.\n\nStep into the spotlight at Voice of RITU, the ultimate singing competition where talent takes center stage. Sing your heart out, dazzle the crowd, and make your mark in this unforgettable musical showdown.\n\nRegister at: ritu25.live\n\nFor queries:\nVijay: 8589032050\nShilpa: 9645088187\n\n#VoiceofRitu #Vocalbattle #Ritm #Ritu25 #Letsritu #RitKottayam",
+        "location": "RIT",
+        "instagram": "https://www.instagram.com/share/p/BAUJdZdRxa",
+        "url": "https://www.yepdesk.com/embed/open-register/68d3957046e0fb00011f2bf3/bkeamot0qj",
+        "contact": [
+            {
+                "name": "Shilpa",
+                "number": "9645088187"
+            },
+            {
+                "name": "Vijay",
+                "number": "8589032050"
+            }
+        ],
+        "endDate": "2025-10-17T13:00:00.000Z",
+        "badge": "competition",
+        "createdDate": "2025-09-29T13:00:00.000Z"
     }
 ];
 

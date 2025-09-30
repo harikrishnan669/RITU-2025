@@ -2,7 +2,16 @@ import {Calendar, MapPin} from "lucide-react";
 import React from "react";
 import {IEventData} from "@/types/event";
 import {Instagram} from "@/components/logos/social";
-import {cn} from "@/lib/utils";
+import {cn, showTimeToGo} from "@/lib/utils";
+
+
+function showEventTime(date) {
+    const dateObj = new Date(date);
+    if (!isNaN(dateObj.getTime())) {
+        return showTimeToGo(date)
+    }
+    return date;
+}
 
 export default function EventCard({event, onClick}: {
     event: IEventData,
@@ -49,7 +58,7 @@ export default function EventCard({event, onClick}: {
             <div className="p-4 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 text-sm text-white/70 mb-2">
                     <Calendar className="size-4"/>
-                    <span>{event.date}</span>
+                    <span>{showEventTime(event.date)}</span>
                 </div>
                 <h3 className="font-semibold text-lg mb-2 line-clamp-2 capitalize">
                     {(event.title || '').toLowerCase()}
@@ -66,14 +75,6 @@ export default function EventCard({event, onClick}: {
                         </a>
                     }
                 </div>
-
-                {/*{event.url &&*/}
-                {/*    <a*/}
-                {/*        href={event.url}*/}
-                {/*        className="bg-purple-900 text-white py-2 px-4 rounded-md hover:bg-purple-800 transition self-end">*/}
-                {/*        Book Now*/}
-                {/*    </a>*/}
-                {/*}*/}
             </div>
         </div>
     );
