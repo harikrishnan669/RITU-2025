@@ -8,12 +8,24 @@ const BE_A_PART: IEventData[] = [
         title: "Call For Stalls",
         description: "Apply now to set up your stall and be a part of our event.",
         location: "RIT",
+        contact: [
+            {
+                name: "Jyothirmayi R",
+                number: "6235819690"
+            }
+        ]
     }, {
         image: "/posters/join-us/call-for-sponsorship.webp",
         date: "Ongoing",
         title: "Call For Sponsorship",
         description: "Partner with us as a sponsor and support our event.",
-        location: "RIT"
+        location: "RIT",
+        contact: [
+            {
+                name: "Jyothirmayi R",
+                number: "6235819690"
+            }
+        ]
     }
 ]
 

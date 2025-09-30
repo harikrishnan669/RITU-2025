@@ -17,12 +17,14 @@ import type {IEventData} from "@/types/event"
 
 export default function PosterListing({
                                           events,
+                                          showFilter = true,
                                           maxVisibleCount = 3,
                                       }: {
-    events: IEventData[]
+    events: IEventData[],
+    showFilter?: boolean,
     maxVisibleCount?: number
 }) {
-    const [visibleCount, setVisibleCount] = useState(maxVisibleCount)
+    const [visibleCount, setVisibleCount] = useState(maxVisibleCount);
     const [selectedBadges, setSelectedBadges] = useState(new Set())
     const [selectedLocations, setSelectedLocations] = useState(new Set())
     const [selectedClubs, setSelectedClubs] = useState(new Set())
@@ -119,7 +121,7 @@ export default function PosterListing({
 
     return (
         <div>
-            <div className="w-full flex justify-end pr-6 mt-10">
+            {showFilter && <div className="w-full flex justify-end pr-6 mt-10">
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button
@@ -184,7 +186,7 @@ export default function PosterListing({
                         )}
                     </DropdownMenuContent>
                 </DropdownMenu>
-            </div>
+            </div>}
             <div className="w-full max-w-[1200px] px-4 flex flex-col items-center py-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full justify-items-center">
                     {filteredAndSortedEvents.slice(0, visibleCount).map((event, idx) => (

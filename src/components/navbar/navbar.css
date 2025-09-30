@@ -10,6 +10,11 @@
     transition: top 0.2s, left 0.2s, right 0.2s, width 0.2s;
 }
 
+.nav-item.nav-always-show .nav-border {
+    --inset: -5px;
+    opacity: 1;
+}
+
 :root {
     --nav-border-width: 10px;
     --nav-border-height: 10px;

@@ -19,7 +19,7 @@ export default function EventModal({event, isOpen, onClose}: {
     isOpen: boolean;
     onClose: Function;
 }) {
-    if (!event) return null
+    if (!event) return null;
 
     return (
         <Dialog open={isOpen} onOpenChange={onClose}>
