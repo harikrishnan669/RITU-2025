@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 export default function BookNow({
-	onClk = () => console.log("Book now clicked"),
+	onClk = () => {
+		// Default no-op function
+	},
 	btnColor = "bg-blue-500",
 }) {
 	return (

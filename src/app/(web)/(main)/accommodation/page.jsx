@@ -1,6 +1,3 @@
-import Header from "@/components/header";
-import Timer from "@/components/timer";
-
 export default function Accommodation() {
     return (
         // <div className="flex flex-col items-center justify-start lg:justify-center min-h-screen px-4 py-[80px] gap-3 lg:m-3 m-4 lg:px-20 lg:gap-10 lg:w-full ">
