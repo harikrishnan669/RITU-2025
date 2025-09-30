@@ -4,7 +4,6 @@ import {Calendar, MapPin, Phone} from "lucide-react"
 import {Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle} from "@/components/ui/dialog"
 import {IEventData} from "@/types/event";
 import {Instagram} from "@/components/logos/social";
-import {showTimeToGo} from "@/lib/utils";
 
 
 function showEventTime(date: string) {
