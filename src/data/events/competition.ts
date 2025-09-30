@@ -35,7 +35,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         url: 'tally.so/r/wzkyrM',
         instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
         location: 'Online',
-    },{
+    }, {
         "image": "/posters/competition/handball.webp",
         "date": "2025-10-01T13:00:00.000Z",
         "title": "Handball Tournament",
@@ -77,7 +77,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "createdDate": "2025-10-17T13:00:00.000Z"
     }, {
         "image": "/posters/competition/voice-of-ritu.webp",
-        "date": "2025-10-17T13:00:00.000Z",
+        "date": "2025-10-18T13:00:00.000Z",
         "title": "Voice Of RITU",
         "description": "https://www.instagram.com/share/p/BAUJdZdRxa\n\nThis RITU 2025, let your voice take the center stage and echo across the festival.\n\nStep into the spotlight at Voice of RITU, the ultimate singing competition where talent takes center stage. Sing your heart out, dazzle the crowd, and make your mark in this unforgettable musical showdown.\n\nRegister at: ritu25.live\n\nFor queries:\nVijay: 8589032050\nShilpa: 9645088187\n\n#VoiceofRitu #Vocalbattle #Ritm #Ritu25 #Letsritu #RitKottayam",
         "location": "RIT",
@@ -93,9 +93,49 @@ A coding twist to the spirit of Onam, as part of RITU’25
                 "number": "8589032050"
             }
         ],
-        "endDate": "2025-10-17T13:00:00.000Z",
+        "endDate": "2025-10-18T13:00:00.000Z",
         "badge": "competition",
         "createdDate": "2025-09-29T13:00:00.000Z"
+    }, {
+        "image": "/posters/competition/soloce.webp",
+        "date": "2025-10-19T00:00:00+05:30",
+        "title": "Solo Dance",
+        "description": "Unleash your passion at RITU ’25—where every move turns into a story on the floor.\n\nWe invite all passionate dancers to be part of SOLO DANCE — an electrifying stage where expressions meet energy. With a prize pool of ₹10k, this is your chance to shine, inspire, and leave the crowd in awe.\n\nRegister at: ritu25.live\n\nFor queries:\nGiyon:7994867061\nSoudha: 7034068604\n\n#SoloDance #DanceWar #tritanz #DanceCompetition #Ritu25 #Letsritu #RitKottayam",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68dc086c46e0fb00013b2fb8/4fin37ucm",
+        "contact": [
+            {
+                "name": "Giyon",
+                "number": "7994867061"
+            },
+            {
+                "name": "Soudha",
+                "number": "7034068604"
+            }
+        ],
+        "endDate": "2025-10-18T13:00:00.000Z",
+        "badge": "competition",
+        "createdDate": "2025-09-30T19:06:25.522Z"
+    }, {
+        "image": "/posters/competition/verse-bound.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Verse Bound",
+        "description": "✨ Find your voice at RITU ’25 — where words turn into rhythm and emotions paint the stage.\n\nWe invite all passionate poets to be part of VERSEBOUND — Slam Poetry, a space where your verses echo, inspire, and move the crowd. With a prize pool of ₹2.5k, this is your chance to let your voice be heard.\n\n📅 Date: 17th October\n💰 Registration: ₹100\n📍 Register at: ritu25.live\n\nFor queries:\n📞 Fajiha: 9496235812\n📞 Nasma: 9048581950\n\n#VerseBound #SlamPoetry #Ritu25 #LetsRitu #RitKottayam",
+        "location": "RIT",
+        "contact": [
+            {
+                "name": "Fajiha",
+                "number": "9496235812"
+            },
+            {
+                "name": "Nasma",
+                "number": "9048581950"
+            }
+        ],
+        "endDate": "2025-10-16T13:00:00.000Z",
+        "badge": "competition",
+        "createdDate": "2025-09-30T19:10:07.945Z",
+        url: "https://www.yepdesk.com/embed/open-register/68dc125a46e0fb00013b6250/u37a5nkdhl"
     }
 ];
 

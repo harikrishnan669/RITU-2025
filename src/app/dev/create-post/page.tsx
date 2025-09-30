@@ -1,18 +1,18 @@
 "use client"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calendar } from "@/components/ui/calendar"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { Copy, Plus, Trash2, CalendarIcon } from "lucide-react"
-import { format } from "date-fns"
-import { cn } from "@/lib/utils"
-import { IEventData } from "@/types/event"
+import {useState} from "react"
+import {Button} from "@/components/ui/button"
+import {Input} from "@/components/ui/input"
+import {Label} from "@/components/ui/label"
+import {Textarea} from "@/components/ui/textarea"
+import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select"
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
+import {Calendar} from "@/components/ui/calendar"
+import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover"
+import {CalendarIcon, Copy, Plus, Trash2} from "lucide-react"
+import {format} from "date-fns"
+import {cn} from "@/lib/utils"
+import {IEventData} from "@/types/event"
 
 
 export default function EventDataBuilder() {
@@ -42,17 +42,26 @@ export default function EventDataBuilder() {
 
     const formatDateTime = (date: Date | undefined, time: string): string => {
         if (!date) return ""
+
         const timeValue = time || "00:00"
-        const [hours, minutes] = timeValue.split(":")
+        const [hours, minutes] = timeValue.split(":").map(Number)
 
-        // Create date in IST timezone
         const dateTime = new Date(date)
-        dateTime.setHours(Number.parseInt(hours), Number.parseInt(minutes), 0, 0)
+        dateTime.setHours(hours, minutes, 0, 0)
 
-        // Convert IST to UTC (IST is UTC+5:30)
-        const utcDateTime = new Date(dateTime.getTime() - 5.5 * 60 * 60 * 1000)
-        return utcDateTime.toISOString()
+        // Build YYYY-MM-DDTHH:mm:ss+05:30 manually
+        const pad = (n: number) => n.toString().padStart(2, "0")
+
+        const year = dateTime.getFullYear()
+        const month = pad(dateTime.getMonth() + 1)
+        const day = pad(dateTime.getDate())
+        const hour = pad(dateTime.getHours())
+        const minute = pad(dateTime.getMinutes())
+        const second = pad(dateTime.getSeconds())
+
+        return `${year}-${month}-${day}T${hour}:${minute}:${second}+05:30`
     }
+
 
     // const parseUTCToIST = (utcString: string): { date: Date; time: string } => {
     //     if (!utcString) return { date: new Date(), time: "" }
@@ -107,11 +116,11 @@ export default function EventDataBuilder() {
     }
 
     const addContact = () => {
-        setContacts((prev) => [...prev, { name: "", number: "" }])
+        setContacts((prev) => [...prev, {name: "", number: ""}])
     }
 
     const updateContact = (index: number, field: "name" | "number", value: string) => {
-        const updatedContacts = contacts.map((contact, i) => (i === index ? { ...contact, [field]: value } : contact))
+        const updatedContacts = contacts.map((contact, i) => (i === index ? {...contact, [field]: value} : contact))
         setContacts(updatedContacts)
         updateEventData("contact", updatedContacts.length > 0 ? updatedContacts : undefined)
     }
@@ -210,12 +219,13 @@ export default function EventDataBuilder() {
                                                     !startDate && "text-muted-foreground",
                                                 )}
                                             >
-                                                <CalendarIcon className="mr-2 h-4 w-4" />
+                                                <CalendarIcon className="mr-2 h-4 w-4"/>
                                                 {startDate ? format(startDate, "PPP") : "Pick a date"}
                                             </Button>
                                         </PopoverTrigger>
                                         <PopoverContent className="w-auto p-0" align="start">
-                                            <Calendar mode="single" selected={startDate} onSelect={handleStartDateChange} initialFocus />
+                                            <Calendar mode="single" selected={startDate}
+                                                      onSelect={handleStartDateChange} initialFocus/>
                                         </PopoverContent>
                                     </Popover>
                                     <Input
@@ -229,9 +239,10 @@ export default function EventDataBuilder() {
 
                             <div className="space-y-2">
                                 <Label htmlFor="location">Location *</Label>
-                                <Select value={eventData.location} onValueChange={(value) => updateEventData("location", value)}>
+                                <Select value={eventData.location}
+                                        onValueChange={(value) => updateEventData("location", value)}>
                                     <SelectTrigger>
-                                        <SelectValue />
+                                        <SelectValue/>
                                     </SelectTrigger>
                                     <SelectContent>
                                         <SelectItem value="Online">Online</SelectItem>
@@ -264,7 +275,7 @@ export default function EventDataBuilder() {
                                                             !createdDate && "text-muted-foreground",
                                                         )}
                                                     >
-                                                        <CalendarIcon className="mr-2 h-4 w-4" />
+                                                        <CalendarIcon className="mr-2 h-4 w-4"/>
                                                         {createdDate ? format(createdDate, "PPP") : "Pick a date"}
                                                     </Button>
                                                 </PopoverTrigger>
@@ -284,7 +295,8 @@ export default function EventDataBuilder() {
                                                 className="w-32"
                                             />
                                         </div>
-                                        <p className="text-xs text-muted-foreground">Defaults to current date/time, stored as UTC</p>
+                                        <p className="text-xs text-muted-foreground">Defaults to current date/time,
+                                            stored as UTC</p>
                                     </div>
 
                                     <div className="space-y-2">
@@ -299,12 +311,13 @@ export default function EventDataBuilder() {
                                                             !endDate && "text-muted-foreground",
                                                         )}
                                                     >
-                                                        <CalendarIcon className="mr-2 h-4 w-4" />
+                                                        <CalendarIcon className="mr-2 h-4 w-4"/>
                                                         {endDate ? format(endDate, "PPP") : "Pick a date"}
                                                     </Button>
                                                 </PopoverTrigger>
                                                 <PopoverContent className="w-auto p-0" align="start">
-                                                    <Calendar mode="single" selected={endDate} onSelect={handleEndDateChange} initialFocus />
+                                                    <Calendar mode="single" selected={endDate}
+                                                              onSelect={handleEndDateChange} initialFocus/>
                                                 </PopoverContent>
                                             </Popover>
                                             <Input
@@ -343,7 +356,7 @@ export default function EventDataBuilder() {
                                             onValueChange={(value) => updateEventData("badge", value || undefined)}
                                         >
                                             <SelectTrigger>
-                                                <SelectValue placeholder="Select badge" />
+                                                <SelectValue placeholder="Select badge"/>
                                             </SelectTrigger>
                                             <SelectContent>
                                                 <SelectItem value="none">None</SelectItem>
@@ -364,7 +377,7 @@ export default function EventDataBuilder() {
                                             onValueChange={(value) => updateEventData("club", value || undefined)}
                                         >
                                             <SelectTrigger>
-                                                <SelectValue placeholder="Select club" />
+                                                <SelectValue placeholder="Select club"/>
                                             </SelectTrigger>
                                             <SelectContent>
                                                 <SelectItem value="none">None</SelectItem>
@@ -381,7 +394,7 @@ export default function EventDataBuilder() {
                                         <div className="flex items-center justify-between">
                                             <Label>Contacts</Label>
                                             <Button type="button" variant="outline" size="sm" onClick={addContact}>
-                                                <Plus className="h-4 w-4 mr-1" />
+                                                <Plus className="h-4 w-4 mr-1"/>
                                                 Add Contact
                                             </Button>
                                         </div>
@@ -401,8 +414,9 @@ export default function EventDataBuilder() {
                                                         onChange={(e) => updateContact(index, "number", e.target.value)}
                                                     />
                                                 </div>
-                                                <Button type="button" variant="outline" size="sm" onClick={() => removeContact(index)}>
-                                                    <Trash2 className="h-4 w-4" />
+                                                <Button type="button" variant="outline" size="sm"
+                                                        onClick={() => removeContact(index)}>
+                                                    <Trash2 className="h-4 w-4"/>
                                                 </Button>
                                             </div>
                                         ))}
@@ -418,7 +432,7 @@ export default function EventDataBuilder() {
                             <div className="flex items-center justify-between">
                                 <CardTitle>Generated Object</CardTitle>
                                 <Button onClick={copyToClipboard} size="sm">
-                                    <Copy className="h-4 w-4 mr-2" />
+                                    <Copy className="h-4 w-4 mr-2"/>
                                     Copy
                                 </Button>
                             </div>
