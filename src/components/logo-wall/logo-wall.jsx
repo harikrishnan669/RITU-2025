@@ -9,7 +9,7 @@ function Logos() {
             <use xlinkHref="#kerala-paints"/>
         </svg>
         <svg>
-            <use xlinkHref="#ritu-placeholder"/>
+            <use xlinkHref="#raze"/>
         </svg>
         <svg>
             <use xlinkHref="#ritu-placeholder"/>
@@ -57,6 +57,9 @@ export default function LogoWall() {
                 </symbol>
                 <symbol id="kerala-paints" viewBox="0 0 24 24">
                     <image href="/sponsors/kerala-paints-poison.webp" className="" width={24} height={24}/>
+                </symbol>
+                <symbol id="raze" viewBox="0 0 24 24">
+                    <image href="/sponsors/raze.webp" className="" width={24} height={24}/>
                 </symbol>
             </defs>
         </svg>

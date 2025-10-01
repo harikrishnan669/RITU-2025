@@ -11,9 +11,9 @@ export default function Home() {
     return <main className="overflow-y-auto size-full">
         <LandingScreen/>
         <ProshowEvents/>
+        <EventsListing/>
         <br/><br/>
         <AboutUs/>
-        <EventsListing/>
         <br/><br/>
         <MeetOurSponsorsNew/>
         <br/><br/>

@@ -3,7 +3,7 @@ import {IEventData} from "@/types/event";
 const COMPETITION: IEventData[] = [
     {
         image: '/posters/competition/capture-the-flag.webp',
-        date: 'Till 6th September 2025',
+        date: '2025-09-06T00:00:00+05:30',
         title: 'CAPTURE THE FLAG',
         description: `
 A quest for the sharpest minds!
@@ -13,11 +13,12 @@ Nothing is as it seems - some paths mislead. Every stage challenges your logic, 
         contact: [{name: 'Jyothsna Treesa George', number: '8547432646'}],
         location: 'Online',
         // badge: '',
+        endDate: '2025-09-06T00:00:00+05:30',
         club: 'Tinkerhub'
     },
     {
         image: '/posters/competition/code-a-pookalam.webp',
-        date: 'Till 6th September 2025',
+        date: '2025-09-06T00:00:00+05:30',
         title: 'CODE A POOKALAM',
         description: `
 A coding twist to the spirit of Onam, as part of RITU’25
@@ -35,6 +36,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         url: 'tally.so/r/wzkyrM',
         instagram: 'https://www.instagram.com/p/DOXlM6UEtjm/?igsh=X3R5MDRNNGI1',
         location: 'Online',
+        endDate: '2025-09-06T00:00:00+05:30'
     }, {
         "image": "/posters/competition/handball.webp",
         "date": "2025-10-01T13:00:00.000Z",
@@ -136,6 +138,23 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "badge": "competition",
         "createdDate": "2025-09-30T19:10:07.945Z",
         url: "https://www.yepdesk.com/embed/open-register/68dc125a46e0fb00013b6250/u37a5nkdhl"
+    }, {
+        "image": "/posters/competition/hishe.webp",
+        "date": "2025-10-19T00:00:00+05:30",
+        "title": "Hishe",
+        "description": "Twist the tale, flip the scene;\nLet the reel spin what might have been at RITU 2025 \n\nJoin us for the Alternative Movie Ending Competition as part of RITU 25. Reimagine iconic climaxes, rewrite the finale, let your creative voice roar.\n\nRegister at: ritu25.live\n\nFor queries:\nAbhinand: 80755 08536\n\n#Hishie #CineTwist #AlternateEnding #RITU25 #RewriteTheFinale #LetsRITU",
+        "location": "Online",
+        "instagram": "https://www.instagram.com/share/p/BAKNhsthKP",
+        "url": "https://www.yepdesk.com/embed/open-register/68dce00d46e0fb00013ddbd4/chjraio390",
+        "contact": [
+            {
+                "name": "Abhinand",
+                "number": "8075508536"
+            }
+        ],
+        "endDate": "2025-10-19T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-01T10:19:25.166Z"
     }
 ];
 
