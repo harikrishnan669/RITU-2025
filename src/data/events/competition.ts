@@ -155,6 +155,25 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "endDate": "2025-10-19T00:00:00+05:30",
         "badge": "competition",
         "createdDate": "2025-10-01T10:19:25.166Z"
+    }, {
+        "image": "/posters/competition/pawn-break.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Pawn Break",
+        "description": "Break the silence, break the board;\nLet every move echo at RITU 2025!\n\nUnleash your strategy in Pawn Break – The Chess Competition of RITU 25. Outsmart your rivals, seize control, and march your pawns to glory.\n\nRegister at: ritu25.live\n\nFor queries:\nAdithyan: 8590307772\nSanjay: 8075778367\n\n#PawnBreak #ChessTournament #RITU25 #BattleOfMinds #LetsRITU #ChessCompetition",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68dd01a446e0fb00013e5db5/huhii9eumf",
+        "contact": [
+            {
+                "name": "Adithyan",
+                "number": "8590307772"
+            },
+            {
+                "name": "Sanjay",
+                "number": "8075778367"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "createdDate": "2025-10-01T11:58:55.440Z"
     }
 ];
 
