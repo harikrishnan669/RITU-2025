@@ -79,11 +79,7 @@ export default function ProshowEvents() {
                                     className="w-full max-sm:flex justify-center items-center"
                                 >
                                     <CulturalsCard
-                                        placeholder={item.placeholder}
-                                        imgSource={item.img}
-                                        buttonColor={item.buttonColor ?? "#08070D"}
-                                        date={item.date}
-                                        location={item.location}
+                                        data={item}
                                     />
                                 </div>
                             </SwiperSlide>
