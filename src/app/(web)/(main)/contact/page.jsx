@@ -13,7 +13,7 @@ export default function TEst() {
             <LandingBanner
                 bg="/bg/contact.webp"
                 title="Contact"
-                description="a set of words that is complete in itself, typically containing subject and predicate, conveying a statement, question,exclamation orcommand consisting of main close sometimes one or more subordinate clauses"
+                description="We’d love to hear from you! Reach out to our team for any queries, details, or support, and stay connected with the fest every step of the way."
             />
             <div className="relative">
                 <div className="relative z-20 flex flex-col items-center justify-center  px-8 py-16">
