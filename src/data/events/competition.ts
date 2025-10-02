@@ -194,6 +194,25 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "endDate": "2025-10-19T00:00:00+05:30",
         "badge": "competition",
         "createdDate": "2025-10-02T07:03:46.972Z"
+    }, {
+        "image": "/posters/competition/inquzzitive.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Inquizzititve",
+        "description": "Join the ultimate battle of wits with Inquizzitive – The Quiz Competition at RITU 25\n\nThink fast, think smart, and outwit the rest. Inquizzitive is the ultimate quiz challenge of RITU 25 where wit meets knowledge and only the sharpest minds emerge victorious.\n\nRegister at: ritu25.live\n\nContact:\nMusthafa: 94463 79112\nFarzan: 73565 09774\n\n#RITU25 #Inquizzitive #QuizCompetition #BattleOfBrains #LiveTheExperience",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68de287646e0fb000142e37d/r9mq70e6jn",
+        "contact": [
+            {
+                "name": "Musthafa",
+                "number": "9446379112"
+            },
+            {
+                "name": "Farzan",
+                "number": "7356509774"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "createdDate": "2025-10-02T11:52:19.095Z"
     }
 ];
 
