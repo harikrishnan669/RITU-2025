@@ -9,7 +9,7 @@ export default function CompetitionPage() {
         <section className="min-h-screen flex flex-col justify-center items-center">
             <LandingBanner
                 title="Competition"
-                description="A set of words that is complete in itself, typically containing a subject and predicate..."
+                description="Competitions are a stage for talent, creativity, and determination, where participants challenge themselves, showcase their skills, and strive for excellence in a spirit of passion and healthy rivalry."
                 bg="/bg/competition.webp"
                 bgAlt=""
             />
