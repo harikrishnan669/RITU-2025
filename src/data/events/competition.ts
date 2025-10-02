@@ -174,6 +174,26 @@ A coding twist to the spirit of Onam, as part of RITU’25
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-01T11:58:55.440Z"
+    }, {
+        "image": "/posters/competition/word-warriors.webp",
+        "date": "2025-10-19T00:00:00+05:30",
+        "title": "Word Warriors",
+        "description": "RITU 25 presents Word Warriors – The Spelling Bee Challenge\n\nEvery word is a battle, every letter a weapon — only the sharpest minds will conquer the hive.\nStep up, test your vocabulary, and spell your way to victory in this thrilling battle of words.\n\nRegister at: ritu25.live\n\nContact:\nAthulya: 96057 87220\nHibah: 98956 31890\n\n#RITU25 #WordWarriors #SpellingBee #BattleOfWords #LiveTheExperience",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68de1fce46e0fb000142c177/h4kcc588f8",
+        "contact": [
+            {
+                "name": "Athulya",
+                "number": "9605787220"
+            },
+            {
+                "name": "Hibah",
+                "number": "9895631890"
+            }
+        ],
+        "endDate": "2025-10-19T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-02T07:03:46.972Z"
     }
 ];
 
