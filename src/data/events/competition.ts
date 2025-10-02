@@ -213,6 +213,46 @@ A coding twist to the spirit of Onam, as part of RITU’25
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-02T11:52:19.095Z"
+    }, {
+        "image": "/posters/competition/robo-war.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Robo War",
+        "description": "Get ready for the ultimate fusion of technology and sport! Robo Wall brings together the thrill of arena battle with the precision of robotics in an electrifying competition. Design, build, and program your autonomous (or remote-controlled, depending on your rules) robots to battle it out on a custom-built arena, aiming for glory!",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68dc0a7c46e0fb00013b380b/siok2mlih4",
+        "contact": [
+            {
+                "name": "Dipesh",
+                "number": "9078176686"
+            },
+            {
+                "name": "Geethul",
+                "number": "9400795679"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-02T16:13:07.741Z"
+    }, {
+        "image": "/posters/competition/robo-soccer.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Robo Soccer",
+        "description": "Get ready to experience the beautiful game like never before at ROBO SOCCER! This isn't just about controlling a robot; it's about engineering a champion. Design, build, and program your autonomous (or remotely controlled, depending on your format) soccer bots to outmaneuver opponents, defend your goal, and unleash powerful shots on target.",
+        "location": "RIT",
+        "url": "",
+        "contact": [
+            {
+                "name": "Dipesh",
+                "number": "9078176686"
+            },
+            {
+                "name": "Adhila",
+                "number": "9188074187"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-02T16:13:07.741Z"
     }
 ];
 
