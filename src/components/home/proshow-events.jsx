@@ -22,7 +22,7 @@ export default function ProshowEvents() {
         <>
             <section
                 className="w-full h-full py-20 overflow-x-hidden  min-h-[40rem] flex flex-col items-center justify-between ">
-                <Header title="Pro Shows" id="proshows"/>
+                <Header title="Flagship Events" id="proshows"/>
 
                 <Swiper
                     className="mySwiper"
@@ -69,7 +69,7 @@ export default function ProshowEvents() {
                                 className="w-full flex justify-center items-center z-30"
                                 style={{
                                     transform: activeIndex === i ? "scale(1.10)" : "scale(0.90)",
-                                    opacity: activeIndex === i ? 1 : 0.6,
+                                    // opacity: activeIndex === i ? 1 : 0.6,
                                     zIndex: activeIndex === i ? 40 : 30,
                                     transition:
                                         "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s cubic-bezier(0.4,0,0.2,1)",
