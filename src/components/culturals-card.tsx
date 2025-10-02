@@ -35,7 +35,7 @@ export default function CulturalsCard({
     data: IProshows
 }) {
     if (data.pageLink || data.href) {
-        return <Link href={data.pageLink || data.href}>
+        return <Link href={data.pageLink || data.href} className="flex flex-col justify-center items-center w-full h-full">
             <ActualPage data={data}/>
         </Link>
     }
