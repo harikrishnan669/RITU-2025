@@ -239,7 +239,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "title": "Robo Soccer",
         "description": "Get ready to experience the beautiful game like never before at ROBO SOCCER! This isn't just about controlling a robot; it's about engineering a champion. Design, build, and program your autonomous (or remotely controlled, depending on your format) soccer bots to outmaneuver opponents, defend your goal, and unleash powerful shots on target.",
         "location": "RIT",
-        "url": "",
+        "url": "https://www.yepdesk.com/embed/open-register/68dea5c846e0fb0001451b4a/2abg0m6h2v",
         "contact": [
             {
                 "name": "Dipesh",
