@@ -22,7 +22,7 @@ export default function ProshowEvents() {
         <>
             <section
                 className="w-full h-full py-20 overflow-x-hidden  min-h-[40rem] flex flex-col items-center justify-between ">
-                <Header title="Flagship Events" id="proshows"/>
+                <Header title="Headliners" id="proshows"/>
 
                 <Swiper
                     className="mySwiper"
