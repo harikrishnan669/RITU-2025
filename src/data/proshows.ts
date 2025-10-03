@@ -7,7 +7,7 @@ export interface IProshows {
 
 const PROSHOWS: IProshows[] = [
     {
-        img: "/placeholder/coming-soon-proshow.webp",
+        img: "/posters/proshows/laqshay.webp",
         placeholder: true
     }, {
         img: "/posters/proshows/jobkurian.webp",
