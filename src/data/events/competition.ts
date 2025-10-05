@@ -217,7 +217,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "image": "/posters/competition/robo-war.webp",
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Robo War",
-        "description": "Get ready for the ultimate fusion of technology and sport! Robo Wall brings together the thrill of arena battle with the precision of robotics in an electrifying competition. Design, build, and program your autonomous (or remote-controlled, depending on your rules) robots to battle it out on a custom-built arena, aiming for glory!",
+        "description": "RITU 25 presents — Robo War\n\nEnter the ultimate battleground where machines clash for dominance. Build, battle, and prove your engineering mastery as your robot takes on rivals in a fight for glory. Strength, strategy, and precision will decide the champion.\n\nRegister now: ritu25.live\n\nContacts:\nDipesh: 8078176686\nGeethul: 9400795679\n\n#RITU25 #RoboWar #TechBattle #RITU25Events",
         "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68dc0a7c46e0fb00013b380b/siok2mlih4",
         "contact": [
@@ -237,7 +237,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "image": "/posters/competition/robo-soccer.webp",
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Robo Soccer",
-        "description": "Get ready to experience the beautiful game like never before at ROBO SOCCER! This isn't just about controlling a robot; it's about engineering a champion. Design, build, and program your autonomous (or remotely controlled, depending on your format) soccer bots to outmaneuver opponents, defend your goal, and unleash powerful shots on target.",
+        "description": "RITU 25 presents — Robo Soccer\n\nStep onto the field where robots compete in a test of skill, strategy, and teamwork. Design and control your robot to outsmart opponents, score goals, and showcase your innovation.\n\nRegister now: ritu25.live\n\nContacts:\nDipesh: 80781 76686\nAdhila: 91880 74187\n\n#RITU25 #RoboSoccer #TechBattle #RITU25Events",
         "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68dea5c846e0fb0001451b4a/2abg0m6h2v",
         "contact": [
