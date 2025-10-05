@@ -253,6 +253,67 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "endDate": "2025-10-17T00:00:00+05:30",
         "badge": "competition",
         "createdDate": "2025-10-02T16:13:07.741Z"
+    }, {
+        "image": "/posters/competition/mic-clash.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Mic Clash",
+        "description": "https://www.instagram.com/share/p/_onFoGJHd\n\nRITU 25 presents Mic Clash– The RJ Competition\n\nStep up to the mic, let your voice take the spotlight, and command the airwaves.\nMic Clash is where charisma meets confidence — a stage for you to express, engage, and entertain like a true radio jockey.\n\nRegister now at: ritu25.live\n\nContact:\nGangothri : 8078116828\nArjun : 8078252861\n\n#RITU25 #MicClash #RJCompetition #VoiceOfRITU #LiveTheExperience",
+        "location": "RIT",
+        "instagram": "https://www.instagram.com/share/p/_onFoGJHd",
+        "url": "https://www.yepdesk.com/embed/open-register/68e1261046e0fb000151fc07/2dg2j7ig8",
+        "contact": [
+            {
+                "name": "Gangothri",
+                "number": "8078116828"
+            },
+            {
+                "name": "Arjun",
+                "number": "8078252861"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-05T09:26:04.492Z"
+    }, {
+        "image": "/posters/competition/start-of-ritu.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Start Of RITU",
+        "description": "The most awaited hunt for talent, creativity, and personality is here!\nSTAR OF RITU is more than just a competition — it’s your stage to showcase originality, confidence, communication skills, and awareness.\n\nRegister now at: ritu25.live\n\nContact:\nAminu: 9497318294\nSougandh: 7012027288\n\n#RITU25 #StarOfRITU #TalentHunt #BeTheStar #RITU25Events",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e146e346e0fb0001525d9f/5qmo8bvrqf",
+        "contact": [
+            {
+                "name": "Aminu",
+                "number": "9497318294"
+            },
+            {
+                "name": "Sougandh",
+                "number": "7012027288"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-05T09:26:04.492Z"
+    }, {
+        "image": "/posters/competition/clue-quest.webp",
+        "date": "2025-10-19T00:00:00+05:30",
+        "title": "Clue Quest",
+        "description": "RITU 2025 presents — Clue Quest: The Crime Scene Investigation Challenge\n\nAre you ready to step into the shoes of a forensic investigator?\nTest your observation, logic, and detective skills as you piece together evidence, analyze clues, and crack the case before time runs out!\n\nRegister now at: ritu25.live\n\nContact:\nPrajul: 85905 39461\nAthulya: 96057 87220\n\n#RITU25 #ClueQuest #CSIChallenge #DetectiveMode #RITU25Events",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e128c746e0fb000152028b/7imnqbijps",
+        "contact": [
+            {
+                "name": "Prajul",
+                "number": "8590539461"
+            },
+            {
+                "name": "Athulya",
+                "number": "9605787220"
+            }
+        ],
+        "endDate": "2025-10-19T00:00:00+05:30",
+        "badge": "competition",
+        "createdDate": "2025-10-05T09:26:04.492Z"
     }
 ];
 
