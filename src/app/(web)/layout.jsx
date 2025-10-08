@@ -3,7 +3,7 @@ import "../globals.css";
 import "../app.css";
 import Background from "@/components/background";
 import {Analytics} from "@vercel/analytics/next";
-import NotFoundPage from "@/app/not-found-page";
+import NotFound from "@/app/not-found";
 
 
 const poppins = Poppins({
@@ -34,7 +34,7 @@ export default function RootLayout({children}) {
         return <>
             <Background/>
 
-            <NotFoundPage/>
+            <NotFound/>
         </>
     }
 

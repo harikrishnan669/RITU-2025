@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function NotFoundPage() {
+export default function NotFound() {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-0">
+        <div className="w-full h-screen bg-black flex flex-col md:flex-row items-center justify-center px-4 md:px-0">
             <div className="flex flex-col items-center md:items-start md:ml-20">
                 <p className="text-[3rem] md:text-[6rem] text-white text-center md:text-left">
                     ERROR
