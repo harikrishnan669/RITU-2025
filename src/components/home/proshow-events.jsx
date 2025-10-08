@@ -37,7 +37,9 @@ export default function ProshowEvents() {
                         swiperRef.current = swiper;
                     }}
                     loop={true}
-                    autoplay={true}
+                    autoplay={{
+                        delay: 15000,
+                    }}
                     effect="slide"
                     navigation
                     modules={[Navigation, Autoplay]}
@@ -50,6 +52,7 @@ export default function ProshowEvents() {
                         },
                         1024: {
                             slidesPerView: 3,
+                            // slidesPerView: 1,
                         },
                     }}
                     onSlideChange={(swiper) => {
