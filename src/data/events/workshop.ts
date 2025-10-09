@@ -222,8 +222,8 @@ const WORKSHOPS = [
         "image": "/posters/workshops/photo.webp",
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Photography workshop",
-        "description": "Photography workshop\nAr. Antony Joby\n\n19/10/2025\n9 am to 12 pm\nVenue : Department Of Architecture \nIntake : 30\nRegistration fee : 200/-\n\nContact \nAdhithyan Shaju \n9446707168",
-        "location": "RIT",
+        "description": "Photography workshop\nAr. Antony Joby\n\n19/10/2025\n9 am to 12 pm\nVenue : Department Of Architecture\nRegistration fee : 200/-\n\nContact \nAdhithyan Shaju \n9446707168",
+        "location": "Department Of Architecture",
         "url": "https://www.yepdesk.com/embed/open-register/68e79d0746e0fb00016e310e/f2klngf519",
         "contact": [
             {
@@ -237,13 +237,13 @@ const WORKSHOPS = [
         "image": "/posters/workshops/live-sketch.webp",
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Live sketching",
-        "description": "Live sketching \n\nAnuchand  Ram S\nArt Director at Carmond Infinity (Animation Studio)\n\n17/10/25\n1pm to 4 pm\nVenue: Department Of Architecture \nIntake 30\nReg fee : 150/-\n\nContact \nShamooda \n9539520341",
-        "location": "RIT",
+        "description": "Live sketching \n\nAnuchand  Ram S\nArt Director at Carmond Infinity (Animation Studio)\n\n17/10/25\n1pm to 4 pm\nVenue: Department Of Architecture\nReg fee : 200/-\n\nContact \nShamooda \n9539520341",
+        "location": "Department Of Architecture",
         "url": "https://www.yepdesk.com/embed/open-register/68e79e2446e0fb00016e3967/np37cr1fft",
         "contact": [
             {
-                "name": "Adhithyan Shaju ",
-                "number": "9446707168"
+                "name": "Shamooda",
+                "number": "9539520341"
             }
         ],
         "endDate": "2025-10-17T00:00:00+05:30",
@@ -253,12 +253,12 @@ const WORKSHOPS = [
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Model Making",
         "description": "Model making \nAr. Ashik Suresh\n\n17/10/2025\n9 am to 12 pm\nVenue : Department Of Architecture \nIntake : 30\nRegistration fee : 250/-\n\nContact \nAdhithyan Shaju \n9446707168",
-        "location": "RIT",
+        "location": "Department Of Architecture",
         "url": "https://www.yepdesk.com/embed/open-register/68e79ee946e0fb00016e3cae/ttc4mlii46",
         "contact": [
             {
-                "name": "Adhithyan Shaju ",
-                "number": "9446707168"
+                "name": "Athulya",
+                "number": "8921129010"
             }
         ],
         "endDate": "2025-10-17T00:00:00+05:30",
