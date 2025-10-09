@@ -218,7 +218,74 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-17T00:00:00+05:30",
         "createdDate": "2025-10-09T12:38:32.558Z"
+    }, {
+        "image": "/posters/workshops/photo.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Photography workshop",
+        "description": "Photography workshop\nAr. Antony Joby\n\n19/10/2025\n9 am to 12 pm\nVenue : \nIntake : 30\nRegistration fee : 200/-\n\nContact \nAdhithyan Shaju \n9446707168",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e79d0746e0fb00016e310e/f2klngf519",
+        "contact": [
+            {
+                "name": "Adhithyan Shaju ",
+                "number": "9446707168"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "createdDate": "2025-10-09T12:44:12.616Z"
+    }, {
+        "image": "/posters/workshops/live-sketch.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Live sketching",
+        "description": "Live sketching \n\nAnuchand  Ram S\nArt Director at Carmond Infinity (Animation Studio)\n\n17/10/25\n1pm to 4 pm\nVenue Arch dept \nIntake 30\nReg fee : 150/-\n\nContact \nShamooda \n9539520341",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e79e2446e0fb00016e3967/np37cr1fft",
+        "contact": [
+            {
+                "name": "Adhithyan Shaju ",
+                "number": "9446707168"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "createdDate": "2025-10-09T12:44:12.616Z"
+    }, {
+        "image": "/posters/workshops/model-making.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Model Making",
+        "description": "Model making \nAr. Aashik Suresh\n\n17/10/2025\n9 am to 12 pm\nVenue : \nIntake : 30\nRegistration fee : 250/-\n\nContact \nAdhithyan Shaju \n9446707168",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e79ee946e0fb00016e3cae/ttc4mlii46",
+        "contact": [
+            {
+                "name": "Adhithyan Shaju ",
+                "number": "9446707168"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "createdDate": "2025-10-09T12:44:12.616Z"
     }
 ];
+
+/*
+{
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Robotic Arm",
+        "description": "Build, program, and control the future of automation!\nJoin us for the Robotic Arm Workshop and get hands-on experience designing and operating robotic mechanisms.\nUnderstand the fundamentals of movement control, sensors, and electronic interfacing that power today’s robots.\n\nSpeaker:\nAlex Chako\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹100\n\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAdithya: 9946538552\nAnu Krishna: 6238796438\n\n#RITU25 #Robotics #Automation #ElectronicsEngineering #Innovation #Technology #RITKottayam #HandsOnLearning",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e7996246e0fb00016e26c2/sl7l2jaf7t",
+        "contact": [
+            {
+                "name": "Adithya",
+                "number": "9946538552"
+            },
+            {
+                "name": " Anu Krishna",
+                "number": "6238796438"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "createdDate": "2025-10-09T12:38:32.558Z"
+    }
+ */
 
 export default WORKSHOPS
