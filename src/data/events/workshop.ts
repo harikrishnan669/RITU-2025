@@ -49,7 +49,8 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-09T05:46:06.950Z",
-        instagram: "https://www.instagram.com/share/p/BA99VSp155"
+        instagram: "https://www.instagram.com/share/p/BA99VSp155",
+        url: "https://www.yepdesk.com/embed/open-register/68e54a6646e0fb0001623a04/beeumnr1ip"
     }
 ];
 
