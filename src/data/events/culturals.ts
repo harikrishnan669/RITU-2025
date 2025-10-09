@@ -7,6 +7,8 @@ const CULTURALS: IEventData[] = [
         "title": "Be The Sound Of RITU",
         "description": "RITU 25 is calling all performers to the Informals Stage!\n\nGet ready to set the vibe and own the spotlight! The Informals Stage at RITU 25 is open for all artists — singers, dancers, musicians, and performers from outside RIT too. Bring your energy, your art, and your rhythm — and make the crowd groove to your beat!\n\nContact:\nPrabhav: 9747150277\nGamirel: 8547538289\n\n#RITU25 #InformalsStage #OpenCall #PerformAtRITU #RITKottayam #CulturalFest #ArtistsUnite #RITU25Live",
         "location": "RIT",
+        instagram: "https://www.instagram.com/share/p/BAYRNymtDR",
+        url: "https://bit.ly/informals_call_ritu25",
         "contact": [
             {
                 "name": "Prabhav",
@@ -21,5 +23,21 @@ const CULTURALS: IEventData[] = [
         "createdDate": "2025-10-09T18:26:59.526Z"
     }
 ]
+
+/*
+https://www.instagram.com/share/p/BAYRNymtDR
+
+RITU 25 is calling all performers to the Informals Stage!
+
+Get ready to set the vibe and own the spotlight! The Informals Stage at RITU 25 is open for all artists — singers, dancers, musicians, and performers from outside RIT too. Bring your energy, your art, and your rhythm — and make the crowd groove to your beat!
+
+Register Now: https://bit.ly/informals_call_ritu25
+
+Contact:
+Prabhav: 9747150277
+Gamirel: 8547538289
+
+#RITU25 #InformalsStage #OpenCall #PerformAtRITU #RITKottayam #CulturalFest #ArtistsUnite #RITU25Live
+ */
 
 export default CULTURALS;
