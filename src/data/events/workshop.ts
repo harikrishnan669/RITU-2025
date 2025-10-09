@@ -201,9 +201,9 @@ const WORKSHOPS = [
         "endDate": "2025-10-17T00:00:00+05:30"
     }, {
         "image": "/posters/workshops/robotic-arm.webp",
-        "date": "2025-10-17T00:00:00+05:30",
+        "date": "2025-10-19T00:00:00+05:30",
         "title": "Robotic Arm",
-        "description": "Build, program, and control the future of automation!\nJoin us for the Robotic Arm Workshop and get hands-on experience designing and operating robotic mechanisms.\nUnderstand the fundamentals of movement control, sensors, and electronic interfacing that power today’s robots.\n\nSpeaker:\nAlex Chako\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹100\n\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAdithya: 9946538552\nAnu Krishna: 6238796438\n\n#RITU25 #Robotics #Automation #ElectronicsEngineering #Innovation #Technology #RITKottayam #HandsOnLearning",
+        "description": "Build, program, and control the future of automation!\nJoin us for the Robotic Arm Workshop and get hands-on experience designing and operating robotic mechanisms.\nUnderstand the fundamentals of movement control, sensors, and electronic interfacing that power today’s robots.\n\nSpeaker:\nAlex Chako\n\nDate: 19 October\nVenue: Rit Kottayam\nRegistration Fee: ₹100\n\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAdithya: 9946538552\nAnu Krishna: 6238796438\n\n#RITU25 #Robotics #Automation #ElectronicsEngineering #Innovation #Technology #RITKottayam #HandsOnLearning",
         "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68e7996246e0fb00016e26c2/sl7l2jaf7t",
         "contact": [
@@ -216,7 +216,7 @@ const WORKSHOPS = [
                 "number": "6238796438"
             }
         ],
-        "endDate": "2025-10-17T00:00:00+05:30",
+        "endDate": "2025-10-19T00:00:00+05:30",
         "createdDate": "2025-10-09T12:38:32.558Z"
     }, {
         "image": "/posters/workshops/photo.webp",
