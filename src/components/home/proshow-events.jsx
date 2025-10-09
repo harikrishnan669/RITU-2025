@@ -22,8 +22,12 @@ export default function ProshowEvents() {
         <>
             <section
                 className="w-full h-full py-20 overflow-x-hidden  min-h-[40rem] flex flex-col items-center justify-between ">
-                <Header title="Headliners" id="proshows"/>
-
+                <Header title="Headliners" id="proshows" className="mb-5"/>
+                <p className="text-center mb-20">
+                    Click on the
+                    <span className="highlighted-text text-black">posters</span>
+                    to know more!
+                </p>
                 <Swiper
                     className="mySwiper"
                     style={{
@@ -64,10 +68,10 @@ export default function ProshowEvents() {
                     }}
                 >
                     {PROSHOWS.map((temp, i) => {
-                        // TODO: Thattikootte... Needed to show Job Kurian first on mobile and second on desktop, so did this.
-                        const item = isMobile ? PROSHOWS[(i + 1) % PROSHOWS.length] : temp;
+                            // TODO: Thattikootte... Needed to show Job Kurian first on mobile and second on desktop, so did this.
+                            const item = isMobile ? PROSHOWS[(i + 1) % PROSHOWS.length] : temp;
 
-                        return <SwiperSlide
+                            return <SwiperSlide
                                 key={i}
                                 className="w-full flex justify-center items-center z-30"
                                 style={{

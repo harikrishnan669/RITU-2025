@@ -33,7 +33,7 @@ export default function EventsListing() {
     }, []);
 
     return <section className="container-cont mt-5">
-        <Header title="Events" id="events"/>
+        <Header title="Events" id="events" className="mb-5"/>
         <div>
             <p className="text-center">Click the<span
                 className="highlighted-text text-black">tickets</span> to know more </p>
