@@ -163,6 +163,61 @@ const WORKSHOPS = [
         "endDate": "2025-10-17T00:00:00+05:30",
         "club": "IEDC",
         "createdDate": "2025-10-09T09:42:23.999Z"
+    }, {
+        "image": "/posters/workshops/sketchup.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Sketch Up",
+        "description": "Bring your design ideas to life in 3D!\nJoin us for an engaging SketchUp Workshop and learn how to create realistic architectural models and visualizations with ease.\nMaster the tools and techniques that make SketchUp an essential skill for every aspiring civil engineer and designer.\n\nSpeaker:\nSiju Varghese\nCivil Facilitator, CADD Centre\n\nDate: 18 October\nVenue: Rit Kottayam\nRegistration Fee: ₹199\n\nActivity Points: Up to 40 points\n\nRegister at: ritu25.live\n\nFor Queries:\nMalvika: 8590311617\nSreelakshmi: 8089838583\n\n#RITU25 #SketchUp #3DModeling #CivilEngineering #CADD #DesignWorkshop #RITKottayam #HandsOnLearning",
+        "location": "Online",
+        "url": "https://www.yepdesk.com/embed/open-register/68e791d846e0fb00016e11f9/2rfea914u8",
+        "contact": [
+            {
+                "name": "Malvika",
+                "number": "8590311617"
+            },
+            {
+                "name": "Sreelakshmi",
+                "number": "8089838583"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30"
+    }, {
+        "image": "/posters/workshops/bim.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "BIM",
+        "description": "Step into the future of construction technology!\nJoin us for the BIM Workshop and learn how Building Information Modeling is transforming design, planning, and execution in civil engineering.\nGain industry insights and practical skills from an expert in digital construction solutions.\n\nSpeaker:\nRijo K John\nTechnical Head, CADBIM Centre\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹149\n\nActivity Points: Up to 40 points\n\nRegister at: ritu25.live\n\nFor Queries:\nNiveditha: 9037268821\nSandra: 6282239101\n\n#RITU25 #BIM #CivilEngineering #CADBIM #ConstructionTechnology #DesignInnovation #RITKottayam #HandsOnLearning",
+        "location": "Online",
+        "url": "https://www.yepdesk.com/embed/open-register/68e794db46e0fb00016e1b1c/66v92143si",
+        "contact": [
+            {
+                "name": "Niveditha",
+                "number": "9037268821"
+            },
+            {
+                "name": "Sandra",
+                "number": "6282239101"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30"
+    }, {
+        "image": "/posters/workshops/robotic-arm.webp",
+        "date": "2025-10-17T00:00:00+05:30",
+        "title": "Robotic Arm",
+        "description": "Build, program, and control the future of automation!\nJoin us for the Robotic Arm Workshop and get hands-on experience designing and operating robotic mechanisms.\nUnderstand the fundamentals of movement control, sensors, and electronic interfacing that power today’s robots.\n\nSpeaker:\nAlex Chako\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹100\n\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAdithya: 9946538552\nAnu Krishna: 6238796438\n\n#RITU25 #Robotics #Automation #ElectronicsEngineering #Innovation #Technology #RITKottayam #HandsOnLearning",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e7996246e0fb00016e26c2/sl7l2jaf7t",
+        "contact": [
+            {
+                "name": "Adithya",
+                "number": "9946538552"
+            },
+            {
+                "name": " Anu Krishna",
+                "number": "6238796438"
+            }
+        ],
+        "endDate": "2025-10-17T00:00:00+05:30",
+        "createdDate": "2025-10-09T12:38:32.558Z"
     }
 ];
 
