@@ -36,7 +36,7 @@ const WORKSHOPS = [
         "date": "2025-10-18T00:00:00+05:30",
         "title": "Solar Power Plant And EV Charging",
         "description": "Get charged up for the future of sustainable energy!\nJoin us for a hands-on workshop that explores the fascinating world of solar power plants and EV charging systems.\nLearn how renewable energy meets next-generation mobility — from solar generation and storage to real-world charging infrastructure and design insights.\n\nSpeaker:\nAbhinav Rajeev\nDirector, Bumblebee Pvt Ltd\nIIT Palakkad\n\nDate: 18 October\nVenue: RIT Kottayam\n\nRegistration Fee: ₹500\n\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nDevika: 7592073427\nHana: 9946820637\n\n#RITU25 #SolarWorkshop #EVCharging #CleanEnergy #GreenTech #SustainableEngineering #RITKottayam #HandsOnLearning",
-        "location": "Online",
+        "location": "RIT",
         "contact": [
             {
                 "name": "Devika",
