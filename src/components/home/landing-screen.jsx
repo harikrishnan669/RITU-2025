@@ -49,11 +49,11 @@ export default function LandingScreen() {
                             </div>
                             <Link href="/tickets">
                                 <div
-                                    className="animate-pulse relative overflow-visible text-xl font-semibold flex items-center gap-4 max-sm:text-lg">
+                                    className="animate-pulse relative overflow-visible text-xl font-semibold flex items-center gap-4 max-sm:text-md">
                                     Grab your
                                     <div>
                                         <img src="/ticket.webp" alt="Ticket image"
-                                             className="h-[90px] max-sm:h-[30px]"/>
+                                             className="h-[90px] max-sm:h-[50px]"/>
                                     </div>
                                 </div>
                             </Link>
