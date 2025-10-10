@@ -341,6 +341,26 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-10T18:28:00.380Z"
+    }, {
+        "image": "/posters/workshops/revit.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Revit",
+        "description": "Design smarter with the power of BIM!\nJoin us for the Revit Workshop and learn how to create intelligent 3D building models that integrate design and documentation.\nExplore professional workflows and collaborative design techniques used across the civil engineering and architecture industries.\n\nSpeaker:\nShijin Titus\nCivil Facilitator, CADD Centre, Kottayam\n\nDate: 18 October\nVenue: Rit Kottayam\nRegistration Fee: ₹199\n\nActivity Points: Up to 40 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAnakha: 9567060531\nAiswarya: 9072858595\n\n#RITU25 #Revit #BIM #CivilEngineering #Architecture #CADD #DesignInnovation #RITKottayam #HandsOnLearning",
+        "location": "RIT",
+        "instagram": "https://www.instagram.com/share/p/BAOag00M_1",
+        "url": "https://www.yepdesk.com/embed/open-register/68e7907c46e0fb00016e0d8b/97mr5inj7j",
+        "contact": [
+            {
+                "name": "Anakha ",
+                "number": "9567060531"
+            },
+            {
+                "name": "Aiswarya",
+                "number": "9072858595"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "createdDate": "2025-10-10T18:28:00.380Z"
     }
 ];
 
