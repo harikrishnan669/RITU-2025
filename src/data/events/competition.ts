@@ -319,7 +319,7 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "date": "2025-10-19T00:00:00+05:30",
         "title": "Drone Racing",
         "description": "RITU 25 presents — Drone Racing\n\nExperience the thrill of flight and the rush of precision as drones soar, twist, and race through the air. Showcase your control, speed, and skill as you navigate through an intense aerial challenge where every second counts.\n\nRegister now: ritu25.live\n\nContacts:\nNishal: 9562210993\nAdarsh: 8157918112\n\n#RITU25 #DroneRacing #AerialShowdown #TechBattle #RITU25Events",
-        "location": "Online",
+        "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68e353e246e0fb00015947e1/5j4fh8a6it",
         "contact": [
             {
