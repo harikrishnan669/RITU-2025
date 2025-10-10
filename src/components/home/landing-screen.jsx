@@ -1,6 +1,7 @@
 import BoxReveal from "@/components/magicui/box-reveal";
 import Wave from "@/components/wave/wave";
 import SOCIALS from "@/data/socials";
+import Link from "next/link";
 
 export default function LandingScreen() {
     return (
@@ -14,7 +15,8 @@ export default function LandingScreen() {
                     </BoxReveal>
                 </div>
                 <div className="flex items-center justify-center w-full relative max-sm:order-1">
-                    <img src="/ritu-ballon.png" draggable={false} className="select-none sm:hidden relative z-1 w-[90%]" alt="RITU 3D Logo"/>
+                    <img src="/ritu-ballon.png" draggable={false} className="select-none sm:hidden relative z-1 w-[90%]"
+                         alt="RITU 3D Logo"/>
                     <div
                         className="w-full h-fit p-0 text-[15vw]/[1] flex justify-between font-bold text-center blur-lg max-sm:blur-xs max-sm:hidden"
                     >
@@ -28,7 +30,8 @@ export default function LandingScreen() {
                         <span>V</span>
                     </div>
                 </div>
-                <div className="flex w-full justify-between items-center max-sm:order-3 max-sm:items-center max-sm:mt-4">
+                <div
+                    className="flex w-full justify-between items-center max-sm:order-3 max-sm:items-center max-sm:mt-4">
                     <div className="max-w-[400px] space-y-3 max-sm:max-w-full max-sm:w-full max-sm:text-center">
                         <Wave/>
 
@@ -44,12 +47,16 @@ export default function LandingScreen() {
                                 Kottayam,
                                 Where innovation meets celebration.
                             </div>
-                            <div className="relative overflow-visible text-xl font-semibold flex items-center gap-4 max-sm:text-lg">
-                                Grab your
-                                <div>
-                                    <img src="/ticket.webp" alt="Ticket image" className="h-[90px] max-sm:h-[30px]"/>
+                            <Link href="/tickets">
+                                <div
+                                    className="animate-pulse relative overflow-visible text-xl font-semibold flex items-center gap-4 max-sm:text-lg">
+                                    Grab your
+                                    <div>
+                                        <img src="/ticket.webp" alt="Ticket image"
+                                             className="h-[90px] max-sm:h-[30px]"/>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </BoxReveal>
                     </div>
 
