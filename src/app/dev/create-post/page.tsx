@@ -21,7 +21,7 @@ export default function EventDataBuilder() {
         date: "",
         title: "",
         description: "",
-        location: "Online",
+        location: "RIT",
         createdDate: new Date().toISOString(),
     })
 
