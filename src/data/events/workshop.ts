@@ -326,29 +326,23 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-10T18:28:00.380Z"
+    }, {
+        "image": "/posters/workshops/thread-art.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Thread Art",
+        "description": "Thread art\nAr. Bhuvaneshwar \n\n18/10/2025\n9 am to 4 pm\nVenue : Arch dept\nRegistration fee : 250/-\n\nContact \nShahid Irfan\n8848727791",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e9513746e0fb0001740606/a2q08gktc6",
+        "contact": [
+            {
+                "name": "Shahid Irfan",
+                "number": "8848727791"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "createdDate": "2025-10-10T18:28:00.380Z"
     }
 ];
 
-/*
-{
-        "date": "2025-10-17T00:00:00+05:30",
-        "title": "Robotic Arm",
-        "description": "Build, program, and control the future of automation!\nJoin us for the Robotic Arm Workshop and get hands-on experience designing and operating robotic mechanisms.\nUnderstand the fundamentals of movement control, sensors, and electronic interfacing that power today’s robots.\n\nSpeaker:\nAlex Chako\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹100\n\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAdithya: 9946538552\nAnu Krishna: 6238796438\n\n#RITU25 #Robotics #Automation #ElectronicsEngineering #Innovation #Technology #RITKottayam #HandsOnLearning",
-        "location": "RIT",
-        "url": "https://www.yepdesk.com/embed/open-register/68e7996246e0fb00016e26c2/sl7l2jaf7t",
-        "contact": [
-            {
-                "name": "Adithya",
-                "number": "9946538552"
-            },
-            {
-                "name": " Anu Krishna",
-                "number": "6238796438"
-            }
-        ],
-        "endDate": "2025-10-17T00:00:00+05:30",
-        "createdDate": "2025-10-09T12:38:32.558Z"
-    }
- */
 
 export default WORKSHOPS
