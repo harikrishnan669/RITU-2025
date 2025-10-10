@@ -296,6 +296,36 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-19T00:00:00+05:30",
         "createdDate": "2025-10-10T16:42:53.112Z"
+    }, {
+        "image": "/posters/workshops/origami.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Origami",
+        "description": "Fold your imagination into form!\nExperience the delicate art of paper folding in our Origami Workshop, where geometry meets creativity. Learn to transform simple sheets into intricate structures guided by a passionate artist.\n\nSpeaker: Vishwa Rajesh, Artist & Co-founder, KagazeeIndia\nDate: 18 October\nVenue: Rit Kottayam\nRegistration Fee: ₹250\n\nActivity Points will be awarded\n\nRegister at: ritu25.live\n\nFor Queries:\nAslesha – 8590820084\n\n#RITU25 #OrigamiArt #DesignThroughFolds #ArchitectureInMotion #PaperCraft #RITKottayam",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e94d4e46e0fb000173de59/4er3fbhu6h",
+        "contact": [
+            {
+                "name": "Aslesha ",
+                "number": "8590820084"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "createdDate": "2025-10-10T18:28:00.380Z"
+    }, {
+        "image": "/posters/workshops/clay.webp",
+        "date": "2025-10-18T00:00:00+05:30",
+        "title": "Clay Modeling ",
+        "description": "Unleash your creativity through the art of clay!\nJoin us for a hands-on Clay Modeling Workshop where you’ll learn the fundamentals of shaping, sculpting, and bringing ideas to life in three dimensions. Dive into texture, proportion, and expression under expert guidance.\n\nSpeaker: Abhishek VS, Clay Artist and Student Architect, Avani Institute of Design, Calicut\nDate: 18 October\nVenue: Rajiv Gandhi Institute of Technology, Kottayam\nRegistration Fee: ₹450\n\nActivity Points will be awarded\n\nRegister at: ritu25.live\n\nFor Queries:\nSmriti Sushil Kumar – 8369104481\n\n#RITU25 #ClayModeling #HandsOnArt #ArchitectureWorkshop #DesignInAction #RITKottayam",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e94e4f46e0fb000173e136/rl7tmnk7ok",
+        "contact": [
+            {
+                "name": "Smriti Sushil Kumar",
+                "number": "8369104481"
+            }
+        ],
+        "endDate": "2025-10-18T00:00:00+05:30",
+        "createdDate": "2025-10-10T18:28:00.380Z"
     }
 ];
 
