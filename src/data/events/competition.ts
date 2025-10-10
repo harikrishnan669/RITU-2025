@@ -334,6 +334,63 @@ A coding twist to the spirit of Onam, as part of RITU’25
         "endDate": "2025-10-19T00:00:00+05:30",
         "badge": "competition",
         "createdDate": "2025-10-06T05:55:33.780Z"
+    }, {
+        "image": "/posters/competition/meme-war.webp",
+        "date": "2025-10-12T05:30:00+05:30",
+        "title": "Memewar",
+        "description": "RITU 25 presents — Meme War\n\nUnleash your creativity and wit in the ultimate Meme War! Create hilarious, relatable, and viral memes that capture the spirit of RITU 25. Whether it’s tech, culture, or college life, your meme could be the next big hit!\n\nRegister now at: ritu25.live\n\nContact:\nManu: 85905 15818\nMelvin: 82817 0906\n\n#RITU25 #MemeWar #MemeCompetition #ViralHumor #RITU25Events",
+        "url": "https://www.yepdesk.com/embed/open-register/68e9064446e0fb0001730055/lnnca0cibs",
+        "contact": [
+            {
+                "name": "Manu",
+                "number": "8590515818"
+            },
+            {
+                "name": "Melvin",
+                "number": "828170906"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "2025-10-15T05:30:00+05:30",
+        "createdDate": "2025-10-11T00:35:47+05:30"
+    }, {
+        "image": "/posters/competition/speed-typing.webp",
+        "date": "2025-10-12T05:30:00+05:30",
+        "title": "Speed typing",
+        "description": "RITU 25 presents — Speed Typing Challenge\n\nHow fast can your fingers fly? Test your typing speed and accuracy in the ultimate Speed Typing Challenge at RITU 25. Whether you’re a coding whiz or just love to type, this is your chance to showcase your skills and compete for glory.\n\nRegister now at: ritu25.live\n\nContact:\nAlvina: 9037510990\nSaira: 91888 69060\n\n#RITU25 #SpeedTyping #TypingChallenge #FastFingers #RITU25Events",
+        "url": "https://www.yepdesk.com/embed/open-register/68e9057746e0fb000172fe83/uf372v8pv2",
+        "contact": [
+            {
+                "name": "Alvina",
+                "number": "9037510990"
+            },
+            {
+                "name": "Saira",
+                "number": "91888 69060"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "2025-10-12T05:30:00+05:30",
+        "createdDate": "2025-10-11T00:20:36+05:30"
+    }, {
+        "image": "/posters/competition/stumble-guys.webp",
+        "date": "2025-10-14T05:30:00+05:30",
+        "title": "Stumble guys",
+        "description": "RITU 25 presents — Stumble Guys Tournament\n\nGet ready to stumble",
+        "url": "https://www.yepdesk.com/embed/open-register/68e907e046e0fb00017303d1/1hfdj7paht",
+        "contact": [
+            {
+                "name": "Ameen",
+                "number": "+918078566470"
+            },
+            {
+                "name": "Sooraj",
+                "number": "9744161354"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "2025-10-14T05:30:00+05:30",
+        "createdDate": "2025-10-11T00:40:12+05:30"
     }
 ];
 
