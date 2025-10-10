@@ -31,7 +31,7 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-07T16:43:59.139Z"
-    },{
+    }, {
         "image": "/posters/workshops/solar-ev.webp",
         "date": "2025-10-18T00:00:00+05:30",
         "title": "Solar Power Plant And EV Charging",
@@ -281,6 +281,21 @@ const WORKSHOPS = [
         "location": "RIT",
         "endDate": "2025-10-17T05:30:00+05:30",
         "createdDate": "2025-10-09T12:44:12.616Z"
+    }, {
+        "image": "/posters/workshops/sculpture.webp",
+        "date": "2025-10-19T00:00:00+05:30",
+        "title": "Sculpture ",
+        "description": "Immerse yourself in the art of form and expression!\nJoin us for a creative and hands-on Sculpture Workshop, where you’ll explore the techniques and processes behind crafting lifelike sculptures. Discover how structure, proportion, and creativity blend to bring artistic visions to life under expert guidance.\n\nSpeakers:\nVineeth Aala – Architect, Made by Aala\nRajesh Raberi – Artist, Made by Aala\n\nDate: 19 October\nVenue: Rit Kottayam\nRegistration Fee: ₹400\n\nActivity Points will be awarded\n\nRegister at: ritu25.live\n\nFor Queries:\nMartin Dominic – 7306392522\n\n#RITU25 #SculptureWorkshop #Architecture #ArtAndDesign #CreativeLearning #HandsOnWorkshop #RITKottayam",
+        "location": "RIT",
+        "url": "https://www.yepdesk.com/embed/open-register/68e92f6a46e0fb00017386b3/bsuja5r382",
+        "contact": [
+            {
+                "name": "Martin Dominic",
+                "number": "7306392522"
+            }
+        ],
+        "endDate": "2025-10-19T00:00:00+05:30",
+        "createdDate": "2025-10-10T16:42:53.112Z"
     }
 ];
 
