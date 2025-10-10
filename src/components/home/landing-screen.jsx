@@ -44,7 +44,7 @@ export default function LandingScreen() {
                                 Kottayam,
                                 Where innovation meets celebration.
                             </div>
-                            <div className="text-xl font-semibold flex items-center gap-4 max-sm:text-lg">
+                            <div className="relative overflow-visible text-xl font-semibold flex items-center gap-4 max-sm:text-lg">
                                 Grab your
                                 <div>
                                     <img src="/ticket.webp" alt="Ticket image" className="h-[90px] max-sm:h-[30px]"/>

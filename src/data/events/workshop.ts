@@ -263,6 +263,24 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-17T00:00:00+05:30",
         "createdDate": "2025-10-09T12:44:12.616Z"
+    }, {
+        "image": "/posters/workshops/concrete.webp",
+        "date": "2025-10-17T05:30:00+05:30",
+        "title": "CONCRETE MIX DESIGN",
+        "description": "Step into the foundations of civil engineering!\nJoin us for an in-depth workshop on Concrete Mix Design, where you’ll explore the principles behind designing durable, efficient, and sustainable concrete mixtures. Learn from experienced experts and gain practical knowledge on optimizing materials for real-world applications.\n\nSpeakers:\nDr Dhanya B S\nShikha Ravi M P\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹499\n\nActivity Points: Up to 56 points\n\nRegister at: ritu25.live\n\nFor Queries:\nAnna John: 8714947902\nSandra: 6282239101\n\n#RITU25 #ConcreteDesign #CivilEngineering #MaterialScience #EngineeringWorkshop #HandsOnLearning #RITKottayam",
+        "url": "https://www.yepdesk.com/embed/open-register/68e8925146e0fb000171e00e/946ol4q0a1",
+        "contact": [
+            {
+                "name": "Anna John",
+                "number": "8714947902"
+            }, {
+                "name": "Sandra",
+                "number": "6282239101"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "2025-10-17T05:30:00+05:30",
+        "createdDate": "2025-10-09T12:44:12.616Z"
     }
 ];
 
