@@ -168,7 +168,7 @@ const WORKSHOPS = [
         "date": "2025-10-18T00:00:00+05:30",
         "title": "Sketch Up",
         "description": "Bring your design ideas to life in 3D!\nJoin us for an engaging SketchUp Workshop and learn how to create realistic architectural models and visualizations with ease.\nMaster the tools and techniques that make SketchUp an essential skill for every aspiring civil engineer and designer.\n\nSpeaker:\nSiju Varghese\nCivil Facilitator, CADD Centre\n\nDate: 18 October\nVenue: Rit Kottayam\nRegistration Fee: ₹199\n\nActivity Points: Up to 40 points\n\nRegister at: ritu25.live\n\nFor Queries:\nMalvika: 8590311617\nSreelakshmi: 8089838583\n\n#RITU25 #SketchUp #3DModeling #CivilEngineering #CADD #DesignWorkshop #RITKottayam #HandsOnLearning",
-        "location": "Online",
+        "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68e791d846e0fb00016e11f9/2rfea914u8",
         "contact": [
             {
@@ -186,7 +186,7 @@ const WORKSHOPS = [
         "date": "2025-10-17T00:00:00+05:30",
         "title": "BIM",
         "description": "Step into the future of construction technology!\nJoin us for the BIM Workshop and learn how Building Information Modeling is transforming design, planning, and execution in civil engineering.\nGain industry insights and practical skills from an expert in digital construction solutions.\n\nSpeaker:\nRijo K John\nTechnical Head, CADBIM Centre\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹149\n\nActivity Points: Up to 40 points\n\nRegister at: ritu25.live\n\nFor Queries:\nNiveditha: 9037268821\nSandra: 6282239101\n\n#RITU25 #BIM #CivilEngineering #CADBIM #ConstructionTechnology #DesignInnovation #RITKottayam #HandsOnLearning",
-        "location": "Online",
+        "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68e794db46e0fb00016e1b1c/66v92143si",
         "contact": [
             {
