@@ -246,7 +246,7 @@ const CIVIL_DEPT: IEventData[] = [
         "image": "/posters/civil/crash-the-box.webp",
         "date": "10/19/2025",
         "title": "Crash The box",
-        "description": "-",
+        "description": "Seismic Structure Challenge - Design and construct a four-story building with limited resources to test its stability and endurance against a simulated earthquake",
         "url": "https://www.yepdesk.com/embed/open-register/68eaa11846e0fb0001781194/epfi0fpfb6",
         "contact": [
             {
@@ -306,7 +306,7 @@ const CIVIL_DEPT: IEventData[] = [
         "image": "/posters/civil/green-print.webp",
         "date": "10/18/2025",
         "title": "Green Print ",
-        "description": "-",
+        "description": "Green Print is a student platform to showcase innovative and sustainable building ideas through creative models.It encourages eco-friendly thinking and futuristic solutions for a better tomorrow.",
         "url": "https://www.yepdesk.com/embed/open-register/68eaa8f346e0fb00017858d7/djnkhd01ku",
         "contact": [
             {
@@ -366,7 +366,7 @@ const CIVIL_DEPT: IEventData[] = [
         "image": "/posters/civil/think-tank.webp",
         "date": "10/19/2025",
         "title": "Think Tank War",
-        "description": "-",
+        "description": "A battle of minds where participants present innovative ideas and strategies to outthink their opponents",
         "url": "https://www.yepdesk.com/embed/open-register/68eaaad646e0fb000178622e/oht47lr4lv",
         "contact": [
             {
@@ -481,6 +481,25 @@ const CIVIL_DEPT: IEventData[] = [
         "location": "Rit",
         "endDate": "10/15/2025",
         "createdDate": "10/12/2025 1:12:21"
+    }, {
+        "image": "/posters/civil/civilography.webp",
+        "date": "10/15/2025",
+        "title": "Civilography",
+        "description": "25 brings you a mobile photography competition \"CIVILOGRAPHY\", that celebrates the art of civil engineering through the lens. It provides a platform for students to capture and showcase the beauty and creativity of structures",
+        "url": "https://www.yepdesk.com/embed/open-register/68eaa7c046e0fb00017853d3/lp56s2bub3",
+        "contact": [
+            {
+                "name": "Jobin p joy",
+                "number": "9778394570"
+            },
+            {
+                "name": "Jijishli s",
+                "number": "8547975769"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/15/2025",
+        "createdDate": "10/12/2025 1:24:09"
     }
 ]
 
