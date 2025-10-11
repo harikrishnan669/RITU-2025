@@ -12,10 +12,10 @@ export default function TestPage() {
             <div className="size-full flex flex-col justify-center max-sm:items-center">
                 <div
                     className="pt-10 flex items-end justify-end space-y-4 text-4xl flex-col max-sm:pt-0 max-sm:order-2 max-sm:text-3xl max-sm:items-center">
-                    <BoxReveal boxColor="#1f8cb7">Best season is</BoxReveal>
-                    <BoxReveal boxColor="#4e9f46">
-                        <div className="font-secondary text-7xl max-sm:text-6xl">Man Made</div>
-                    </BoxReveal>
+                    {/*<BoxReveal boxColor="#1f8cb7">Best season is</BoxReveal>*/}
+                    {/*<BoxReveal boxColor="#4e9f46">*/}
+                    {/*    <div className="font-secondary text-7xl max-sm:text-6xl">Man Made</div>*/}
+                    {/*</BoxReveal>*/}
                 </div>
                 <div className="flex items-center justify-center w-full relative max-sm:order-1">
                     <img src="/ritu-ballon.png" draggable={false} className="select-none sm:hidden relative z-1 w-[90%]"
