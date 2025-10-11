@@ -4,24 +4,13 @@ import {useEffect, useState} from "react"
 import {Button} from "@/components/ui/button"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
 import {Table, TableBody, TableCell, TableHead, TableHeader, TableRow} from "@/components/ui/table"
+import {Checkbox} from "@/components/ui/checkbox"
 import {Copy, RefreshCw} from "lucide-react"
-import {parseEvent} from "@/app/dev/events/utils";
+import {parseEvent} from "./utils"
 import parseCSV from "./parse-csv"
 
-export interface IEventData {
-    /** Date: IST time format */
-    date: string
-    title: string
-    description: string
-    url?: string
-    contact?: { name: string; number: string }[]
-    location: string
-    /** Should be IST Date format */
-    endDate?: string
-    createdDate?: string
-}
 
-interface SheetRow {
+export interface SheetRow {
     timestamp: string
     title: string
     eventDate: string
@@ -35,9 +24,11 @@ interface SheetRow {
     contactNumber2: string
 }
 
+
 export default function EventsPage() {
     const [events, setEvents] = useState<SheetRow[]>([])
     const [loading, setLoading] = useState(true)
+    const [selectedEvents, setSelectedEvents] = useState<Set<number>>(new Set())
 
     const SHEET_ID = "1fq6xNuMKlVVRQeRTMIsxK1LywEFSnIP_uaFjrgcetAA"
     const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`
@@ -45,13 +36,10 @@ export default function EventsPage() {
     const fetchData = async () => {
         setLoading(true)
         try {
-            const response = await fetch(CSV_URL);
-            const csvText = await response.text();
+            const response = await fetch(CSV_URL)
+            const csvText = await response.text()
 
-            console.log("CSV:", csvText)
-
-
-            const rows = parseCSV(csvText);
+            const rows = parseCSV(csvText)
 
             const sortedRows = rows.sort((a, b) => {
                 const dateA = new Date(a.timestamp).getTime()
@@ -60,6 +48,7 @@ export default function EventsPage() {
             })
 
             setEvents(sortedRows)
+            setSelectedEvents(new Set())
         } catch (error) {
             console.error("Error fetching or parsing data:", error)
         } finally {
@@ -69,16 +58,37 @@ export default function EventsPage() {
 
     useEffect(() => {
         fetchData()
-    }, []);
+    }, [])
+
+    const toggleEventSelection = (index: number) => {
+        const newSelected = new Set(selectedEvents)
+        if (newSelected.has(index)) {
+            newSelected.delete(index)
+        } else {
+            newSelected.add(index)
+        }
+        setSelectedEvents(newSelected)
+    }
+
+    const toggleAllEvents = () => {
+        if (selectedEvents.size === events.length) {
+            setSelectedEvents(new Set())
+        } else {
+            setSelectedEvents(new Set(events.map((_, index) => index)))
+        }
+    }
 
     const generateJSON = () => {
-        const parsedEvents: IEventData[] = events.map(event => parseEvent(event));
-        const jsonString = JSON.stringify(parsedEvents, null, 2);
+        const eventsToExport = Array.from(selectedEvents)
+            .sort((a, b) => a - b)
+            .map((index) => parseEvent(events[index]))
+
+        const jsonString = JSON.stringify(eventsToExport, null, 2)
 
         navigator.clipboard
             .writeText(jsonString)
             .then(() => {
-                alert("Event JSON copied to clipboard!")
+                alert(`${eventsToExport.length} event(s) JSON copied to clipboard!`)
             })
             .catch(() => {
                 alert("Failed to copy event JSON")
@@ -93,15 +103,18 @@ export default function EventsPage() {
                         <div className="flex items-center justify-between">
                             <div>
                                 <CardTitle className="text-2xl">Event Data Viewer</CardTitle>
-                                <CardDescription>Data from Google Sheet - Sorted by newest first</CardDescription>
+                                <CardDescription>
+                                    Data from Google Sheet - Sorted by newest first
+                                    {selectedEvents.size > 0 && ` • ${selectedEvents.size} selected`}
+                                </CardDescription>
                             </div>
                             <div className="flex gap-2">
                                 <Button variant="outline" size="icon" onClick={fetchData} disabled={loading}>
                                     <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`}/>
                                 </Button>
-                                <Button onClick={generateJSON} disabled={loading || events.length === 0}>
+                                <Button onClick={generateJSON} disabled={loading || selectedEvents.size === 0}>
                                     <Copy className="mr-2 h-4 w-4"/>
-                                    Copy JSON
+                                    Copy JSON ({selectedEvents.size})
                                 </Button>
                             </div>
                         </div>
@@ -118,6 +131,13 @@ export default function EventsPage() {
                                 <Table>
                                     <TableHeader>
                                         <TableRow>
+                                            <TableHead className="w-12">
+                                                <Checkbox
+                                                    checked={selectedEvents.size === events.length && events.length > 0}
+                                                    onCheckedChange={toggleAllEvents}
+                                                    aria-label="Select all events"
+                                                />
+                                            </TableHead>
                                             <TableHead>Created</TableHead>
                                             <TableHead>Title</TableHead>
                                             <TableHead>Event Date</TableHead>
@@ -133,6 +153,13 @@ export default function EventsPage() {
                                     <TableBody>
                                         {events.map((event, index) => (
                                             <TableRow key={index}>
+                                                <TableCell>
+                                                    <Checkbox
+                                                        checked={selectedEvents.has(index)}
+                                                        onCheckedChange={() => toggleEventSelection(index)}
+                                                        aria-label={`Select ${event.title}`}
+                                                    />
+                                                </TableCell>
                                                 <TableCell className="whitespace-nowrap text-xs">
                                                     {new Date(event.timestamp).toLocaleString()}
                                                 </TableCell>

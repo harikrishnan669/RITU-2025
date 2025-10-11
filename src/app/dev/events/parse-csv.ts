@@ -45,6 +45,7 @@ export default function parseCSV(csvData: string): SheetRow[] {
 
         // Map header → value
         const row: any = {}
+
         headers.forEach((h, idx) => {
             row[h] = values[idx] || ""
         })
