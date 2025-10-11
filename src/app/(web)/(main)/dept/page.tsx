@@ -13,7 +13,7 @@ export default function DeptPage() {
                 <p className="mt-4 text-lg text-center z-10">Welcome to the Department Page. Please select a department to
                     view more details.</p>
             </div>
-            <div className="grid grid-cols-2 gap-10 justify-items-center">
+            <div className="grid grid-cols-2 gap-10 justify-items-center max-sm:grid-cols-1">
                 {DEPT_MAPPING.map((item, index) => (
                     <Link
                         href={item.page}
@@ -26,7 +26,7 @@ export default function DeptPage() {
                         <img
                             alt="Dept"
                             src={item.image}
-                            className={cn("h-[200px] max-md:w-[65vw]", item.comingSoon && "opacity-50 grayscale")}
+                            className={cn("h-[200px] max-sm:h-auto max-sm:max-w-[90vw] max-md:w-[65vw]", item.comingSoon && "opacity-50 grayscale")}
                         />
                     </Link>
                 ))}
