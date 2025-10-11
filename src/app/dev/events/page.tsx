@@ -167,8 +167,8 @@ export default function EventsPage() {
                                                 <TableCell className="whitespace-nowrap">{event.eventDate}</TableCell>
                                                 <TableCell
                                                     className="whitespace-nowrap">{event.eventEndDate || "-"}</TableCell>
-                                                <TableCell>{event.location}</TableCell>
-                                                <TableCell className="max-w-xs truncate">{event.description}</TableCell>
+                                                <TableCell className="max-w-[200px] truncate">{event.location}</TableCell>
+                                                <TableCell className="truncate max-w-[300px]">{event.description}</TableCell>
                                                 <TableCell>
                                                     {event.url ? (
                                                         <a
