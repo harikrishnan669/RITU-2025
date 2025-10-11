@@ -1,7 +1,7 @@
 :root {
     --color-text: transparent;
     --color-bg: papayawhip;
-    --color-bg-accent: red;
+    --color-bg-accent: transparent;
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
     --gap: calc(var(--size) / 14);
     --duration: 60s;
