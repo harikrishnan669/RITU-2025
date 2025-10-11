@@ -147,7 +147,7 @@ const WORKSHOPS = [
         "image": "/posters/workshops/cyber.webp",
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Cybersecurity 101",
-        "description": "Step into the frontlines of digital defense! \nJoin us for Cybersecurity 101, a workshop that uncovers the essentials of ethical hacking, data protection, and system security.\nLearn how to safeguard networks, identify vulnerabilities, and understand the mindset of a hacker — guided by leading experts in the field.\n\nSpeakers:\nAbhikrishna – Security Architect, Cybernix\nShadirvan MC – Senior Penetration Tester, Cybernix\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹399\n\nCertificates will be provided\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nRoshny: 8921132077\nEzekiel: 8301866113\n\n#RITU25 #Cybersecurity #EthicalHacking #DataProtection #TechWorkshop #RITKottayam #DigitalDefense #HandsOnLearning",
+        "description": "LAPTOP REQUIRED | Step into the frontlines of digital defense! \nJoin us for Cybersecurity 101, a workshop that uncovers the essentials of ethical hacking, data protection, and system security.\nLearn how to safeguard networks, identify vulnerabilities, and understand the mindset of a hacker — guided by leading experts in the field.\n\nSpeakers:\nAbhikrishna – Security Architect, Cybernix\nShadirvan MC – Senior Penetration Tester, Cybernix\n\nDate: 17 October\nVenue: Rit Kottayam\nRegistration Fee: ₹399\n\nCertificates will be provided\nActivity Points: Up to 50 points\n\nRegister at: ritu25.live\n\nFor Queries:\nRoshny: 8921132077\nEzekiel: 8301866113\n\n#RITU25 #Cybersecurity #EthicalHacking #DataProtection #TechWorkshop #RITKottayam #DigitalDefense #HandsOnLearning",
         "location": "RIT",
         "url": "https://www.yepdesk.com/embed/open-register/68e77e3e46e0fb00016dcfc2/e7aos5ssvh",
         "contact": [
@@ -222,7 +222,7 @@ const WORKSHOPS = [
         "image": "/posters/workshops/photo.webp",
         "date": "2025-10-17T00:00:00+05:30",
         "title": "Photography workshop",
-        "description": "Photography workshop\nAr. Antony Joby\n\n19/10/2025\n9 am to 12 pm\nVenue : Department Of Architecture\nRegistration fee : 200/-\n\nContact \nAdhithyan Shaju \n9446707168",
+        "description": "Photography workshop\nAr. Antony Joby\n\n17/10/2025\n9 am to 12 pm\nVenue : Department Of Architecture\nRegistration fee : 250/-\n\nContact \nAdhithyan Shaju \n9446707168",
         "location": "Department Of Architecture",
         "url": "https://www.yepdesk.com/embed/open-register/68e79d0746e0fb00016e310e/f2klngf519",
         "contact": [
