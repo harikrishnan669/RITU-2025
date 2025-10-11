@@ -1,5 +1,5 @@
 :root {
-    --color-text: red;
+    --color-text: transparent;
     --color-bg: papayawhip;
     --color-bg-accent: red;
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
