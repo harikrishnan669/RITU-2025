@@ -12,7 +12,6 @@ const SOCIETIES_MAPPING = [
     }, {
         image: "/society/tinkerhub.webp",
         page: "/society/tinkerhub",
-        comingSoon: true
     }
 ]
 
