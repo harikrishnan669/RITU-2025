@@ -425,7 +425,7 @@ const WORKSHOPS = [
         "date": "10/18/2025",
         "title": "UI/UX Workshop",
         "description": "Step into the world of design and innovation! This hands-on workshop for Computer Science Engineering students will take you from wireframing to UI design and prototyping, all using Figma. Learn how to create intuitive, user-centered digital experiences and bring your ideas to life.\n\n Register now at: ritu25.live\n\n Laptop with Figma required\n\nFor queries:\nAysha Naurin: 9497838229\nSwetha: 83018 66113\n\n#UXUIWorkshop #DesignDecode #RITU25 #IEDCRIT #Figma #Wireframing #Prototyping #DesignThinking #FutureReady",
-        "url": "https://www.yepdesk.com/embed/open-register/68eac42d46e0fb000178a11b/goc4v6etke",
+        "url": "https://www.yepdesk.com/embed/open-register/68ea866946e0fb0001777297/oaqm5fm2t4",
         "contact": [
             {
                 "name": "Aysha Naurin",
