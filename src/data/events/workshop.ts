@@ -400,7 +400,46 @@ const WORKSHOPS = [
         "endDate": "2025-10-18T05:30:00+05:30",
         "createdDate": "2025-10-11T21:20:56+05:30"
     },
-
+    {
+        "image": "/posters/workshops/netflix.webp",
+        "date": "10/18/2025",
+        "title": "Netflix Clone Bootcamp",
+        "description": "This beginner-friendly workshop will guide you to build your very own Netflix clone from scratch. Learn the essentials of frontend development using HTML, CSS, and JavaScript, and discover how AI coding tools can speed up your workflow. By the end of the session, you’ll have your first web app project ready to showcase!\n\nRegister now at: ritu25.live\n\nLaptop required\n\nFor queries:\nMegha :6238267075,\nFathima Fidha:9995520066",
+        "url": "https://www.yepdesk.com/embed/open-register/68eac4eb46e0fb000178a2d2/mmb8fqm95k",
+        "contact": [
+            {
+                "name": "Megha C R",
+                "number": "6238267075"
+            },
+            {
+                "name": "Fathima Fidha",
+                "number": "9995520066"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/18/2025",
+        "createdDate": "10/12/2025 2:28:03"
+    },
+    {
+        "image": "/posters/workshops/uiux.webp",
+        "date": "10/18/2025",
+        "title": "UI/UX Workshop",
+        "description": "Step into the world of design and innovation! This hands-on workshop for Computer Science Engineering students will take you from wireframing to UI design and prototyping, all using Figma. Learn how to create intuitive, user-centered digital experiences and bring your ideas to life.\n\n Register now at: ritu25.live\n\n Laptop with Figma required\n\nFor queries:\nAysha Naurin: 9497838229\nSwetha: 83018 66113\n\n#UXUIWorkshop #DesignDecode #RITU25 #IEDCRIT #Figma #Wireframing #Prototyping #DesignThinking #FutureReady",
+        "url": "https://www.yepdesk.com/embed/open-register/68eac42d46e0fb000178a11b/goc4v6etke",
+        "contact": [
+            {
+                "name": "Aysha Naurin",
+                "number": "9497838229"
+            },
+            {
+                "name": "Swetha",
+                "number": "7994921306"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/18/2025",
+        "createdDate": "10/12/2025 1:28:25"
+    }
 ];
 
 
