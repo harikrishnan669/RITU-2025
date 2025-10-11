@@ -7,10 +7,10 @@ export default function DeptPage() {
     return (
         <section className="flex flex-col justify-center items-center">
             <div className="max-h-[600px] h-screen flex flex-col justify-center items-center">
-                <img src="/bg/bg-line-left.webp" className="absolute left-0 w-[20%] h-[200px] opacity-50 z-0"/>
-                <img src="/bg/bg-line-right.webp" className="absolute right-0 w-[20%] h-[200px] opacity-50 z-0"/>
-                <h1 className="text-4xl font-bold">Department Page</h1>
-                <p className="mt-4 text-lg text-center">Welcome to the Department Page. Please select a department to
+                <img src="/bg/bg-line-left.webp" className="absolute left-0 w-[20%] h-[200px] max-sm:h-auto max-sm:w-[40%] opacity-50 z-0"/>
+                <img src="/bg/bg-line-right.webp" className="absolute right-0 w-[20%] h-[200px] max-sm:h-auto max-sm:w-[40%] opacity-50 z-0"/>
+                <h1 className="text-4xl font-bold z-10">Department Page</h1>
+                <p className="mt-4 text-lg text-center z-10">Welcome to the Department Page. Please select a department to
                     view more details.</p>
             </div>
             <div className="grid grid-cols-2 gap-10 justify-items-center">
