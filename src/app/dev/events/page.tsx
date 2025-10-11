@@ -7,7 +7,7 @@ import {Table, TableBody, TableCell, TableHead, TableHeader, TableRow} from "@/c
 import {Checkbox} from "@/components/ui/checkbox"
 import {Copy, RefreshCw} from "lucide-react"
 import {parseEvent} from "./utils"
-import parseCSV from "./parse-csv"
+import parseJSON from "./parse-json"
 
 
 export interface SheetRow {
@@ -31,17 +31,29 @@ export default function EventsPage() {
     const [selectedEvents, setSelectedEvents] = useState<Set<number>>(new Set())
 
     const SHEET_ID = "1fq6xNuMKlVVRQeRTMIsxK1LywEFSnIP_uaFjrgcetAA"
-    const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`
+    // const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`
+
+    const JSON_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`
 
     const fetchData = async () => {
         setLoading(true)
         try {
-            const response = await fetch(CSV_URL)
-            const csvText = await response.text()
+            const response_json = await fetch(JSON_URL);
+            const text_json = await response_json.text();
+            const main_json = text_json.substring(47).slice(0, -2);
+            const parsed_json = JSON.parse(main_json);
 
-            const rows = parseCSV(csvText)
+            // console.log("Fetched JSON data:", main_json);
+            // console.log("Raw JSON response:", );
+            //
+            // const response = await fetch(CSV_URL);
+            // const csvText = await response.text();
 
-            const sortedRows = rows.sort((a, b) => {
+            // const rows = parseCSV(csvText);
+            const rows_json = parseJSON(parsed_json);
+            // const rows_json = JSON.parse(main_json).table.rows.map((row: any) => {
+
+            const sortedRows = rows_json.sort((a, b) => {
                 const dateA = new Date(a.timestamp).getTime()
                 const dateB = new Date(b.timestamp).getTime()
                 return dateB - dateA
@@ -169,7 +181,7 @@ export default function EventsPage() {
                                                     className="whitespace-nowrap">{event.eventEndDate || "-"}</TableCell>
                                                 <TableCell className="max-w-[200px] truncate">{event.location}</TableCell>
                                                 <TableCell className="truncate max-w-[300px]">{event.description}</TableCell>
-                                                <TableCell>
+                                                <TableCell className="max-w-[200px] truncate">
                                                     {event.url ? (
                                                         <a
                                                             href={event.url}
@@ -183,7 +195,7 @@ export default function EventsPage() {
                                                         "-"
                                                     )}
                                                 </TableCell>
-                                                <TableCell className="whitespace-nowrap text-sm">
+                                                <TableCell className="max-w-[200px] truncate">
                                                     {event.contactName1 && (
                                                         <div>
                                                             <div>{event.contactName1}</div>
@@ -192,7 +204,7 @@ export default function EventsPage() {
                                                         </div>
                                                     )}
                                                 </TableCell>
-                                                <TableCell className="whitespace-nowrap text-sm">
+                                                <TableCell className="max-w-[200px] truncate">
                                                     {event.contactName2 && (
                                                         <div>
                                                             <div>{event.contactName2}</div>

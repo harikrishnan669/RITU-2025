@@ -65,7 +65,7 @@ export interface IEventData {
 export const parseEvent = (data: RawEvent): IEventData => {
     const contacts = [];
 
-    console.log("Parsing event:", data);
+    // console.log("Parsing event:", data);
 
     if (data.contactName1) {
         contacts.push({ name: data.contactName1, number: data.contactNumber1! });

@@ -361,7 +361,46 @@ const WORKSHOPS = [
         ],
         "endDate": "2025-10-18T00:00:00+05:30",
         "createdDate": "2025-10-10T18:28:00.380Z"
-    }
+    },
+    {
+        "image": "/posters/civil/ets.webp",
+        "date": "2025-10-18T05:30:00+05:30",
+        "title": "ETABS WORKSHOP",
+        "description": "Civil Department presents \"ETABS WORKSHOP\" on this RITu 25.\n" +
+            "\n" +
+            "This workshop is designed to introduce participants to the fundamentals of structural analysis and design using ETABS software, providing practical knowledge in modeling, load analysis, and design of multi-storey buildings, enabling them to efficiently analyze and optimize structural systems in real-world projects.\n" +
+            "\n" +
+            "Date : 18/10/25 \n" +
+            "Mode: Offline \n" +
+            "Time: 1.00 PM to 4.00 PM\n" +
+            "Speaker: Anson Jose, Structural design engineer, CSA engineering\n" +
+            "Registration fees: ₹199\n" +
+            "\n" +
+            "Register at: RITu25.live\n" +
+            "\n" +
+            "Upto 20 Activity Points!\n" +
+            "\n" +
+            "For queries:\n" +
+            "Karishma: 8590848721\n" +
+            "Saniya Jose: 7593887562\n" +
+            "\n" +
+            "#RITu2025 #Etabsworkshop #civilmood #RIT kottayam",
+        "url": "https://www.yepdesk.com/embed/open-register/68ea6b2046e0fb000176b647/lsadg2oden",
+        "contact": [
+            {
+                "name": "Karishma s kumar",
+                "number": "8590848721"
+            },
+            {
+                "name": "Saniya jose",
+                "number": "7593887562"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "2025-10-18T05:30:00+05:30",
+        "createdDate": "2025-10-11T21:20:56+05:30"
+    },
+
 ];
 
 

@@ -50,7 +50,7 @@ export default function parseCSV(csvData: string): SheetRow[] {
             row[h] = values[idx] || ""
         })
 
-        console.log("Parsed row:", row)
+        // console.log("Parsed row:", row)
 
         // Map to SheetRow structure
 
