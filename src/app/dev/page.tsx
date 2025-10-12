@@ -9,6 +9,9 @@ export default function DevPage() {
             <li>
                 <Link href="/dev/create-post" className="text-blue-600">Create Post</Link>
             </li>
+            <li>
+                <Link href="/dev/events" className="text-blue-600">Events</Link>
+            </li>
         </div>
     </div>
 }

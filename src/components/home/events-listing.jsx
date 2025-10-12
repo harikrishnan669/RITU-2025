@@ -15,7 +15,6 @@ export default function EventsListing() {
                 const windowHeight = window.innerHeight;
                 const elementTop = element.getBoundingClientRect().top;
                 const revealPoint = 10;
-
                 if (elementTop < windowHeight - revealPoint) {
                     element.classList.add('active');
                     setShowSVG(true);
@@ -55,7 +54,7 @@ export default function EventsListing() {
                     <img alt="" src="/events-listing/ticket1.webp"
                          className="w-[28vw] max-md:w-[65vw]"/>
                 </Link>
-                <Link href={'/competition'}
+                <Link href='/competition'
                       className="reveal-left invert-reveal1 transition-transform duration-100 cursor-pointer select-none hover:scale-105"
                       onMouseEnter={() => setHovered('blue')}
                       onMouseLeave={() => setHovered(null)}>
@@ -65,14 +64,14 @@ export default function EventsListing() {
             </div>
             <div
                 className="w-full flex flex-row max-sm:flex-col justify-between max-sm:justify-center items-center gap-12 max-md:gap-10 py-2 max-sm:py-0 max-md:pb-2">
-                <Link href={'/culturals'}
+                <Link href='/culturals'
                       className="reveal-right invert-reveal2 transition-transform duration-100 cursor-pointer select-none hover:scale-105"
                       onMouseEnter={() => setHovered('yellow')}
                       onMouseLeave={() => setHovered(null)}>
                     <img alt="" src={'/events-listing/ticket3.webp'}
                          className="w-[28vw] max-md:w-[65vw]"/>
                 </Link>
-                <Link href={'/gaming'}
+                <Link href='/gaming'
                       className="reveal-left transition-transform duration-100 cursor-pointer select-none hover:scale-105"
                       onMouseEnter={() => setHovered('green')}
                       onMouseLeave={() => setHovered(null)}>
@@ -84,9 +83,9 @@ export default function EventsListing() {
 
         <div className="flex justify-center">
             <Link href='/dept'
-                  className="reveal-left transition-transform duration-100 cursor-pointer select-none hover:scale-105"
+                  className="transition-transform duration-100 cursor-pointer select-none hover:scale-105"
             >
-                <img alt="" src='/events-listing/dept.webp'
+                <img alt="Dept" src='/events-listing/dept.webp'
                      className="w-[28vw] max-md:w-[65vw]"/>
             </Link>
         </div>
