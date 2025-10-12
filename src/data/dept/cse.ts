@@ -71,7 +71,7 @@ const CSE_DEPT: IEventData[] = [
         "contact": [
             {
                 "name": "Amrutha",
-                "number": ""
+                "number": "9995275459"
             },
             {
                 "name": "Aswathi",
@@ -107,7 +107,6 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Gaming Room (Retro Games)",
         "description": "This RITU 2025, travel back in time and relive the golden era of gaming. \n\nJoin us at the Retro Gaming Room — a nostalgic arcade experience featuring legendary consoles and timeless classics like Mario, Contra, and Tetris. Challenge your friends, chase high scores, and enjoy the thrill of vintage gaming fun!\n\nRegister at: ritu25.live\nSpot registrations available\nFor queries:\nSooraj Bijukumar : +91 8848785914\nEmmanuval George: +91 7592884660\n\n#RetroGaming #gaming #Ritu25 #LetsRitu #RITKottayam #GamingNostalgia",
-        // "url": "nul",
         "contact": [
             {
                 "name": "Sooraj Bijukumar",
@@ -245,7 +244,7 @@ const CSE_DEPT: IEventData[] = [
             },
             {
                 "name": "Adwaith",
-                "number": ""
+                "number": "9947536101"
             }
         ],
         "location": "RIT",
