@@ -1,6 +1,6 @@
 "use client"
 
-import {Fuel as Funnel} from "lucide-react"
+import {Funnel} from "lucide-react"
 import {useState} from "react"
 import {
     DropdownMenu,

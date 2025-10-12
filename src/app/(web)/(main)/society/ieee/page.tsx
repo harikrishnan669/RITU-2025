@@ -8,8 +8,8 @@ export default function DeptPage() {
         <section className="min-h-screen flex flex-col justify-center items-center">
             <LandingBanner
                 bg="/bg/civil.webp"
-                title="IEDC RIT"
-                description="Explore workshops, seminars, and events organized by the IEDC RIT."
+                title="IEEE SB RIT"
+                description="Explore workshops, seminars, and events organized by the IEEE SB RIT."
             />
             <PosterListing events={IEEE_DATA}/>
         </section>
