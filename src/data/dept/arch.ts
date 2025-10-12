@@ -75,7 +75,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/17/2025",
             "title": "Model Making workshop ",
             "description": "\n\nA creative workshop where students work in groups of two to build models using form boards while exploring new materials. The session encourages teamwork, creativity, and spatial understanding, helping participants translate their ideas into expressive 3D forms through hands-on making.",
-            "url": "..",
+            "url": "https://www.yepdesk.com/embed/open-register/68e79ee946e0fb00016e3cae/ttc4mlii46",
             "contact": [
                 {
                     "name": "9539520341",
@@ -91,7 +91,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/18/2025",
             "title": "Thread art workshop ",
             "description": "\n\n\n\nJoin us for a creative session where threads become your paintbrush and patterns tell your story.. Explore the magic of transforming simple nails and colorful threads into stunning  patterns and designs.\nIt’s art that blends precision, patience, and play.",
-            "url": "..",
+            "url": "https://www.yepdesk.com/embed/open-register/68e9513746e0fb0001740606/a2q08gktc6",
             "contact": [
                 {
                     "name": "+918848727791",
@@ -123,7 +123,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/17/2025",
             "title": "POSTER MAKING COMPETITION",
             "description": "join the individual poster making competition at ritu 25 in collaboration with rasa",
-            "url": "-",
+            "url": "https://www.yepdesk.com/embed/open-register/68ebec0246e0fb0001809f6e/7pitusm0fa",
             "contact": [
                 {
                     "name": "Amrutha",
@@ -139,7 +139,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/16/2025",
             "title": "REEL",
             "description": "Showcase your creativity and story telling skills",
-            "url": "null",
+            "url": "https://www.yepdesk.com/embed/open-register/68ebedd446e0fb000180b4ff/m7ejgjv2ic",
             "contact": [
                 {
                     "name": "Akshaya",
@@ -155,7 +155,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/16/2025",
             "title": "AD SPOOF",
             "description": "Join the ADS Spoof challenge at RITU'25",
-            "url": "Null",
+            "url": "https://www.yepdesk.com/embed/open-register/68ebed4846e0fb000180ab6b/cvtkhj3i7u",
             "contact": [
                 {
                     "name": "Akshaya",
@@ -171,7 +171,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/19/2025",
             "title": "ARCHITECHTURE PHOTOGRAPHY",
             "description": "Showcase your creativity and capture the world",
-            "url": "null",
+            "url": "https://www.yepdesk.com/embed/open-register/68ebfb1546e0fb000181187c/fhg6qidek9",
             "contact": [
                 {
                     "name": "Akshaya",
@@ -187,7 +187,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/18/2025",
             "title": "DESIGN",
             "description": "Individual design competition",
-            "url": "Null",
+            "url": "https://www.yepdesk.com/embed/open-register/68ebeebd46e0fb000180c3f4/ko31po9f0e",
             "contact": [
                 {
                     "name": "Akshaya",
@@ -203,7 +203,7 @@ const ARCH_DEPT: IEventData[] = [
             "date": "10/18/2025",
             "title": "Model Making Competition",
             "description": "Showcase your creativity and craftmanship",
-            "url": "Null",
+            "url": "https://www.yepdesk.com/embed/open-register/68ebeaea46e0fb0001809b8b/5b1gaj8u28",
             "contact": [
                 {
                     "name": "Sreya",
