@@ -5,7 +5,7 @@ const DEPT_MAPPING = [
     {image: "/dept/ece.webp", page: "/dept/ece"},
     {image: "/dept/eee.webp", page: "/dept/eee"},
     {image: "/dept/mca.webp", page: "/dept/mca"},
-    {image: "/dept/mech.webp", page: "/dept/mech", comingSoon: true},
+    {image: "/dept/mech.webp", page: "/dept/mech"},
     {image: "/dept/mtech.webp", page: "/dept/mtech", comingSoon: true},
 ];
 
