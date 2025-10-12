@@ -506,7 +506,7 @@ const CIVIL_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "CAD War",
         "description": "A theme based Autocad design competition where participants showcase their creativity and precision through 2D/3D drafting",
-        "url": "-",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb9b1446e0fb00017f187c/1s86fg2kf9",
         "contact": [
             {
                 "name": "Lakshmi",
