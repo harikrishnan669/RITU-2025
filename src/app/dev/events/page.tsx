@@ -1,14 +1,13 @@
 "use client"
 
-import {useEffect, useState} from "react"
-import {Button} from "@/components/ui/button"
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
-import {Table, TableBody, TableCell, TableHead, TableHeader, TableRow} from "@/components/ui/table"
-import {Checkbox} from "@/components/ui/checkbox"
-import {Copy, RefreshCw} from "lucide-react"
-import {parseEvent} from "./utils"
+import { useEffect, useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Copy, RefreshCw } from "lucide-react"
+import { parseEvent } from "./utils"
 import parseJSON from "./parse-json"
-
 
 export interface SheetRow {
     timestamp: string
@@ -24,24 +23,41 @@ export interface SheetRow {
     contactNumber2: string
 }
 
-
 export default function EventsPage() {
     const [events, setEvents] = useState<SheetRow[]>([])
     const [loading, setLoading] = useState(true)
     const [selectedEvents, setSelectedEvents] = useState<Set<number>>(new Set())
+    const [completedEvents, setCompletedEvents] = useState<Set<number>>(new Set())
+    const [showAll, setShowAll] = useState(false)
 
     const SHEET_ID = "1fq6xNuMKlVVRQeRTMIsxK1LywEFSnIP_uaFjrgcetAA"
     // const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`
 
     const JSON_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`
 
+    useEffect(() => {
+        const stored = localStorage.getItem("completedEvents")
+        if (stored) {
+            try {
+                const parsed = JSON.parse(stored)
+                setCompletedEvents(new Set(parsed))
+            } catch (error) {
+                console.error("Error loading completed events:", error)
+            }
+        }
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem("completedEvents", JSON.stringify(Array.from(completedEvents)))
+    }, [completedEvents])
+
     const fetchData = async () => {
         setLoading(true)
         try {
-            const response_json = await fetch(JSON_URL);
-            const text_json = await response_json.text();
-            const main_json = text_json.substring(47).slice(0, -2);
-            const parsed_json = JSON.parse(main_json);
+            const response_json = await fetch(JSON_URL)
+            const text_json = await response_json.text()
+            const main_json = text_json.substring(47).slice(0, -2)
+            const parsed_json = JSON.parse(main_json)
 
             // console.log("Fetched JSON data:", main_json);
             // console.log("Raw JSON response:", );
@@ -50,7 +66,7 @@ export default function EventsPage() {
             // const csvText = await response.text();
 
             // const rows = parseCSV(csvText);
-            const rows_json = parseJSON(parsed_json);
+            const rows_json = parseJSON(parsed_json)
             // const rows_json = JSON.parse(main_json).table.rows.map((row: any) => {
 
             const sortedRows = rows_json.sort((a, b) => {
@@ -90,6 +106,16 @@ export default function EventsPage() {
         }
     }
 
+    const toggleEventCompleted = (index: number) => {
+        const newCompleted = new Set(completedEvents)
+        if (newCompleted.has(index)) {
+            newCompleted.delete(index)
+        } else {
+            newCompleted.add(index)
+        }
+        setCompletedEvents(newCompleted)
+    }
+
     const generateJSON = () => {
         const eventsToExport = Array.from(selectedEvents)
             .sort((a, b) => a - b)
@@ -107,6 +133,8 @@ export default function EventsPage() {
             })
     }
 
+    const visibleEvents = showAll ? events : events.filter((_, index) => !completedEvents.has(index))
+
     return (
         <div className="min-h-screen bg-background p-4 md:p-8">
             <div className="mx-auto max-w-7xl">
@@ -118,14 +146,18 @@ export default function EventsPage() {
                                 <CardDescription>
                                     Data from Google Sheet - Sorted by newest first
                                     {selectedEvents.size > 0 && ` • ${selectedEvents.size} selected`}
+                                    {completedEvents.size > 0 && ` • ${completedEvents.size} completed`}
                                 </CardDescription>
                             </div>
                             <div className="flex gap-2">
+                                <Button variant={showAll ? "default" : "outline"} onClick={() => setShowAll(!showAll)}>
+                                    {showAll ? "Hide Completed" : "View All"}
+                                </Button>
                                 <Button variant="outline" size="icon" onClick={fetchData} disabled={loading}>
-                                    <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`}/>
+                                    <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
                                 </Button>
                                 <Button onClick={generateJSON} disabled={loading || selectedEvents.size === 0}>
-                                    <Copy className="mr-2 h-4 w-4"/>
+                                    <Copy className="mr-2 h-4 w-4" />
                                     Copy JSON ({selectedEvents.size})
                                 </Button>
                             </div>
@@ -134,7 +166,7 @@ export default function EventsPage() {
                     <CardContent>
                         {loading ? (
                             <div className="flex items-center justify-center py-8">
-                                <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground"/>
+                                <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
                             </div>
                         ) : events.length === 0 ? (
                             <div className="py-8 text-center text-muted-foreground">No events found</div>
@@ -150,6 +182,7 @@ export default function EventsPage() {
                                                     aria-label="Select all events"
                                                 />
                                             </TableHead>
+                                            <TableHead className="w-12">Done</TableHead>
                                             <TableHead>Created</TableHead>
                                             <TableHead>Title</TableHead>
                                             <TableHead>Event Date</TableHead>
@@ -163,77 +196,89 @@ export default function EventsPage() {
                                         </TableRow>
                                     </TableHeader>
                                     <TableBody>
-                                        {events.map((event, index) => (
-                                            <TableRow key={index}>
-                                                <TableCell>
-                                                    <Checkbox
-                                                        checked={selectedEvents.has(index)}
-                                                        onCheckedChange={() => toggleEventSelection(index)}
-                                                        aria-label={`Select ${event.title}`}
-                                                    />
-                                                </TableCell>
-                                                <TableCell className="whitespace-nowrap text-xs">
-                                                    {new Date(event.timestamp).toLocaleString()}
-                                                </TableCell>
-                                                <TableCell className="font-medium">{event.title}</TableCell>
-                                                <TableCell className="whitespace-nowrap">{event.eventDate}</TableCell>
-                                                <TableCell
-                                                    className="whitespace-nowrap">{event.eventEndDate || "-"}</TableCell>
-                                                <TableCell className="max-w-[200px] truncate">{event.location}</TableCell>
-                                                <TableCell className="truncate max-w-[300px]">{event.description}</TableCell>
-                                                <TableCell className="max-w-[200px] truncate">
-                                                    {event.url ? (
-                                                        <a
-                                                            href={event.url}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                            className="text-primary hover:underline"
+                                        {visibleEvents.map((event) => {
+                                            // Get the original index from the full events array
+                                            const index = events.indexOf(event)
+                                            const isCompleted = completedEvents.has(index)
+
+                                            return (
+                                                <TableRow key={index} className={isCompleted ? "opacity-50" : ""}>
+                                                    <TableCell>
+                                                        <Checkbox
+                                                            className="cursor-pointer"
+                                                            checked={selectedEvents.has(index)}
+                                                            onCheckedChange={() => toggleEventSelection(index)}
+                                                            aria-label={`Select ${event.title}`}
+                                                        />
+                                                    </TableCell>
+                                                    <TableCell className="text-center w-[40px]">
+                                                        <Checkbox
+                                                            className="cursor-pointer"
+                                                            checked={isCompleted}
+                                                            onCheckedChange={() => toggleEventCompleted(index)}
+                                                            aria-label={`Mark ${event.title} as completed`}
+                                                        />
+                                                    </TableCell>
+                                                    <TableCell className="whitespace-nowrap text-xs">
+                                                        {new Date(event.timestamp).toLocaleString()}
+                                                    </TableCell>
+                                                    <TableCell className="font-medium">{event.title}</TableCell>
+                                                    <TableCell className="whitespace-nowrap">{event.eventDate}</TableCell>
+                                                    <TableCell className="whitespace-nowrap">{event.eventEndDate || "-"}</TableCell>
+                                                    <TableCell className="max-w-[200px] truncate">{event.location}</TableCell>
+                                                    <TableCell className="truncate max-w-[300px]">{event.description}</TableCell>
+                                                    <TableCell className="max-w-[200px] truncate">
+                                                        {event.url ? (
+                                                            <a
+                                                                href={event.url}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="text-primary hover:underline"
+                                                            >
+                                                                Link
+                                                            </a>
+                                                        ) : (
+                                                            "-"
+                                                        )}
+                                                    </TableCell>
+                                                    <TableCell className="max-w-[200px] truncate">
+                                                        {event.contactName1 && (
+                                                            <div>
+                                                                <div>{event.contactName1}</div>
+                                                                <div className="text-muted-foreground">{event.contactNumber1}</div>
+                                                            </div>
+                                                        )}
+                                                    </TableCell>
+                                                    <TableCell className="max-w-[200px] truncate">
+                                                        {event.contactName2 && (
+                                                            <div>
+                                                                <div>{event.contactName2}</div>
+                                                                <div className="text-muted-foreground">{event.contactNumber2}</div>
+                                                            </div>
+                                                        )}
+                                                    </TableCell>
+                                                    <TableCell>
+                                                        <Button
+                                                            variant="link"
+                                                            size="sm"
+                                                            className="cursor-pointer"
+                                                            onClick={() => {
+                                                                navigator.clipboard
+                                                                    .writeText(JSON.stringify(parseEvent(event), null, 2))
+                                                                    .then(() => {
+                                                                        alert("Event JSON copied to clipboard!")
+                                                                    })
+                                                                    .catch(() => {
+                                                                        alert("Failed to copy event JSON")
+                                                                    })
+                                                            }}
                                                         >
-                                                            Link
-                                                        </a>
-                                                    ) : (
-                                                        "-"
-                                                    )}
-                                                </TableCell>
-                                                <TableCell className="max-w-[200px] truncate">
-                                                    {event.contactName1 && (
-                                                        <div>
-                                                            <div>{event.contactName1}</div>
-                                                            <div
-                                                                className="text-muted-foreground">{event.contactNumber1}</div>
-                                                        </div>
-                                                    )}
-                                                </TableCell>
-                                                <TableCell className="max-w-[200px] truncate">
-                                                    {event.contactName2 && (
-                                                        <div>
-                                                            <div>{event.contactName2}</div>
-                                                            <div
-                                                                className="text-muted-foreground">{event.contactNumber2}</div>
-                                                        </div>
-                                                    )}
-                                                </TableCell>
-                                                <TableCell>
-                                                    <Button
-                                                        variant="link"
-                                                        size="sm"
-                                                        className="cursor-pointer"
-                                                        onClick={() => {
-                                                            navigator.clipboard
-                                                                .writeText(JSON.stringify(parseEvent(event), null, 2))
-                                                                .then(() => {
-                                                                    alert("Event JSON copied to clipboard!")
-                                                                })
-                                                                .catch(() => {
-                                                                    alert("Failed to copy event JSON")
-                                                                })
-                                                        }}
-                                                    >
-                                                        <Copy/>
-                                                    </Button>
-                                                </TableCell>
-                                            </TableRow>
-                                        ))}
+                                                            <Copy />
+                                                        </Button>
+                                                    </TableCell>
+                                                </TableRow>
+                                            )
+                                        })}
                                     </TableBody>
                                 </Table>
                             </div>

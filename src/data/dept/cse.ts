@@ -310,6 +310,46 @@ const CSE_DEPT: IEventData[] = [
         "location": "RIT",
         "endDate": "10/17/2025",
         "createdDate": "10/11/2025 21:52:00"
+    },
+    {
+        "image": "/posters/cse/sketch-to-screen.webp",
+        "date": "10/17/2025",
+        "title": "Sketch to screen with ui/ux",
+        "description": "This RITU 2025, unleash your inner designer and turn your ideas into stunning digital realities.\n\nGet ready for Sketch to Screen — an exciting UI/UX design competition where participants transform raw concepts into polished interfaces using PC-based design tools. From initial wireframes to final screens, this is your moment to showcase creativity, design thinking, and digital craftsmanship.\n\nRegister at: ritu25.live\nSpot Registration is available\nFor queries:\nAbhiram : 9605205455\nHriju : 9447196346\n\n#SketchToScreen #UIUXDesign #Ritu25 #LetsRitu #RitKottayam #DesignCompetition #CreativeMinds\n\nRules/Guidelines\n1. This is an individual event and each participant must register separately.\n\n2. A theme will be provided, and participants must design a UI along with wireframed pages based on it.\n\n3. Each participant must bring their own laptop and design tools of choice (e.g., Figma).\n\n4. Spot registration will be available; ensure you have a laptop to participate.\n\n5. The decision of the judges will be final",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb690646e0fb00017dda84/j3h9fik8af",
+        "contact": [
+            {
+                "name": "Abhiram",
+                "number": "9605205455"
+            },
+            {
+                "name": "Hriju",
+                "number": "9447196346"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/17/2025",
+        "createdDate": "10/12/2025 12:28:42"
+    },
+    {
+        "image": "/posters/cse/python.webp",
+        "date": "10/19/2025",
+        "title": "Python Workshop",
+        "description": "RITU 2025 is here — your gateway to coding, creativity, and innovation!\n\nPython Bootcamp: Learn by Doing\nStep into the world of programming with an immersive, hands-on coding experience!\nLed by experts from the tech industry, this beginner-friendly workshop will help you master Python from the ground up.\nLearn to write real code, solve practical problems, and build your confidence to kickstart your programming journey.\n\nHighlights:\nInteractive live coding sessions\nReal-world problem solving\nCertificates for participants\nPerfect for beginners and aspiring developers\nLaptop is preferable for the best experience\n\nRegister at: ritu25.live\n\nFor queries:\nDrishya: 8848897286\nAnunandha: 7306980226\n\n#PythonBootcamp #PythonWorkshop #RITU25 #LearnByDoing #CSEWorkshop #LetsRitu #TechFest",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb690646e0fb00017dda84/j3h9fik8af",
+        "contact": [
+            {
+                "name": "Drishya",
+                "number": "8848897286"
+            },
+            {
+                "name": "Anunandha",
+                "number": "7306980226"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/19/2025",
+        "createdDate": "10/12/2025 14:12:50"
     }
 ]
 
