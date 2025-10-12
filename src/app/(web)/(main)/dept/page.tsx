@@ -10,11 +10,11 @@ export default function DeptPage() {
         <section className="flex flex-col justify-center items-center">
             <div className="max-h-[600px] h-screen flex flex-col justify-center items-center">
                 <img src="/bg/bg-line-left.webp"
-                     className="absolute left-0 w-[20%] h-[200px] max-sm:h-auto max-sm:w-[40%] opacity-50 z-0"/>
+                     className="absolute left-0 w-[20%] max-sm:translate-y-[120px] h-[200px] max-sm:h-auto max-sm:w-[40%] opacity-50 z-0"/>
                 <img src="/bg/bg-line-right.webp"
-                     className="absolute right-0 w-[20%] h-[200px] max-sm:h-auto max-sm:w-[40%] opacity-50 z-0"/>
-                <h1 className="text-4xl font-bold z-10">Departments And Societies</h1>
-                <p className="mt-4 text-lg text-center z-10">Welcome to the Departments and Societies. Click on the
+                     className="absolute right-0 w-[20%] h-[200px] max-sm:translate-y-[-120px] max-sm:h-auto max-sm:w-[40%] opacity-50 z-0"/>
+                <h1 className="text-4xl font-bold z-10 max-sm:mx-10 text-center">Departments And Societies</h1>
+                <p className="mt-4 text-lg text-center z-10 max-sm:mx-10">Welcome to the Departments and Societies. Click on the
                     cards below to view its events.</p>
             </div>
 
