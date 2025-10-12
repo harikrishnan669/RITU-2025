@@ -500,6 +500,26 @@ const CIVIL_DEPT: IEventData[] = [
         "location": "RIT",
         "endDate": "10/15/2025",
         "createdDate": "10/12/2025 1:24:09"
+    },
+    {
+        "image": "/posters/civil/cad.webp",
+        "date": "10/17/2025",
+        "title": "CAD War",
+        "description": "A theme based Autocad design competition where participants showcase their creativity and precision through 2D/3D drafting",
+        "url": "-",
+        "contact": [
+            {
+                "name": "Lakshmi",
+                "number": "7907869254"
+            },
+            {
+                "name": "Haripriya",
+                "number": "9207658486"
+            }
+        ],
+        "location": "RIT CE",
+        "endDate": "10/17/2025",
+        "createdDate": "10/11/2025 23:08:23"
     }
 ]
 
