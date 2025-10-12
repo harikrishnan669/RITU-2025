@@ -101,7 +101,7 @@ const IEEE_DATA: IEventData[] = [
         "date": "10/17/2025",
         "title": "DEPLOYING AN ML MODEL USING PYTHON",
         "description": "Deploying AI/ML Models is a hands-on workshop that guides participants through the complete process of turning trained models into real-world applications — covering model optimization, API integration, and deployment on cloud platforms. Perfect for those looking to bridge the gap between machine learning and production-ready solutions.",
-        "url": "https://www.yepdesk.com/embed/open-register/68eb534e46e0fb00017c8a68/oij8qu7ght",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb53ea46e0fb00017c908c/2v8nrm237s",
         "contact": [
             {
                 "name": "Megha R pillai",
