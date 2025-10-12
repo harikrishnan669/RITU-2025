@@ -1,16 +1,4 @@
 import {IEventData} from "@/types/event";
-/*
-click.webp
-drone-expo.webp
-f1.webp
-neon-room.webp
-photoshop.webp
-project-expo.webp
-scrap-to-bot.webp
-semiconductor.webp
-verilog.webp
-wave-form.webp
- */
 
 const ECE_DEPT: IEventData[] = [
     {
