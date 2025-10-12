@@ -69,7 +69,7 @@ const IEEE_DATA: IEventData[] = [
             },
             {
                 "name": "Neethu ",
-                "number": ""
+                "number": "8304917846"
             }
         ],
         "location": "Measurement Lab,Electrical Department ",
@@ -84,12 +84,12 @@ const IEEE_DATA: IEventData[] = [
         "url": "https://www.yepdesk.com/embed/open-register/68eb56dc46e0fb00017cb7d9/8h6fm5ia9m",
         "contact": [
             {
-                "name": "Bijila ",
-                "number": ""
+                "name": "Rajeswari PT",
+                "number": "9048110183"
             },
             {
                 "name": "Abhiram",
-                "number": ""
+                "number": "9744520508"
             }
         ],
         "location": "Systems Lab, Ece department, Rit, offline",
