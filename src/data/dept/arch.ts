@@ -3,7 +3,7 @@ import {IEventData} from "@/types/event";
 
 const ARCH_DEPT: IEventData[] = [
     {
-        "image": "/posters/arch/wild-mark.webp",
+        "image": "/posters/arch/wild-marks.webp",
         "date": "10/19/2025",
         "title": "Wild Mark",
         "description": "Wild mark\nAr. Adithya SB\n\n19/10/25\n9am-12pm\nVenue : Arch dept\nReg fee 150\n\nAn outdoor workshop filled with fun games and creative surprises. Participants will explore the surroundings and collect natural or everyday objects like leaves, stones, or bricks. Using ink and clay, they’ll imprint textures on A3 paper, then explore charcoal as a medium. Finally, they’ll map their imprints into expressive charcoal compositions inspired by patterns of nature.",
