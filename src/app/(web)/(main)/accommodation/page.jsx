@@ -18,7 +18,7 @@ export default function Accommodation() {
             {/*    </p>*/}
             {/*</div>*/}
 
-            <a href="https://www.yepdesk.com/embed/buy-tickets/68ea7deb46e0fb000177452d/private/au67g97kic"
+            <a href="https://www.yepdesk.com/embed/open-register/68ea7deb46e0fb000177452d/au67g97kic"
                 className="bg-white text-black mt-3 py-5 text-center rounded-xl font-semibold text-base sm:text-lg cursor-pointer transition duration-300 shadow-lg w-full lg:max-w-[300px] max-w-[250px] ">
                 Book Accommodation
             </a>
@@ -33,3 +33,9 @@ export default function Accommodation() {
         // </main>
     );
 }
+
+/*
+<iframe width="560" height="315" src="
+https://www.yepdesk.com/embed/open-register/68ea7deb46e0fb000177452d/au67g97kic
+"></iframe>
+ */
