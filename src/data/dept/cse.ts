@@ -336,7 +336,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/19/2025",
         "title": "Python Workshop",
         "description": "RITU 2025 is here — your gateway to coding, creativity, and innovation!\n\nPython Bootcamp: Learn by Doing\nStep into the world of programming with an immersive, hands-on coding experience!\nLed by experts from the tech industry, this beginner-friendly workshop will help you master Python from the ground up.\nLearn to write real code, solve practical problems, and build your confidence to kickstart your programming journey.\n\nHighlights:\nInteractive live coding sessions\nReal-world problem solving\nCertificates for participants\nPerfect for beginners and aspiring developers\nLaptop is preferable for the best experience\n\nRegister at: ritu25.live\n\nFor queries:\nDrishya: 8848897286\nAnunandha: 7306980226\n\n#PythonBootcamp #PythonWorkshop #RITU25 #LearnByDoing #CSEWorkshop #LetsRitu #TechFest",
-        "url": "https://www.yepdesk.com/embed/open-register/68eb690646e0fb00017dda84/j3h9fik8af",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb604a46e0fb00017d4538/rjvsrpf1hq",
         "contact": [
             {
                 "name": "Drishya",
