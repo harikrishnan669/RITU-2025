@@ -26,7 +26,7 @@ const EEE_DEPT: IEventData[] = [
         "contact": [
             {
                 "name": "Pavithra K ",
-                "number": ""
+                "number": "9037619074"
             },
             {
                 "name": "Thasni K T ",
