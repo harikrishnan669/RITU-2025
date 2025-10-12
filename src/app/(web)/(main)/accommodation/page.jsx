@@ -18,7 +18,7 @@ export default function Accommodation() {
             {/*    </p>*/}
             {/*</div>*/}
 
-            <a href="https://www.yepdesk.com/embed/open-register/68ea7deb46e0fb000177452d/au67g97kic"
+            <a href="https://www.yepdesk.com/embed/open-register/68ebd10146e0fb000180352e/n4or71051b"
                 className="bg-white text-black mt-3 py-5 text-center rounded-xl font-semibold text-base sm:text-lg cursor-pointer transition duration-300 shadow-lg w-full lg:max-w-[300px] max-w-[250px] ">
                 Book Accommodation
             </a>
