@@ -183,7 +183,6 @@ const MECH_DEPT: IEventData[] = [
         "date": "10/18/2025",
         "title": "Body show",
         "description": "5 pm\n 1.30 hour\nreg fee : ₹1000\n",
-        "url": "nill",
         "contact": [
             {
                 "name": "Vishnu p",
@@ -255,7 +254,6 @@ const MECH_DEPT: IEventData[] = [
         "date": "10/18/2025",
         "title": "Mock seminar presentation ",
         "description": "9 AM\n2 HOUR\n\nmock seminar presentation to demonstrate presentation skills\n",
-        "url": "NILL",
         "contact": [
             {
                 "name": "githin george joby",
@@ -271,7 +269,6 @@ const MECH_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Film screening (mech related )",
         "description": "4 PM\n1.30 HOUR\n\n",
-        "url": "NILL",
         "contact": [
             {
                 "name": "Akash ka",
@@ -287,7 +284,6 @@ const MECH_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Familiarisation with the mechanical workshop ",
         "description": "2 TO 4 pm\n2 hour\nSpeaker: Harish sir",
-        "url": "NULL",
         "contact": [
             {
                 "name": "vinay v",
@@ -303,7 +299,6 @@ const MECH_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Art vs Mech ",
         "description": "2 hour \n9.00 am\ncarry colour pencils and other art supplies as per requirement\n\n",
-        "url": "null",
         "contact": [
             {
                 "name": "Ansiya nasrin",
