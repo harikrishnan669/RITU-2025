@@ -67,7 +67,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Horror Room",
         "description": "RITU 2025 – The Last Scream Horror Room \nStep into the darkness of RITU 2025, where silence screams and shadows chase your every move. Dare to solve the puzzles, escape the traps, and survive the night… or be haunted forever.\n\nWe invite you to experience THE LAST SCREAM – HORROR ROOM, a chilling escape room filled with fear, mystery, and surprises.\n\nRegister at: ritu25.live\nSpot registrations available\n For queries:\nAmrutha:99952 75459\nAswathi: 7736549601\n\n#TheLastScream #HorrorRoom #EscapeTheFear #Ritu25 #LetsRitu #RitKottayam",
-        // "url": "null",
+        "url": "https://www.yepdesk.com/embed/open-register/68ea7d9846e0fb0001774332/v77smh678l",
         "contact": [
             {
                 "name": "Amrutha",
