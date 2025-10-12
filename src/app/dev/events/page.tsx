@@ -23,11 +23,15 @@ export interface SheetRow {
     contactNumber2: string
 }
 
+const getEventId = (event: SheetRow): string => {
+    return `${event.timestamp}-${event.title}-${event.eventDate}`
+}
+
 export default function EventsPage() {
     const [events, setEvents] = useState<SheetRow[]>([])
     const [loading, setLoading] = useState(true)
     const [selectedEvents, setSelectedEvents] = useState<Set<number>>(new Set())
-    const [completedEvents, setCompletedEvents] = useState<Set<number>>(new Set())
+    const [completedEvents, setCompletedEvents] = useState<Set<string>>(new Set())
     const [showAll, setShowAll] = useState(false)
 
     const SHEET_ID = "1fq6xNuMKlVVRQeRTMIsxK1LywEFSnIP_uaFjrgcetAA"
@@ -106,12 +110,13 @@ export default function EventsPage() {
         }
     }
 
-    const toggleEventCompleted = (index: number) => {
+    const toggleEventCompleted = (event: SheetRow) => {
+        const eventId = getEventId(event)
         const newCompleted = new Set(completedEvents)
-        if (newCompleted.has(index)) {
-            newCompleted.delete(index)
+        if (newCompleted.has(eventId)) {
+            newCompleted.delete(eventId)
         } else {
-            newCompleted.add(index)
+            newCompleted.add(eventId)
         }
         setCompletedEvents(newCompleted)
     }
@@ -133,7 +138,7 @@ export default function EventsPage() {
             })
     }
 
-    const visibleEvents = showAll ? events : events.filter((_, index) => !completedEvents.has(index))
+    const visibleEvents = showAll ? events : events.filter((event) => !completedEvents.has(getEventId(event)))
 
     return (
         <div className="min-h-screen bg-background p-4 md:p-8">
@@ -199,23 +204,21 @@ export default function EventsPage() {
                                         {visibleEvents.map((event) => {
                                             // Get the original index from the full events array
                                             const index = events.indexOf(event)
-                                            const isCompleted = completedEvents.has(index)
+                                            const isCompleted = completedEvents.has(getEventId(event))
 
                                             return (
                                                 <TableRow key={index} className={isCompleted ? "opacity-50" : ""}>
                                                     <TableCell>
                                                         <Checkbox
-                                                            className="cursor-pointer"
                                                             checked={selectedEvents.has(index)}
                                                             onCheckedChange={() => toggleEventSelection(index)}
                                                             aria-label={`Select ${event.title}`}
                                                         />
                                                     </TableCell>
-                                                    <TableCell className="text-center w-[40px]">
+                                                    <TableCell>
                                                         <Checkbox
-                                                            className="cursor-pointer"
                                                             checked={isCompleted}
-                                                            onCheckedChange={() => toggleEventCompleted(index)}
+                                                            onCheckedChange={() => toggleEventCompleted(event)}
                                                             aria-label={`Mark ${event.title} as completed`}
                                                         />
                                                     </TableCell>

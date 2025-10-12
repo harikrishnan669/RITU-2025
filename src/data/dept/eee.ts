@@ -160,6 +160,22 @@ const EEE_DEPT: IEventData[] = [
         "location": "RIT",
         "endDate": "10/17/2025",
         "createdDate": "10/11/2025 21:50:42"
+    },
+    {
+        "image": "/posters/eee/embedded.webp",
+        "date": "10/19/2025",
+        "title": "Embedded Systems ",
+        "description": "Embedded Systems are the backbone of modern technology — powering everything from smart devices to industrial automation. This workshop offers an introduction to embedded hardware and programming, helping participants understand how software and electronics combine to create intelligent systems.",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb869546e0fb00017ec878/groteqqsfd",
+        "contact": [
+            {
+                "name": "Mariya:6238679574",
+                "number": ""
+            }
+        ],
+        "location": "RIT ",
+        "endDate": "10/19/2025",
+        "createdDate": "10/12/2025 16:05:01"
     }
 ];
 
