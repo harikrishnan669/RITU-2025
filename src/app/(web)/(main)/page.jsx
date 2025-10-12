@@ -8,7 +8,7 @@ import ProshowEvents from "@/components/home/proshow-events";
 import Gallery from "@/components/home/gallery";
 
 export default function Home() {
-    return <main className="overflow-y-auto size-full">
+    return <main className="overflow-y-auto size-full overflow-x-hidden">
         <LandingScreen/>
         <ProshowEvents/>
         <EventsListing/>
