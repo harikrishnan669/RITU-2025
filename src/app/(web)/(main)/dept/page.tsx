@@ -26,7 +26,7 @@ export default function DeptPage() {
                         key={index}
                         className={cn("relative w-fit h-fit transition-transform duration-100 cursor-pointer select-none hover:scale-105", item.comingSoon && "flex items-center pointer-events-none")}
                     >
-                        {item.comingSoon && <div
+                        {item?.comingSoon && <div
                             className="absolute w-full text-center bg-black text-white px-2 py-1 text-2xl font-bold z-10 ">
                             Coming Soon
                         </div>}
@@ -51,14 +51,14 @@ export default function DeptPage() {
                         key={index}
                         className={cn("relative w-fit h-fit transition-transform duration-100 cursor-pointer select-none hover:scale-105", item.comingSoon && "flex items-center pointer-events-none")}
                     >
-                        {item.comingSoon && <div
+                        {item?.comingSoon && <div
                             className="absolute w-full text-center bg-black text-white px-2 py-1 text-2xl font-bold z-10 ">
                             Coming Soon
                         </div>}
                         <img
                             alt="Dept"
                             src={item.image}
-                            className={cn("h-[200px] max-sm:h-auto max-sm:max-w-[90vw] max-md:w-[65vw]", item.comingSoon && "opacity-50 grayscale")}
+                            className={cn("h-[200px] max-sm:h-auto max-sm:max-w-[90vw] max-md:w-[65vw]", item?.comingSoon && "opacity-50 grayscale")}
                         />
                     </Link>
                 ))}
