@@ -1,7 +1,7 @@
 "use client";
 import LandingBanner from "@/components/pages/landing-banner";
 import PosterListing from "@/components/pages/poster-listing";
-import IEDC_DATA from "@/data/socities/iedc";
+import IEEE_DATA from "@/data/socities/ieee";
 
 export default function DeptPage() {
     return (
@@ -11,7 +11,7 @@ export default function DeptPage() {
                 title="IEDC RIT"
                 description="Explore workshops, seminars, and events organized by the IEDC RIT."
             />
-            <PosterListing events={IEDC_DATA}/>
+            <PosterListing events={IEEE_DATA}/>
         </section>
     )
 }
