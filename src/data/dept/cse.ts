@@ -15,6 +15,10 @@ pixel-pitch.webp
 rapid-miner.webp
 sketch-to-screen.webp
 solvathon.webp
+
+<iframe width="560" height="315" src="
+
+"></iframe>
  */
 
 const CSE_DEPT: IEventData[] = [
@@ -23,7 +27,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/18/2025",
         "title": "Solve-A-Thon",
         "description": "This RITU 2025, get ready for a hackathon like no other — where every click, tap, or keypress sets off a chain of fun, creativity, and pure chaos.\n\nTurn a single move into cascading reactions.\nTrigger the fun. Code the unexpected.\n\nWe invite all brilliant minds to be part of this power packed coding clash with a prize pool of ₹2,000. Come, unleash your imagination and spark infinite reactions.\n\nParticipants must bring their own laptops.\n\nRegister at: ritu25.live\n\nFor queries:\nKevin:8921896206\nJyothsna:8547432646\n \n#Hackathon#Solve-a-thon #CodeTheUnexpected #Ritu25 #Letsritu #RitKottayam       \n\nRules/Guidelines\n\nSolveAThon – Where One Idea Sparks a Chain of Chaos!\n\nTeam Size: 2–4 members (Pre-registration required)\nTheme: Contextual Chain Reactions – one action triggers a quirky chain of effects.\n(Example: Typing too long causes text chaos → triggers a funny mini-task)\n\nRules:\n\nBuild everything from scratch during the event (no pre-built code).\n\nUse any language/framework/API, but core logic must be original.\n\nAI tools allowed only for ideas or debugging, not full builds.\n\nUse GitHub – commits will be checked for progress.\n\nTime Limit: 3 hours to build and submit.",
-        "url": "null",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb54f646e0fb00017c9f39/im3fqofuq8",
         "contact": [
             {
                 "name": "Kevin",
@@ -43,7 +47,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Games Zone",
         "description": "At the outset of RITU 2025, The Department of Computer Science is bringing forth GAME ZONE.\n\nGame Zone is a lively entertainment space filled with exciting physical and tech-based challenges. It offers a fun and competitive atmosphere where participants can test their skills and enjoy friendly play. There are engaging games like Dart Board, Bell Ringing, Reflex Tester, Tech Flip & Match, and Laser Tag.\n\nRegister now at :ritu25.live\n\nFor queries, contact:  \nGokul: 90377 73361\nAkash: ‪8891168824\n\n#GameZone #Games #RITU2025 #LetsRitu #Ritu25",
-        "url": "null",
+        // "url": "null",
         "contact": [
             {
                 "name": "Gokul",
@@ -63,7 +67,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Horror Room",
         "description": "RITU 2025 – The Last Scream Horror Room \nStep into the darkness of RITU 2025, where silence screams and shadows chase your every move. Dare to solve the puzzles, escape the traps, and survive the night… or be haunted forever.\n\nWe invite you to experience THE LAST SCREAM – HORROR ROOM, a chilling escape room filled with fear, mystery, and surprises.\n\nRegister at: ritu25.live\nSpot registrations available\n For queries:\nAmrutha:99952 75459\nAswathi: 7736549601\n\n#TheLastScream #HorrorRoom #EscapeTheFear #Ritu25 #LetsRitu #RitKottayam",
-        "url": "null",
+        // "url": "null",
         "contact": [
             {
                 "name": "Amrutha",
@@ -83,7 +87,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Photo Booth",
         "description": "This RITU 2025, capture the vibe, freeze the fun! \n\nStep into PhotoBooth and create picture-perfect memories with your gang. Strike a pose, flash your brightest smile, and take home unforgettable moments from the biggest fest of the year.\n\nRegister now at: ritu25.live\n\nFor queries:\nSivadath: +91 77369 78442\nRoopesh: +91 85907 18680\n\n#PhotoBooth #Ritu25 #LetsRitu #RitKottayam #SnapIt #FreezeTheMoment #CaptureTheFun",
-        "url": "nul",
+        // "url": "nul",
         "contact": [
             {
                 "name": "Sivadath",
@@ -103,7 +107,7 @@ const CSE_DEPT: IEventData[] = [
         "date": "10/17/2025",
         "title": "Gaming Room (Retro Games)",
         "description": "This RITU 2025, travel back in time and relive the golden era of gaming. \n\nJoin us at the Retro Gaming Room — a nostalgic arcade experience featuring legendary consoles and timeless classics like Mario, Contra, and Tetris. Challenge your friends, chase high scores, and enjoy the thrill of vintage gaming fun!\n\nRegister at: ritu25.live\nSpot registrations available\nFor queries:\nSooraj Bijukumar : +91 8848785914\nEmmanuval George: +91 7592884660\n\n#RetroGaming #gaming #Ritu25 #LetsRitu #RITKottayam #GamingNostalgia",
-        "url": "nul",
+        // "url": "nul",
         "contact": [
             {
                 "name": "Sooraj Bijukumar",
@@ -199,10 +203,20 @@ const CSE_DEPT: IEventData[] = [
         "createdDate": "10/11/2025 22:24:43"
     },
     {
-        "image": "posters/cse/firewall.webp",
+        "image": "/posters/cse/firewall.webp",
         "date": "10/19/2025",
         "title": "The Firewall(Can you break through the questions?)",
-        "description": "-",
+        "description": "\"This RITU 2025, fuel your curiosity and put your knowledge to the ultimate test.\n" +
+            "\n" +
+            "We present FIREWALL — a tech quiz designed to test your knowledge in computers, programming, and the latest technological trends. Compete with the best minds and prove your mettle in the world of technology.\n" +
+            "Register as a team of 2 or as lonewolf\n" +
+            "Register at: https://ritu25.live\n" +
+            "Spot registrations available\n" +
+            "For queries:\n" +
+            "Sanjay: 8075778367\n" +
+            "Haroon: 8089547006\n" +
+            "\n" +
+            "#Firewall #TechQuiz #Ritu25 #LetsRitu #RITKottayam\"",
         "url": "https://www.yepdesk.com/embed/open-register/68ea85d446e0fb0001777025/ue92ggk0al",
         "contact": [
             {
