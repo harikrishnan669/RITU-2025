@@ -13,6 +13,10 @@ const SOCIETIES_MAPPING = [
         image: "/society/tinkerhub.webp",
         page: "/society/tinkerhub",
         comingSoon: false
+    }, {
+        image: "/society/sae.webp",
+        page: "/society/sae",
+        comingSoon: false
     }
 ]
 
