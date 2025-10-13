@@ -4,7 +4,7 @@ import {IEventData} from "@/types/event";
 const CIVIL_DEPT: IEventData[] = [
     {
         "image": "/posters/civil/waste-water.webp",
-        "date": "2025-10-13T05:30:00+05:30",
+        "date": "2025-10-13T22:30:00+05:30",
         "title": "New development And innovations in water and wastewater treatment",
         "description": "Civil  Department is conducting a\n" +
             "Talk session on 𝗡𝗘𝗪 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗠𝗘𝗡𝗧𝗦 𝗔𝗡𝗗 𝗜𝗡𝗡𝗢𝗩𝗔𝗧𝗜𝗢𝗡𝗦 𝗜𝗡 𝗪𝗔𝗧𝗘𝗥 𝗔𝗡𝗗 𝗪𝗔𝗦𝗧𝗘𝗪𝗔𝗧𝗘𝗥 𝗧𝗥𝗘𝗔𝗧𝗠𝗘𝗡𝗧 on this RITu 25.\n" +
@@ -41,7 +41,7 @@ const CIVIL_DEPT: IEventData[] = [
             }
         ],
         "location": "RIT",
-        "endDate": "2025-10-13T05:30:00+05:30",
+        "endDate": "2025-10-13T22:30:00+05:30",
         "createdDate": "2025-10-12T00:40:31+05:30"
     },
     {
@@ -144,7 +144,7 @@ const CIVIL_DEPT: IEventData[] = [
     },
     {
         "image": "/posters/civil/speed.webp",
-        "date": "2025-10-13T05:30:00+05:30",
+        "date": "2025-10-13T22:30:00+05:30",
         "title": "Speed typing",
         "description": "RITU 25 presents — Speed Typing Challenge\n\nHow fast can your fingers fly? Test your typing speed and accuracy in the ultimate Speed Typing Challenge at RITU 25. Whether you’re a coding whiz or just love to type, this is your chance to showcase your skills and compete for glory.\n\nRegister now at: RITu25.live\n\nContact:\nAlvina: 9037510990\nSaira: 91888 69060\n\n#RITU25 #SpeedTyping #TypingChallenge #FastFingers #RITU25Events",
         "url": "https://www.yepdesk.com/embed/open-register/68e9057746e0fb000172fe83/uf372v8pv2",
@@ -159,7 +159,7 @@ const CIVIL_DEPT: IEventData[] = [
             }
         ],
         "location": "RIT",
-        "endDate": "2025-10-13T05:30:00+05:30",
+        "endDate": "2025-10-13T22:30:00+05:30",
         "createdDate": "2025-10-11T00:20:36+05:30"
     },
     {
