@@ -52,7 +52,6 @@ const IEDC_DATA: IEventData[] = [
         "date": "10/17/2025",
         "title": "Period pain simulator ",
         "description": "Period Pain Simulator is a wearable device that mimics menstrual cramps using controlled electrical impulses. Designed to raise awareness and build empathy, it allows non-menstruating individuals to experience the intensity of period pain firsthand.",
-        "url": "null",
         "contact": [
             {
                 "name": "Akshaya",
@@ -90,9 +89,9 @@ const IEDC_DATA: IEventData[] = [
     {
         "image": "/posters/iedc/startup-bootcamp.webp",
         "date": "10/18/2025",
-        "title": "Start up bootcamp ",
+        "title": "Startup bootcamp ",
         "description": "Talk session on turning ideas into impact ",
-        "url": "null",
+        "url": "https://www.yepdesk.com/embed/open-register/68eb599f46e0fb00017cdec4/rj04fnji4o",
         "contact": [
             {
                 "name": "Krishnapriya S ",
