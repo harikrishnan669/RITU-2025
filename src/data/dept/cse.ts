@@ -332,25 +332,45 @@ const CSE_DEPT: IEventData[] = [
         "createdDate": "10/12/2025 12:28:42"
     },
     {
-        "image": "/posters/cse/python.webp",
-        "date": "10/19/2025",
-        "title": "Python Workshop",
-        "description": "RITU 2025 is here — your gateway to coding, creativity, and innovation!\n\nPython Bootcamp: Learn by Doing\nStep into the world of programming with an immersive, hands-on coding experience!\nLed by experts from the tech industry, this beginner-friendly workshop will help you master Python from the ground up.\nLearn to write real code, solve practical problems, and build your confidence to kickstart your programming journey.\n\nHighlights:\nInteractive live coding sessions\nReal-world problem solving\nCertificates for participants\nPerfect for beginners and aspiring developers\nLaptop is preferable for the best experience\n\nRegister at: ritu25.live\n\nFor queries:\nDrishya: 8848897286\nAnunandha: 7306980226\n\n#PythonBootcamp #PythonWorkshop #RITU25 #LearnByDoing #CSEWorkshop #LetsRitu #TechFest",
-        "url": "https://www.yepdesk.com/embed/open-register/68eb604a46e0fb00017d4538/rjvsrpf1hq",
+        "image": "/posters/cse/python_new.webp",
+        "date": "10/18/2025",
+        "title": "Python Bootcamp",
+        "description": "RITU 2025 is here — your gateway to coding, creativity, and innovation!\n\nPython Bootcamp: Learn by Doing\nStep into the world of programming with an immersive, hands-on coding experience!\nLed by experts from the tech industry, this beginner-friendly workshop will help you master Python from the ground up.\nLearn to write real code, solve practical problems, and build your confidence to kickstart your programming journey.\n\nHighlights:\nInteractive live coding sessions\nReal-world problem solving\nCertificates for participants\nPerfect for beginners and aspiring developers\nLaptop is preferable for the best experience\n\nRegister at: ritu25.live\n\n#PythonBootcamp #PythonWorkshop #RITU25 #LearnByDoing #CSEWorkshop #LetsRitu #TechFest",
+        "url": "https://www.yepdesk.com/embed/open-register/68ed47fb46e0fb000188640e/uikdprmb4v",
         "contact": [
             {
-                "name": "Drishya",
-                "number": "8848897286"
+                "name": "Swathy",
+                "number": "8714022884"
             },
             {
-                "name": "Anunandha",
-                "number": "7306980226"
+                "name": "Anusree",
+                "number": "8157022442"
             }
         ],
         "location": "RIT",
-        "endDate": "10/19/2025",
-        "createdDate": "10/12/2025 14:12:50"
+        "endDate": "10/18/2025",
+        "createdDate": "10/14/2025 14:12:50"
     }
+    // {
+    //     "image": "/posters/cse/python.webp",
+    //     "date": "10/19/2025",
+    //     "title": "Python Workshop",
+    //     "description": "RITU 2025 is here — your gateway to coding, creativity, and innovation!\n\nPython Bootcamp: Learn by Doing\nStep into the world of programming with an immersive, hands-on coding experience!\nLed by experts from the tech industry, this beginner-friendly workshop will help you master Python from the ground up.\nLearn to write real code, solve practical problems, and build your confidence to kickstart your programming journey.\n\nHighlights:\nInteractive live coding sessions\nReal-world problem solving\nCertificates for participants\nPerfect for beginners and aspiring developers\nLaptop is preferable for the best experience\n\nRegister at: ritu25.live\n\nFor queries:\nDrishya: 8848897286\nAnunandha: 7306980226\n\n#PythonBootcamp #PythonWorkshop #RITU25 #LearnByDoing #CSEWorkshop #LetsRitu #TechFest",
+    //     "url": "https://www.yepdesk.com/embed/open-register/68eb604a46e0fb00017d4538/rjvsrpf1hq",
+    //     "contact": [
+    //         {
+    //             "name": "Drishya",
+    //             "number": "8848897286"
+    //         },
+    //         {
+    //             "name": "Anunandha",
+    //             "number": "7306980226"
+    //         }
+    //     ],
+    //     "location": "RIT",
+    //     "endDate": "10/19/2025",
+    //     "createdDate": "10/12/2025 14:12:50"
+    // }
 ]
 
 export default CSE_DEPT;

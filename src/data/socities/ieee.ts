@@ -45,11 +45,11 @@ const IEEE_DATA: IEventData[] = [
         "contact": [
             {
                 "name": "Bijila",
-                "number": ""
+                "number": "6238464655"
             },
             {
                 "name": "Abhiram ",
-                "number": ""
+                "number": "9744520508"
             }
         ],
         "location": "Ece Department,RIT,Offline",
