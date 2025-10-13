@@ -439,6 +439,195 @@ const WORKSHOPS = [
         "location": "RIT",
         "endDate": "10/18/2025",
         "createdDate": "10/12/2025 1:28:25"
+    },
+
+    /*
+    /posters/competition/fashion-show.webp
+/posters/competition/jam.webp
+/posters/competition/line-o-mania.webp
+/posters/competition/mehindi.webp
+/posters/competition/moments-ritu.webp
+/posters/competition/neon-football.webp
+/posters/competition/scavenger-hunt.webp
+/posters/competition/soapy.webp
+/posters/competition/verbal-duels.webp
+
+     */
+    {
+        "image": "/posters/competition/line-o-mania.webp",
+        "date": "10/18/2025",
+        "title": "Line o mania",
+        "description": "Ready to engineer precision and creativity into motion?\nCompete in Line-O-Mania, the thrilling line-following robot challenge where innovation meets agility. Design, code, and calibrate your bot to perfection as it races through the course — every curve counts!",
+        "url": "https://www.yepdesk.com/embed/open-register/68ec157d46e0fb0001814cb8/gkftprfhbs",
+        "contact": [
+            {
+                "name": "Gauri Luxmi",
+                "number": "8848622785"
+            },
+            {
+                "name": "Devatha",
+                "number": "8078964817"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/18/2025",
+        "createdDate": "10/13/2025 21:17:55"
+    },
+    {
+        "image": "/posters/competition/scavenger-hunt.webp",
+        "date": "10/17/2025",
+        "title": "Scavenger hunt",
+        "description": "Gear up for a quest packed with mystery and adventure!\nJoin the Scavenger Hunt and race across clues, solve riddles, and unlock hidden treasures across the campus. Team up, think smart, and uncover secrets before time runs out!",
+        "url": "https://www.yepdesk.com/embed/open-register/68ec145a46e0fb00018149db/rt3f33bsbg",
+        "contact": [
+            {
+                "name": "Ashin Saji",
+                "number": "9947483013"
+            },
+            {
+                "name": "Riyas Iqbal",
+                "number": "9778501955"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/17/2025",
+        "createdDate": "10/13/2025 21:16:36"
+    },
+    {
+        "image": "/posters/competition/jam.webp",
+        "date": "10/18/2025",
+        "title": "Jam",
+        "description": "Get ready to think fast and speak faster!\nJoin the Just A Minute (JAM) competition — a battle of wit, spontaneity, and articulation where every second counts. Impress the judges with your quick thinking and flawless delivery, and claim your spot as the ultimate JAM master!",
+        "url": "https://www.yepdesk.com/embed/open-register/68ec169e46e0fb0001815080/cmncfs3dr5",
+        "contact": [
+            {
+                "name": "Gouri Sankari",
+                "number": "9497343196"
+            },
+            {
+                "name": "Sreenandana",
+                "number": "8301920161"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/18/2025",
+        "createdDate": "10/13/2025 21:14:51"
+    },
+    {
+        "image": "/posters/competition/neon-football.webp",
+        "date": "10/18/2025",
+        "title": "Neon football",
+        "description": "Light up the night with every move you make!\nJoin us for the electrifying Neon Football event, where energy, teamwork, and excitement collide under glowing lights. Experience the thrill of football like never before — fast-paced, vibrant, and unforgettable!",
+        "url": "https://www.yepdesk.com/embed/open-register/68ecf8dc46e0fb000186578b/ts22bskh0p",
+        "contact": [
+            {
+                "name": "Dhanshyam",
+                "number": "9188448093"
+            },
+            {
+                "name": "Shadil",
+                "number": ""
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/18/2025",
+        "createdDate": "10/13/2025 20:48:58"
+    },
+    {
+        "image": "/posters/competition/moments-ritu.webp",
+        "date": "10/20/2025",
+        "title": "Moments of ritu",
+        "description": "Capture the essence, the energy, and the excitement of RITU!\nParticipate in Moments of RITU, a photography contest that celebrates creativity and storytelling through your lens. Freeze unforgettable memories and let your perspective shine.",
+        "url": "https://www.yepdesk.com/embed/open-register/68e2551046e0fb0001556c5b/2e2alqjlhi",
+        "contact": [
+            {
+                "name": "Akshay ",
+                "number": "8281328978"
+            },
+            {
+                "name": "Hibah ",
+                "number": "9895631890"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/20/2025",
+        "createdDate": "10/13/2025 20:47:22"
+    },
+    {
+        "image": "/posters/competition/verbal-duels.webp",
+        "date": "10/17/2025",
+        "title": "Verbal duel",
+        "description": "Think fast, speak sharp, and conquer the stage!\nTake part in the Verbal Duel, where words become your greatest weapon. Engage in spirited debates, test your wit, and prove your mettle in this battle of ideas and expression",
+        "url": "https://www.yepdesk.com/embed/open-register/68ecef2946e0fb0001862efc/1an2je9o6h",
+        "contact": [
+            {
+                "name": "Fajiha",
+                "number": "9496235812"
+            },
+            {
+                "name": "Athulya ",
+                "number": "9605787220"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/17/2025",
+        "createdDate": "10/13/2025 20:44:05"
+    },
+    {
+        "image": "/posters/competition/fashion-show.webp",
+        "date": "10/17/2025",
+        "title": "Fashion show",
+        "description": "Step into the spotlight and redefine style!\nJoin us for the Fashion Show Competition, where creativity meets confidence on the runway. Showcase your flair for fashion, design, and performance as you bring your boldest ideas to life.",
+        "url": "https://www.yepdesk.com/embed/open-register/68ecea8346e0fb000186018d/m2dqj1s69s",
+        "contact": [
+            {
+                "name": "Amrita ",
+                "number": "8890974807"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/17/2025",
+        "createdDate": "10/13/2025 20:42:39"
+    },
+    {
+        "image": "/posters/competition/soapy.webp",
+        "date": "10/18/2025",
+        "title": "Soapy football",
+        "description": "Slide, splash, and score your way to victory!\nGet ready for an action-packed Soapy Football event where fun meets competition. Gather your team, show off your skills, and experience the thrill of football like never before — on a slippery, laughter-filled field!",
+        "url": "https://www.yepdesk.com/embed/open-register/68ece83846e0fb000185ee4e/1nbflrb4n",
+        "contact": [
+            {
+                "name": "Dhanshyam",
+                "number": "9188448093"
+            },
+            {
+                "name": "Shadii",
+                "number": "9562556179"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/18/2025",
+        "createdDate": "10/13/2025 20:41:34"
+    },
+    {
+        "image": "/posters/competition/mehindi.webp",
+        "date": "10/19/2025",
+        "title": "Mehndi",
+        "description": "Unleash your creativity through intricate designs and patterns!\nJoin us for the Mehndi Competition and showcase your artistic flair with traditional and contemporary styles. Let your imagination flow as your hands become the canvas for stunning expressions of art.",
+        "url": "https://www.yepdesk.com/embed/open-register/68ecefcc46e0fb0001863274/kmonrvvdgc",
+        "contact": [
+            {
+                "name": "Sreelekshmi M",
+                "number": "8921212906"
+            },
+            {
+                "name": "Aysha Liya",
+                "number": "8089850274"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/19/2025",
+        "createdDate": "10/13/2025 20:39:28"
     }
 ];
 
