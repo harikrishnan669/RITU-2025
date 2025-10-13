@@ -68,7 +68,7 @@ const IEEE_DATA: IEventData[] = [
                 "number": "8078055173"
             },
             {
-                "name": "Neethu ",
+                "name": "Neethu",
                 "number": "8304917846"
             }
         ],
