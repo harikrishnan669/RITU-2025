@@ -453,66 +453,6 @@ const WORKSHOPS = [
 /posters/competition/verbal-duels.webp
 
      */
-    {
-        "image": "/posters/competition/line-o-mania.webp",
-        "date": "10/18/2025",
-        "title": "Line o mania",
-        "description": "Ready to engineer precision and creativity into motion?\nCompete in Line-O-Mania, the thrilling line-following robot challenge where innovation meets agility. Design, code, and calibrate your bot to perfection as it races through the course — every curve counts!",
-        "url": "https://www.yepdesk.com/embed/open-register/68ec157d46e0fb0001814cb8/gkftprfhbs",
-        "contact": [
-            {
-                "name": "Gauri Luxmi",
-                "number": "8848622785"
-            },
-            {
-                "name": "Devatha",
-                "number": "8078964817"
-            }
-        ],
-        "location": "RIT",
-        "endDate": "10/18/2025",
-        "createdDate": "10/13/2025 21:17:55"
-    },
-    {
-        "image": "/posters/competition/scavenger-hunt.webp",
-        "date": "10/17/2025",
-        "title": "Scavenger hunt",
-        "description": "Gear up for a quest packed with mystery and adventure!\nJoin the Scavenger Hunt and race across clues, solve riddles, and unlock hidden treasures across the campus. Team up, think smart, and uncover secrets before time runs out!",
-        "url": "https://www.yepdesk.com/embed/open-register/68ec145a46e0fb00018149db/rt3f33bsbg",
-        "contact": [
-            {
-                "name": "Ashin Saji",
-                "number": "9947483013"
-            },
-            {
-                "name": "Riyas Iqbal",
-                "number": "9778501955"
-            }
-        ],
-        "location": "RIT",
-        "endDate": "10/17/2025",
-        "createdDate": "10/13/2025 21:16:36"
-    },
-    {
-        "image": "/posters/competition/jam.webp",
-        "date": "10/17/2025",
-        "title": "Jam",
-        "description": "Get ready to think fast and speak faster!\nJoin the Just A Minute (JAM) competition — a battle of wit, spontaneity, and articulation where every second counts. Impress the judges with your quick thinking and flawless delivery, and claim your spot as the ultimate JAM master!",
-        "url": "https://www.yepdesk.com/embed/open-register/68ec169e46e0fb0001815080/cmncfs3dr5",
-        "contact": [
-            {
-                "name": "Gouri Sankari",
-                "number": "9497343196"
-            },
-            {
-                "name": "Sreenandana",
-                "number": "8301920161"
-            }
-        ],
-        "location": "RIT",
-        "endDate": "10/17/2025",
-        "createdDate": "10/13/2025 21:14:51"
-    },
 ];
 
 
