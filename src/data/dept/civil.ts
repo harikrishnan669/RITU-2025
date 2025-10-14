@@ -520,6 +520,26 @@ const CIVIL_DEPT: IEventData[] = [
         "location": "RIT CE",
         "endDate": "10/17/2025",
         "createdDate": "10/11/2025 23:08:23"
+    },
+    {
+        "image": "/posters/civil/beam-me-up.webp",
+        "date": "10/17/2025",
+        "title": "Beam Me Up",
+        "description": "The Ultimate Tech Quiz - A challenging competition to test your knowledge of Civil Engineering and General Engineering concepts.",
+        "url": "https://www.yepdesk.com/embed/open-register/68ee421246e0fb00018c5b5d/cbivpi3cbp",
+        "contact": [
+            {
+                "name": "Niranjana",
+                "number": "8590187967"
+            },
+            {
+                "name": "Ardra",
+                "number": "6235606212"
+            }
+        ],
+        "location": "RIT",
+        "endDate": "10/17/2025",
+        "createdDate": "10/14/2025 17:11:40"
     }
 ]
 
