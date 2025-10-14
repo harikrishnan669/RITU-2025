@@ -17,6 +17,10 @@ const SOCIETIES_MAPPING = [
         image: "/society/sae.webp",
         page: "/society/sae",
         comingSoon: false
+    }, {
+        image: "/society/iste.webp",
+        page: "/society/iste",
+        comingSoon: false
     }
 ]
 

@@ -2,7 +2,7 @@ import {IEventData} from "@/types/event";
 
 
 const ARCH_DEPT: IEventData[] = [
-    {
+/*    {
         "image": "/posters/arch/wild mark.webp",
         "date": "10/19/2025",
         "title": "Wild Mark",
@@ -33,7 +33,7 @@ const ARCH_DEPT: IEventData[] = [
         "location": "Department of Architecture ",
         "endDate": "10/19/2025",
         "createdDate": "10/12/2025 13:04:09"
-    },
+    },*/
         {
             "image": "/posters/arch/architecture conclave.webp",
             "date": "10/18/2025",
