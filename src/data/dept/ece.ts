@@ -228,6 +228,7 @@ const ECE_DEPT: IEventData[] = [
                 "number": "8907430337"
             }
         ],
+        closed: true,
         "location": "ECE DEPARTMENT",
         "endDate": "10/18/2025",
         "createdDate": "10/12/2025 12:59:29"

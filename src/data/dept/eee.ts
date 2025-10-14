@@ -173,6 +173,7 @@ const EEE_DEPT: IEventData[] = [
                 "number": ""
             }
         ],
+        closed: true,
         "location": "RIT ",
         "endDate": "10/19/2025",
         "createdDate": "10/12/2025 16:05:01"

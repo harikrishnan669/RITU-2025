@@ -24,24 +24,33 @@ export default function EventCard({event, onClick}: {
         eventEnded = new Date() >= endDate;
     }
 
+    if (event.closed) {
+        eventEnded = true;
+    }
+
+    console.log("Event Ended:", event);
 
     return (
         <div
             className={cn(
                 "bg-white/10 border border-white/20 rounded-xl shadow-lg overflow-hidden max-w-sm w-full flex flex-col cursor-pointer",
-                eventEnded && 'grayscale-100 cursor-not-allowed'
+                eventEnded && 'cursor-not-allowed'
             )}
             onClick={() => {
                 if (!eventEnded)
                     onClick(event);
             }}
         >
-            <div className="relative">
+            <div className="relative flex justify-center items-center">
                 <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-60 object-cover"
+                    className={cn("w-full h-60 object-cover",
+                        eventEnded && 'grayscale-100 cursor-not-allowed blur-xs'
+                    )}
                 />
+                {eventEnded && <img src="/placeholder/reg-closed.webp" className="absolute w-[80%]"/>}
+
                 {event.badge && (
                     eventEnded ?
                         <span
@@ -55,10 +64,15 @@ export default function EventCard({event, onClick}: {
                     </span>
                 )}
             </div>
-            <div className="p-4 flex flex-col flex-grow">
+
+            <div className={cn("p-4 flex flex-col flex-grow", eventEnded && 'opacity-30')}>
                 <div className="flex items-center gap-2 text-sm text-white/70 mb-2">
-                    <Calendar className="size-4"/>
-                    <span>{showEventTime(event.date)}</span>
+                    {eventEnded ? "Event Closed" :
+                        <>
+                            <Calendar className="size-4"/>
+                            <span>{showEventTime(event.date)}</span>
+                        </>
+                    }
                 </div>
                 <h3 className="font-semibold text-lg mb-2 line-clamp-2 capitalize">
                     {(event.title || '').toLowerCase()}

@@ -59,8 +59,8 @@ export default function PosterListing({
 
     const filteredAndSortedEvents = filteredEvents.sort((a, b) => {
         const currentDate = new Date()
-        const aEnded = a.endDate ? new Date(a.endDate) <= currentDate : false
-        const bEnded = b.endDate ? new Date(b.endDate) <= currentDate : false
+        const aEnded = a.closed ? true : a.endDate ? new Date(a.endDate) <= currentDate : false
+        const bEnded = b.closed ? true : b.endDate ? new Date(b.endDate) <= currentDate : false
 
         // If one event has ended and the other hasn't, prioritize the active one
         if (aEnded && !bEnded) return 1

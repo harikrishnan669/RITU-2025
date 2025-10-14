@@ -166,6 +166,7 @@ const CIVIL_DEPT: IEventData[] = [
         "image": "/posters/civil/stumble-guys.webp",
         "date": "2025-10-14T05:30:00+05:30",
         "title": "Stumble guys",
+        closed: true,
         "description": "RITU 25 presents — Stumble Guys Tournament\n\nGet ready to stumble",
         "url": "https://www.yepdesk.com/embed/open-register/68e907e046e0fb00017303d1/1hfdj7paht",
         "contact": [
