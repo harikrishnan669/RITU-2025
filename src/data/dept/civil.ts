@@ -119,7 +119,7 @@ const CIVIL_DEPT: IEventData[] = [
             }
         ],
         "location": "RIT",
-        "endDate": "2025-10-14T05:30:00+05:30",
+        "endDate": "2025-10-14T24:30:00+05:30",
         "createdDate": "2025-10-12T00:36:39+05:30"
     },
     {
@@ -179,7 +179,7 @@ const CIVIL_DEPT: IEventData[] = [
             }
         ],
         "location": "RIT",
-        "endDate": "2025-10-14T05:30:00+05:30",
+        "endDate": "2025-10-14T24:30:00+05:30",
         "createdDate": "2025-10-11T00:40:12+05:30"
     },
     {
