@@ -23,7 +23,7 @@ export default function FlashSaleBanner() {
                 }}
             >
 
-                <a href={"#"} className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
+                <a href={"https://www.yepdesk.com/embed/buy-tickets/68ef678b46e0fb0001910834/private/42d851k5kd"} className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
                     <div className="relative overflow-hidden h-full flex items-center">
                         {/* Scrolling marquee content */}
                         <div className="flex animate-marquee whitespace-nowrap">
@@ -50,7 +50,7 @@ function MarqueeContent() {
     return (
         <div className="flex items-center gap-8 px-8">
               <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Flash Sale @ 7pm
+                Flash Sale from 7pm to 8pm
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
@@ -60,10 +60,10 @@ function MarqueeContent() {
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
                 RITU Festival 2025 - October 16-19
               </span>
-            {/*<span className="text-yellow-300 font-bold text-xl">•</span>*/}
-            {/*<span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">*/}
-            {/*    Click on the banner*/}
-            {/*  </span>*/}
+            <span className="text-yellow-300 font-bold text-xl">•</span>
+            <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
+                Click on the banner
+              </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
         </div>
     )
