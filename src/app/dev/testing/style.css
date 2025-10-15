@@ -30,10 +30,23 @@
     }
 }
 
+@keyframes flash-bg-amber {
+    0%,
+    100% {
+        background-color: rgb(234, 167, 38); /* red-600 */
+    }
+    50% {
+        background-color: rgb(211, 149, 33); /* red-600 */
+    }
+}
+
 .animate-marquee {
     animation: marquee 20s linear infinite;
 }
 
 .animate-flash-bg {
     animation: flash-bg 1.5s ease-in-out infinite;
+}
+.animate-flash-bg-amber {
+    animation: flash-bg-amber 1.5s ease-in-out infinite;
 }

@@ -1,16 +1,15 @@
-"use client"
-
 import {useState} from "react"
 import {X} from "lucide-react"
 import {cn} from "@/lib/utils";
+import "./style.css"
 
-export function FlashSaleBanner() {
+export default function FlashSaleBanner() {
     const [isVisible, setIsVisible] = useState(true)
 
     if (!isVisible) return null
 
     return (
-        <div className="fixed inset-0 z-50 pointer-events-none">
+        <div className="absolute inset-0 z-50">
             <div
                 className="absolute left-0 right-0 pointer-events-auto"
                 style={{
@@ -20,7 +19,7 @@ export function FlashSaleBanner() {
                     height: "80px",
                 }}
             >
-                <div className={cn("relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
+                <a href={"#"} className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
                     <div className="relative overflow-hidden h-full flex items-center">
                         {/* Scrolling marquee content */}
                         <div className="flex animate-marquee whitespace-nowrap">
@@ -37,7 +36,7 @@ export function FlashSaleBanner() {
                     >
                         <X className="h-5 w-5"/>
                     </button>
-                </div>
+                </a>
             </div>
         </div>
     )
