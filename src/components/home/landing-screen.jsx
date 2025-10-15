@@ -2,12 +2,12 @@ import BoxReveal from "@/components/magicui/box-reveal";
 import Wave from "@/components/wave/wave";
 import SOCIALS from "@/data/socials";
 import Link from "next/link";
-// import FlashSaleBanner from "@/components/banner/flash-sale-banner";
+import FlashSaleBanner from "@/components/banner/flash-sale-banner";
 
 export default function LandingScreen() {
     return (
         <main className="relative flex items-center justify-center h-screen text-white container-cont">
-            {/*<FlashSaleBanner/>*/}
+            <FlashSaleBanner/>
             <div className="size-full flex flex-col justify-center max-sm:items-center">
                 <div
                     className="pt-10 flex items-end justify-end space-y-4 text-4xl flex-col max-sm:pt-0 max-sm:order-2 max-sm:text-3xl max-sm:items-center">

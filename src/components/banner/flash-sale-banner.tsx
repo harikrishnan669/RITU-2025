@@ -3,6 +3,9 @@ import {X} from "lucide-react"
 import {cn} from "@/lib/utils";
 import "./style.css"
 
+// https://www.yepdesk.com/embed/buy-tickets/68ef678b46e0fb0001910834/private/42d851k5kd
+
+
 export default function FlashSaleBanner() {
     const [isVisible, setIsVisible] = useState(true)
 
@@ -19,6 +22,7 @@ export default function FlashSaleBanner() {
                     height: "80px",
                 }}
             >
+
                 <a href={"#"} className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
                     <div className="relative overflow-hidden h-full flex items-center">
                         {/* Scrolling marquee content */}
@@ -46,20 +50,20 @@ function MarqueeContent() {
     return (
         <div className="flex items-center gap-8 px-8">
               <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Flash Sale
+                Flash Sale @ 8pm
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Limited Time Only - Grab Your Spot Now
+                Limited Time Only - Grab Your Spots
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
                 RITU Festival 2025 - October 16-19
               </span>
-            <span className="text-yellow-300 font-bold text-xl">•</span>
-            <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Click on the banner
-              </span>
+            {/*<span className="text-yellow-300 font-bold text-xl">•</span>*/}
+            {/*<span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">*/}
+            {/*    Click on the banner*/}
+            {/*  </span>*/}
             <span className="text-yellow-300 font-bold text-xl">•</span>
         </div>
     )
