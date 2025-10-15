@@ -46,7 +46,7 @@ const CIVIL_DEPT: IEventData[] = [
     },
     {
         "image": "/posters/civil/ml-shm.webp",
-        "date": "2025-10-15T05:30:00+05:30",
+        "date": "2025-10-15T22:30:00+05:30",
         "title": "Machine learning in SHM and CM workshop",
         "description": "Civil Department presents \"MACHINE LEARNING IN SHM AND CM WORKSHOP\" on this RITu 25.\n" +
             "\n" +
@@ -79,7 +79,7 @@ const CIVIL_DEPT: IEventData[] = [
             }
         ],
         "location": "RIT",
-        "endDate": "2025-10-15T05:30:00+05:30",
+        "endDate": "2025-10-15T22:30:00+05:30",
         "createdDate": "2025-10-12T00:38:31+05:30"
     },
     {
@@ -465,7 +465,7 @@ const CIVIL_DEPT: IEventData[] = [
     },
     {
         "image": "/posters/civil/civita.webp",
-        "date": "10/15/2025",
+        "date": "10/19/2025",
         "title": "Civista",
         "description": "RITU 25 Presents \"CIVISTA\"- A poster-makingcompetition that celebrates the art of creativity of civilengineering.It provides a platform for students to designand showcase innovative posters that capture the essence,beauty, and vision of civil structures",
         "url": "https://www.yepdesk.com/embed/open-register/68ea8c2946e0fb0001778fb5/isueonthll",
@@ -480,7 +480,7 @@ const CIVIL_DEPT: IEventData[] = [
             }
         ],
         "location": "Rit",
-        "endDate": "10/15/2025",
+        "endDate": "10/19/2025",
         "createdDate": "10/12/2025 1:12:21"
     }, {
         "image": "/posters/civil/civilography.webp",
