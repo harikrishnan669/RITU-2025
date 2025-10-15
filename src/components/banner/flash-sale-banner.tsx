@@ -50,7 +50,7 @@ function MarqueeContent() {
     return (
         <div className="flex items-center gap-8 px-8">
               <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Flash Sale @ 8pm
+                Flash Sale @ 9pm
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
