@@ -180,7 +180,37 @@ const IEEE_DATA: IEventData[] = [
         "image": "/posters/ieee/industrial-logo-hunt.webp",
         "date": "10/19/2025",
         "title": "industrial logo hunt",
-        "description": "The event aims to enhance students’ awareness of industrial sectors and leading companies through a fun and interactive logo identification challenge, where participants recognize industry logos and answer related questions to test their knowledge and observation skills.",
+        url: "https://forms.gle/i5fFyNJfUGGM6AyH7",
+        "description": "\"The only way to learn a new programming language is by writing programs in it.\"\n" +
+            "~ Dennis Ritchie\n" +
+            "\n" +
+            "How well do you know the giants of the industrial world? 🌐\n" +
+            "\n" +
+            "IEEE IAS presents a fun and interactive challenge:\n" +
+            "\n" +
+            "⚡ INDUSTRIAL LOGO HUNT ⚡\n" +
+            "Test your knowledge and observation skills by recognizing industry logos and answering related questions about leading industrial sectors and companies!\n" +
+            "\n" +
+            "📝 Key Details:\n" +
+            "\n" +
+            "Focus: Industrial Logo Identification and related questions.\n" +
+            "\n" +
+            "Format: Fun, interactive knowledge challenge.\n" +
+            "\n" +
+            "Activity Points: 10\n" +
+            "\n" +
+            "📅 Date: October 19, 2025\n" +
+            "🕒 Time: 9:00 AM to 11:00 AM\n" +
+            "📍 Venue: Measurement Lab , Department of Electrical and Electronics Engineering\n" +
+            "💰 Registration Fee: ₹20\n" +
+            "🏆 Prize Pool: 500\n" +
+            "     Register at : ritu25.live\n" +
+            "\n" +
+            "📲 For queries, contact:\n" +
+            "Prabhav: +91 97471 50277\n" +
+            "Roshny: +91 89211 32077\n" +
+            "\n" +
+            "https://www.instagram.com/p/DPxi4hVkqgY/?igsh=MWw4Y21ycW0wMTN3bQ==",
         "contact": [
             {
                 "name": "Prabhav",
