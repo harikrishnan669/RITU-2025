@@ -177,6 +177,26 @@ const EEE_DEPT: IEventData[] = [
         "location": "RIT ",
         "endDate": "10/19/2025",
         "createdDate": "10/12/2025 16:05:01"
+    },
+    {
+        "image": "/posters/eee/indus-mep-bim.webp",
+        "date": "10/18/2025",
+        "title": "Industrial MEP Engineering And BIM Designing ",
+        "description": "“Design is not just what it looks like and feels like design is how it works.” - Steve Jobs \n\nJoin us for an insightful session on Conventional Designing vs Building Information Modeling (BIM) and explore the world of industrial software applications. Learn about load calculations, electrical and mechanical design, and advanced BIM techniques for architectural, MEP, HVAC, plumbing, and fire-fighting systems. Gain practical experience using top industry tools like AutoCAD, HAP, Revit, Navisworks, and Duct Sizer to create intelligent and collaborative building designs.\n\nDate:18th October 2025\nVenue: Department of Electrical and Electronics Engineering\n *Time:* 1:30 PM – 3:30 PM\nKTU Points: Upto 20 Activity Points \n Registration Fee: ₹30 per participant",
+        "url": "https://www.yepdesk.com/embed/open-register/68f1281c46e0fb0001981c70/n4b3g3j1m4",
+        "contact": [
+            {
+                "name": "Sayooj",
+                "number": "8590713685"
+            },
+            {
+                "name": "Ansil",
+                "number": "9074300434"
+            }
+        ],
+        "location": "Electrical and electronics department (offline)",
+        "endDate": "10/18/2025 23:01:32",
+        "createdDate": "10/16/2025 23:01:32"
     }
 ];
 

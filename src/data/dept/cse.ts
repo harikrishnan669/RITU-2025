@@ -38,6 +38,7 @@ const CSE_DEPT: IEventData[] = [
                 "number": "8547432646"
             }
         ],
+        closed: true,
         "location": "RIT",
         "endDate": "10/18/2025",
         "createdDate": "10/12/2025 0:40:35"
@@ -349,7 +350,7 @@ const CSE_DEPT: IEventData[] = [
         ],
         "location": "RIT",
         "endDate": "10/18/2025",
-        "createdDate": "10/14/2025 14:12:50"
+        "createdDate": "10/14/2025 14:12:50",
     }
     // {
     //     "image": "/posters/cse/python.webp",
