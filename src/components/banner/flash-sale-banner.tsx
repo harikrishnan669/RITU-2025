@@ -22,8 +22,8 @@ export default function FlashSaleBanner() {
                     height: "80px",
                 }}
             >
-
-                <a href={"https://www.yepdesk.com/embed/buy-tickets/68ef678b46e0fb0001910834/private/42d851k5kd"} className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
+                <a href={"https://drive.google.com/drive/folders/1JxWiAJdsSAGVJPogayrTmRl_feoAymR_"}
+                   className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
                     <div className="relative overflow-hidden h-full flex items-center">
                         {/* Scrolling marquee content */}
                         <div className="flex animate-marquee whitespace-nowrap">
@@ -50,6 +50,43 @@ function MarqueeContent() {
     return (
         <div className="flex items-center gap-8 px-8">
               <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
+                Ticket Live @ Civil Jn, RIT
+              </span>
+            <span className="text-yellow-300 font-bold text-xl">•</span>
+            <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
+                Click to view event details
+              </span>
+            <span className="text-yellow-300 font-bold text-xl">•</span>
+            <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
+                RITU Festival 2025 - October 16-19
+              </span>
+            <span className="text-yellow-300 font-bold text-xl">•</span>
+        </div>
+    )
+}
+
+/*
+<a href={"https://www.yepdesk.com/embed/buy-tickets/68ef678b46e0fb0001910834/private/42d851k5kd"} className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
+                    <div className="relative overflow-hidden h-full flex items-center">
+<div className="flex animate-marquee whitespace-nowrap">
+    <MarqueeContent/>
+    <MarqueeContent/>
+</div>
+</div>
+
+<button
+    onClick={() => setIsVisible(false)}
+    className="absolute top-1/2 right-4 -translate-y-1/2 text-white hover:bg-white/20 rounded-full p-1.5 transition-colors z-10"
+    aria-label="Close banner"
+>
+    <X className="h-5 w-5"/>
+</button>
+</a>
+ */
+
+/*
+        <div className="flex items-center gap-8 px-8">
+              <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
                 Flash Sale from 7pm to 8pm
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
@@ -66,5 +103,4 @@ function MarqueeContent() {
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
         </div>
-    )
-}
+ */

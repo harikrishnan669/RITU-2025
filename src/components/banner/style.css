@@ -45,7 +45,7 @@
 }
 
 .animate-flash-bg {
-    animation: flash-bg 1.5s ease-in-out infinite;
+    /*animation: flash-bg 1.5s ease-in-out infinite;*/
 }
 .animate-flash-bg-amber {
     animation: flash-bg-amber 1.5s ease-in-out infinite;
