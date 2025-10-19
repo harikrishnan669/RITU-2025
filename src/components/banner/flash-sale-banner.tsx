@@ -5,6 +5,7 @@ import "./style.css"
 
 // https://www.yepdesk.com/embed/buy-tickets/68ef678b46e0fb0001910834/private/42d851k5kd
 
+// https://drive.google.com/drive/folders/1JxWiAJdsSAGVJPogayrTmRl_feoAymR_
 
 export default function FlashSaleBanner() {
     const [isVisible, setIsVisible] = useState(true)
@@ -22,7 +23,7 @@ export default function FlashSaleBanner() {
                     height: "80px",
                 }}
             >
-                <a href={"https://drive.google.com/drive/folders/1JxWiAJdsSAGVJPogayrTmRl_feoAymR_"}
+                <a href="https://www.yepdesk.com/embed/buy-tickets/68ef678b46e0fb0001910834/private/42d851k5kd"
                    className={cn("block relative bg-red-600 animate-flash-bg h-full shadow-2xl")}>
                     <div className="relative overflow-hidden h-full flex items-center">
                         {/* Scrolling marquee content */}
@@ -50,11 +51,11 @@ function MarqueeContent() {
     return (
         <div className="flex items-center gap-8 px-8">
               <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Ticket Live @ Civil Jn, RIT
+                FLASH SALE
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
-                Click to view event details
+                Click To Grab Your Tickets Now!
               </span>
             <span className="text-yellow-300 font-bold text-xl">•</span>
             <span className="text-white font-bold text-xl uppercase tracking-wider drop-shadow-lg">
