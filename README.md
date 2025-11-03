@@ -37,3 +37,7 @@ A blog post explaining the technical details behind the ticketing system.
 <img src="/public/view-count.png" alt="View Count"/>
 
 The view count; Last updated on: 03-Nov-2025
+
+### Figma Design
+
+https://www.figma.com/design/aB6Cwgnh50cPtPWlbXSoat/RITU-25?node-id=0-1&t=BAZQnCfrhgpUTyD6-1
