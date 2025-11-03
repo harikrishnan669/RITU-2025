@@ -19,6 +19,5 @@ export default function Home() {
         <br/><br/>
         <Gallery/>
         <br/><br/>
-
     </main>
 }
